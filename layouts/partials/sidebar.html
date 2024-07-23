@@ -1,0 +1,57 @@
+<aside class="hidden xl:block tc-sidebar pt-6 sticky top-0 mb-auto">
+  <div class="text-justify tc-sidebar-text">
+    <p>Because <b>C++ is fun</b></p>
+  </div>
+
+  <ul>
+    {{ $sections := index .Site.Data.sections "sections" }} {{ range $sections
+    }}
+    <li>
+      <a href="/{{ .name }}">{{ .title }}</a>
+      <ul>
+        {{ range (where site.RegularPages "Section" .name) }}
+        <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+        {{ end }}
+      </ul>
+    </li>
+    {{ end }}
+  </ul>
+
+  <div class="flex flex-row content-center my-auto">
+    <div class="flex flex-col my-auto">
+      <div class="font-bold mb-1">Follow me on</div>
+      <div class="flex flex-row sjjpace-x-5">
+        <a
+          href="https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=gituliar"
+          target="_blank"
+          title="LinkedIn"
+          class="tc-sidebar-social"
+        >
+          <img src="/img/brands/linkedin.svg" />
+        </a>
+        <a
+          href="https://github.com/gituliar"
+          target="_blank"
+          title="GitHub"
+          class="tc-sidebar-social"
+        >
+          <img src="/img/brands/github.svg" />
+        </a>
+        <a
+          href="https://twitter.com/OGituliar"
+          target="_blank"
+          title="Twitter"
+          class="tc-sidebar-social"
+        >
+          <img src="/img/brands/x-twitter.svg" />
+        </a>
+      </div>
+    </div>
+    <div class="ml-auto inline-block">
+      <img
+        src="/img/profile-64x64.png"
+        class="w-16 rounded-full scale-x-[-1]"
+      />
+    </div>
+  </div>
+</aside>

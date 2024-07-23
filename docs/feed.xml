@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tasty C&#43;&#43;</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Tasty C&#43;&#43;</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>oleksandr@gituliar.net (Oleksandr Gituliar)</managingEditor>
+    <webMaster>oleksandr@gituliar.net (Oleksandr Gituliar)</webMaster>
+    <lastBuildDate>Tue, 02 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>std::set</title>
+      <link>http://localhost:1313/std/set/</link>
+      <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/std/set/</guid>
+      <description>std::set The std::set container in C++ is a sorted associative container that stores unique elements. Internally, it is typically implemented as a balanced binary tree (usually a Red-Black Tree). The memory layout of std::set is similar to that of std::map, but since std::set only stores keys (without associated values), its node structure is simpler.&#xA;Size&#xA;xx bytes (64-bit) xx bytes (32-bit) Components of std::set std::set uses a tree structure where each node contains:</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/about/</guid>
+      <description>About page </description>
+    </item>
+    <item>
+      <title>std::vector</title>
+      <link>http://localhost:1313/std/vector/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/std/vector/</guid>
+      <description>In C++ Standard Library, std::vector is nothing more than a contiguous region of dynamic memory. The main task of std::vector is to grow the memory region when there is no space left for new elements.&#xA;Methods mention complexity&#xA;capacity empty() size() max_size() capacity() Structure Size 24 bytes (64-bit) 12 bytes (32-bit) Layout myFirst myLast myEnd | | | v v v +---+---+---+---+---+---+ | 1 | 2 | 3 | | | | +---+---+---+---+---+---+ 1template&amp;lt;typename T&amp;gt; 2struct vector { 3private: 4 T* myFirst; 5 T* myLast; 6 T* myEnd; 7} myFirst - pointer to the first element.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,13 @@
+{{ define "content" }}
+
+<h2>{{ .Title }}</h2>
+
+{{ .Content }}
+
+<ul>
+  {{ range (where site.RegularPages "Section" .Section) }}
+  <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+  {{ end }}
+</ul>
+
+{{ end }}

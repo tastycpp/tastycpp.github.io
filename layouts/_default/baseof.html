@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>
+      {{ .Title }}{{ if ne .Title .Site.Title }} | {{ .Site.Title }}{{ end }}
+    </title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="{{ .Site.Params.Author.name }}" />
+    <meta
+      name="description"
+      content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"
+    />
+
+    {{ if eq hugo.Environment "production" }}
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-GE8XJ8MBDF"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-GE8XJ8MBDF");
+    </script>
+
+    <!-- Umami Analytics -->
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="37d16868-5fe7-42b7-a7ac-e297d436bc93"
+    ></script>
+    {{ end }}
+
+    <link href="https://fonts.cdnfonts.com/css/lato" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/code.css" />
+    <link rel="icon" href="/favicon.ico" />
+
+    {{ template "_internal/opengraph.html" . }}
+
+    <!-- {% seo %} -->
+  </head>
+
+  <body>
+    <div class="flex flex-col xl:flex-row px-6 lg:px-0 gh-content mx-auto">
+      <main class="mx-auto">
+        <!-- Header -->
+        {{ partial "header.html" . }}
+
+        <!-- Content -->
+        {{ block "content" . }} {{ .Content }} {{ end }}
+      </main>
+
+      <!-- Sidebar -->
+      {{ partial "sidebar.html" . }}
+    </div>
+
+    <script>
+      document.querySelectorAll('a[href^="http"]').forEach(function (e) {
+        e.setAttribute("target", "_blank");
+      });
+    </script>
+  </body>
+</html>

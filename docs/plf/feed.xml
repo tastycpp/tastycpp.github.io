@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PLF Library on Tasty C&#43;&#43;</title>
+    <link>http://localhost:1313/plf/</link>
+    <description>Recent content in PLF Library on Tasty C&#43;&#43;</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>oleksandr@gituliar.net (Oleksandr Gituliar)</managingEditor>
+    <webMaster>oleksandr@gituliar.net (Oleksandr Gituliar)</webMaster>
+    <atom:link href="http://localhost:1313/plf/feed.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
