@@ -49,6 +49,9 @@
 
   <body>
     <div class="flex flex-col xl:flex-row px-6 lg:px-0 gh-content mx-auto">
+      <!-- Sidebar -->
+      {{ partial "sidebar.html" . }}
+
       <main class="mx-auto">
         <!-- Header -->
         {{ partial "header.html" . }}
@@ -56,9 +59,6 @@
         <!-- Content -->
         {{ block "content" . }} {{ .Content }} {{ end }}
       </main>
-
-      <!-- Sidebar -->
-      {{ partial "sidebar.html" . }}
     </div>
 
     <script>

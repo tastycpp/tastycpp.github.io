@@ -33,21 +33,89 @@
 
   <body>
     <div class="flex flex-col xl:flex-row px-6 lg:px-0 gh-content mx-auto">
-      <main class="mx-auto">
-        
-        <nav class="tc-nav gh-canvas">
-  <div class="flex flex-row justify-between gh-width-wide">
+      
+      <aside class="hidden xl:block tc-sidebar sticky top-0 mb-auto">
+  <div class="text-justify tc-nav tc-sidebar-text">
     <a
       class="block font-black hover:underline text-2xl md:text-3xl no-underline tracking-tight"
       style="text-underline-offset: 6px"
       href="/"
     >
-      <img src="/img/logo/logo-64x64.png" class="inline-flex md:me-2" /><span
-        class="font-black align-middle my-8 inline-block"
-      >
-        Tasty C&#43;&#43;</span
-      >
+      <img src="/img/logo/logo-64x64.png" class="inline-flex md:me-2" />
+      <span class="font-black align-middle my-8 inline-block">
+        Tasty C&#43;&#43;
+      </span>
     </a>
+  </div>
+
+  <ul>
+     
+    <li>
+      <a href="/std">Containers</a>
+      <ul>
+        
+        <li><a href="/std/set/">std::set</a></li>
+        
+        <li><a href="/std/vector/">std::vector</a></li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <a href="/mt">Multi-Threading</a>
+      <ul>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <a href="/plf">PLF Library</a>
+      <ul>
+        
+      </ul>
+    </li>
+    
+  </ul>
+
+  <div class="flex flex-row content-center my-auto">
+    <div class="flex flex-col my-auto">
+      <div class="font-bold mb-1">Follow on</div>
+      <div class="flex flex-row sjjpace-x-5">
+        <a
+          href="https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=gituliar"
+          target="_blank"
+          title="LinkedIn"
+          class="tc-sidebar-social"
+        >
+          <img src="/img/brands/linkedin.svg" />
+        </a>
+        <a
+          href="https://github.com/gituliar"
+          target="_blank"
+          title="GitHub"
+          class="tc-sidebar-social"
+        >
+          <img src="/img/brands/github.svg" />
+        </a>
+        <a
+          href="https://twitter.com/OGituliar"
+          target="_blank"
+          title="Twitter"
+          class="tc-sidebar-social"
+        >
+          <img src="/img/brands/x-twitter.svg" />
+        </a>
+      </div>
+    </div>
+    
+  </div>
+</aside>
+
+
+      <main class="mx-auto">
+        
+        <nav class="tc-nav gh-canvas">
+  <div class="flex flex-row justify-between gh-width-wide">
     <div class="block xl:hidden pt-9 flex flex-row space-x-3 md:space-x-5">
       <a
         href="https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=gituliar"
@@ -85,81 +153,6 @@
 
  
       </main>
-
-      
-      <aside class="hidden xl:block tc-sidebar pt-6 sticky top-0 mb-auto">
-  <div class="text-justify tc-sidebar-text">
-    <p>Because <b>C++ is fun</b></p>
-  </div>
-
-  <ul>
-     
-    <li>
-      <a href="/std">Containers</a>
-      <ul>
-        
-        <li><a href="/std/set/">std::set</a></li>
-        
-        <li><a href="/std/vector/">std::vector</a></li>
-        
-      </ul>
-    </li>
-    
-    <li>
-      <a href="/mt">Multi-Threading</a>
-      <ul>
-        
-      </ul>
-    </li>
-    
-    <li>
-      <a href="/plf">PLF Library</a>
-      <ul>
-        
-      </ul>
-    </li>
-    
-  </ul>
-
-  <div class="flex flex-row content-center my-auto">
-    <div class="flex flex-col my-auto">
-      <div class="font-bold mb-1">Follow me on</div>
-      <div class="flex flex-row sjjpace-x-5">
-        <a
-          href="https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=gituliar"
-          target="_blank"
-          title="LinkedIn"
-          class="tc-sidebar-social"
-        >
-          <img src="/img/brands/linkedin.svg" />
-        </a>
-        <a
-          href="https://github.com/gituliar"
-          target="_blank"
-          title="GitHub"
-          class="tc-sidebar-social"
-        >
-          <img src="/img/brands/github.svg" />
-        </a>
-        <a
-          href="https://twitter.com/OGituliar"
-          target="_blank"
-          title="Twitter"
-          class="tc-sidebar-social"
-        >
-          <img src="/img/brands/x-twitter.svg" />
-        </a>
-      </div>
-    </div>
-    <div class="ml-auto inline-block">
-      <img
-        src="/img/profile-64x64.png"
-        class="w-16 rounded-full scale-x-[-1]"
-      />
-    </div>
-  </div>
-</aside>
-
     </div>
 
     <script>
