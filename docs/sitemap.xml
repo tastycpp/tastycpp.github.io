@@ -2,19 +2,90 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/std/</loc>
-    <lastmod>2024-07-02T00:00:00+00:00</lastmod>
+    <loc>https://tastycpp.com/algorithms/algorithm/</loc>
   </url><url>
-    <loc>http://localhost:1313/std/set/</loc>
-    <lastmod>2024-07-02T00:00:00+00:00</lastmod>
+    <loc>https://tastycpp.com/thread/atomic/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2024-07-02T00:00:00+00:00</lastmod>
+    <loc>https://tastycpp.com/utilities/bit/</loc>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://tastycpp.com/utilities/bitset/</loc>
   </url><url>
-    <loc>http://localhost:1313/plf/</loc>
+    <loc>https://tastycpp.com/numerics/cmath/</loc>
   </url><url>
-    <loc>http://localhost:1313/std/vector/</loc>
+    <loc>https://tastycpp.com/algorithms/cstdlib/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/mem/cstdlib/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/numerics/cstdlib/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/input.output/filesystem/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/utilities/format/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/input.output/fstream/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/utilities/functional/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/thread/future/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/input.output/iostream/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/algorithms/memory/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/mem/memory/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/thread/mutex/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/numerics/numbers/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/algorithms/numeric/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/utilities/optional/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/numerics/random/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/re/regex/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/thread/semaphore/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/containers/set/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/strings/string_view/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/strings/string/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/thread/thread/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/utilities/tuple/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/numerics/valarray/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/containers/vector/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/about/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/concurrency/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/containers/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/utilities/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/algorithms/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/mem/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/numerics/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/re/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/thread/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/plf/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/input.output/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/strings/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/</loc>
   </url>
 </urlset>
