@@ -63,7 +63,7 @@
   /* ---------------------------------------------------------- */
 
   html {
-    font-size: 1.2rem;
+    font-size: 1rem;
     overflow-y: scroll;
   }
 
@@ -75,12 +75,12 @@
 
   a {
     color: blue;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   a:hover {
     /* opacity: 0.8; */
-    text-decoration: none;
+    text-decoration: underline;
   }
 
   address {
@@ -92,6 +92,7 @@
   samp,
   pre {
     font-family: var(--font-mono);
+    font-size: 0.9em;
   }
   pre * {
     font-size: 0.9em;

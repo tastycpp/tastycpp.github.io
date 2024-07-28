@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Input/Output Library on Tasty C&#43;&#43;</title>
+    <link>http://localhost:1313/input.output/</link>
+    <description>Recent content in Input/Output Library on Tasty C&#43;&#43;</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>oleksandr@gituliar.net (Oleksandr Gituliar)</managingEditor>
+    <webMaster>oleksandr@gituliar.net (Oleksandr Gituliar)</webMaster>
+    <atom:link href="http://localhost:1313/input.output/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>&lt;filesystem&gt;</title>
+      <link>http://localhost:1313/input.output/filesystem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/input.output/filesystem/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;fstream&gt;</title>
+      <link>http://localhost:1313/input.output/fstream/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/input.output/fstream/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;iostream&gt;</title>
+      <link>http://localhost:1313/input.output/iostream/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/input.output/iostream/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>
+      &lt;tuple&gt; | Tasty C&#43;&#43;
+    </title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Oleksandr Gituliar" />
+    <meta
+      name="description"
+      content="Subclause 22.4 describes the tuple library that provides a tuple type as the class template tuple that can be instantiated with any number of arguments. Each template argument specifies the type of an element in the tuple. Consequently, tuples are heterogeneous, fixed-size collections of values. An instantiation of tuple with two arguments is similar to an instantiation of pair with the same two arguments. See 22.3."
+    />
+
+    
+
+    <link href="https://fonts.cdnfonts.com/css/lato" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/code.css" />
+    <link rel="icon" href="/favicon.ico" />
+
+    <meta property="og:title" content="&lt;tuple&gt;" />
+<meta property="og:description" content="Subclause 22.4 describes the tuple library that provides a tuple type as the class template tuple that can be instantiated with any number of arguments. Each template argument specifies the type of an element in the tuple. Consequently, tuples are heterogeneous, fixed-size collections of values. An instantiation of tuple with two arguments is similar to an instantiation of pair with the same two arguments. See 22.3." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/utilities/tuple/" /><meta property="article:section" content="utilities" />
+
+
+
+
+
+    
+  </head>
+
+  <body>
+    <div class="flex flex-col xl:flex-row px-6 lg:px-0 gh-content mx-auto">
+      
+      <aside class="hidden xl:block tc-sidebar sticky top-0 mb-auto">
+  <div class="text-justify tc-nav tc-sidebar-text">
+    <a
+      class="block font-black hover:underline text-2xl md:text-3xl no-underline tracking-tight"
+      style="text-underline-offset: 6px"
+      href="/"
+    >
+      <img src="/img/logo/logo-64x64.png" class="inline-flex md:me-2" />
+      <span class="font-black align-middle my-8 inline-block">
+        Tasty C&#43;&#43;
+      </span>
+    </a>
+  </div>
+
+  <ul>
+     
+    <li>
+      <a href="/mem">Memory Management</a>
+      <ul>
+        
+        <li><a href="/mem/cstdlib/">&lt;cstdlib&gt;</a></li>
+        
+        <li><a href="/mem/memory/">&lt;memory&gt;</a></li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <a href="/utilities">General Utilities</a>
+      <ul>
+        
+        <li><a href="/utilities/bit/">&lt;bit&gt;</a></li>
+        
+        <li><a href="/utilities/bitset/">&lt;bitset&gt;</a></li>
+        
+        <li><a href="/utilities/format/">&lt;format&gt;</a></li>
+        
+        <li><a href="/utilities/functional/">&lt;functional&gt;</a></li>
+        
+        <li><a href="/utilities/optional/">&lt;optional&gt;</a></li>
+        
+        <li><a href="/utilities/tuple/">&lt;tuple&gt;</a></li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <a href="/strings">Strings</a>
+      <ul>
+        
+        <li><a href="/strings/string_view/">&lt;string_view&gt;</a></li>
+        
+        <li><a href="/strings/string/">&lt;string&gt;</a></li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <a href="/containers">Containers</a>
+      <ul>
+        
+        <li><a href="/containers/array/">&lt;array&gt;</a></li>
+        
+        <li><a href="/containers/deque/">&lt;deque&gt;</a></li>
+        
+        <li><a href="/containers/flat_map/">&lt;flat_map&gt;</a></li>
+        
+        <li><a href="/containers/flat_set/">&lt;flat_set&gt;</a></li>
+        
+        <li><a href="/containers/forward_list/">&lt;forward_list&gt;</a></li>
+        
+        <li><a href="/containers/list/">&lt;list&gt;</a></li>
+        
+        <li><a href="/containers/map/">&lt;map&gt;</a></li>
+        
+        <li><a href="/containers/mdspan/">&lt;mdspan&gt;</a></li>
+        
+        <li><a href="/containers/queue/">&lt;queue&gt;</a></li>
+        
+        <li><a href="/containers/set/">&lt;set&gt;</a></li>
+        
+        <li><a href="/containers/span/">&lt;span&gt;</a></li>
+        
+        <li><a href="/containers/stack/">&lt;stack&gt;</a></li>
+        
+        <li><a href="/containers/unordered_map/">&lt;unordered_map&gt;</a></li>
+        
+        <li><a href="/containers/unordered_set/">&lt;unordered_set&gt;</a></li>
+        
+        <li><a href="/containers/vector/">&lt;vector&gt;</a></li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <a href="/algorithms">Algorithms</a>
+      <ul>
+        
+        <li><a href="/algorithms/algorithm/">&lt;algorithm&gt;</a></li>
+        
+        <li><a href="/algorithms/cstdlib/">&lt;cstdlib&gt;</a></li>
+        
+        <li><a href="/algorithms/memory/">&lt;memory&gt;</a></li>
+        
+        <li><a href="/algorithms/numeric/">&lt;numeric&gt;</a></li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <a href="/numerics">Numerics</a>
+      <ul>
+        
+        <li><a href="/numerics/cmath/">&lt;cmath&gt;</a></li>
+        
+        <li><a href="/numerics/cstdlib/">&lt;cstdlib&gt;</a></li>
+        
+        <li><a href="/numerics/numbers/">&lt;numbers&gt;</a></li>
+        
+        <li><a href="/numerics/random/">&lt;random&gt;</a></li>
+        
+        <li><a href="/numerics/valarray/">&lt;valarray&gt;</a></li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <a href="/input.output">Input/Output</a>
+      <ul>
+        
+        <li><a href="/input.output/filesystem/">&lt;filesystem&gt;</a></li>
+        
+        <li><a href="/input.output/fstream/">&lt;fstream&gt;</a></li>
+        
+        <li><a href="/input.output/iostream/">&lt;iostream&gt;</a></li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <a href="/re">Regular Expressions</a>
+      <ul>
+        
+        <li><a href="/re/regex/">&lt;regex&gt;</a></li>
+        
+      </ul>
+    </li>
+    
+    <li>
+      <a href="/thread">Concurrency</a>
+      <ul>
+        
+        <li><a href="/thread/atomic/">&lt;atomic&gt;</a></li>
+        
+        <li><a href="/thread/future/">&lt;future&gt;</a></li>
+        
+        <li><a href="/thread/mutex/">&lt;mutex&gt;</a></li>
+        
+        <li><a href="/thread/semaphore/">&lt;semaphore&gt;</a></li>
+        
+        <li><a href="/thread/thread/">&lt;thread&gt;</a></li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+
+  <div class="flex flex-row content-center my-auto">
+    <div class="flex flex-col my-auto">
+      <div class="font-bold mb-1">Follow on</div>
+      <div class="flex flex-row sjjpace-x-5">
+        <a
+          href="https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=gituliar"
+          target="_blank"
+          title="LinkedIn"
+          class="tc-sidebar-social"
+        >
+          <img src="/img/brands/linkedin.svg" />
+        </a>
+        <a
+          href="https://github.com/gituliar"
+          target="_blank"
+          title="GitHub"
+          class="tc-sidebar-social"
+        >
+          <img src="/img/brands/github.svg" />
+        </a>
+        <a
+          href="https://twitter.com/OGituliar"
+          target="_blank"
+          title="Twitter"
+          class="tc-sidebar-social"
+        >
+          <img src="/img/brands/x-twitter.svg" />
+        </a>
+      </div>
+    </div>
+    
+  </div>
+</aside>
+
+
+      <main class="mx-auto">
+        
+        <nav class="tc-nav gh-canvas">
+  <div class="flex flex-row justify-between gh-width-wide">
+    <div class="block xl:hidden pt-9 flex flex-row space-x-3 md:space-x-5">
+      <a
+        href="https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=gituliar"
+        target="_blank"
+        title="LinkedIn"
+        class="tc-sidebar-social"
+      >
+        <img src="/img/brands/linkedin.svg" />
+      </a>
+      <a
+        href="https://github.com/gituliar"
+        target="_blank"
+        title="GitHub"
+        class="tc-sidebar-social"
+      >
+        <img src="/img/brands/github.svg" />
+      </a>
+      <a
+        href="https://twitter.com/OGituliar"
+        target="_blank"
+        title="Twitter"
+        class="tc-sidebar-social"
+      >
+        <img src="/img/brands/x-twitter.svg" />
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+        
+        
+
+<article>
+  <header class="gh-canvas">
+    <h1 class="" itemprop="name headline">&lt;tuple&gt;</h1>
+
+    
+  </header>
+
+  <section class="gh-canvas mb-8" itemprop="articleBody">
+    <p>Subclause 22.4 describes the tuple library that provides a tuple type as the
+class template tuple that can be instantiated with any number of arguments. Each
+template argument specifies the type of an element in the tuple. Consequently,
+tuples are heterogeneous, fixed-size collections of values. An instantiation of
+tuple with two arguments is similar to an instantiation of pair with the same
+two arguments. See 22.3.</p>
+
+  </section>
+
+  
+</article>
+
+
+      </main>
+    </div>
+
+    <script>
+      document.querySelectorAll('a[href^="http"]').forEach(function (e) {
+        e.setAttribute("target", "_blank");
+      });
+    </script>
+  </body>
+</html>

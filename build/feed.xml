@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tasty C&#43;&#43;</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Tasty C&#43;&#43;</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>oleksandr@gituliar.net (Oleksandr Gituliar)</managingEditor>
+    <webMaster>oleksandr@gituliar.net (Oleksandr Gituliar)</webMaster>
+    <atom:link href="http://localhost:1313/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>&lt;algorithm&gt;</title>
+      <link>http://localhost:1313/algorithms/algorithm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/algorithms/algorithm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;array&gt;</title>
+      <link>http://localhost:1313/containers/array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/containers/array/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;atomic&gt;</title>
+      <link>http://localhost:1313/thread/atomic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/thread/atomic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;bit&gt;</title>
+      <link>http://localhost:1313/utilities/bit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/utilities/bit/</guid>
+      <description>The header provides components to access, manipulate and process both individual bits and bit sequences.</description>
+    </item>
+    <item>
+      <title>&lt;bitset&gt;</title>
+      <link>http://localhost:1313/utilities/bitset/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/utilities/bitset/</guid>
+      <description>The header defines a class template and several related functions for representing and manipulating fixed-size sequences of bits.</description>
+    </item>
+    <item>
+      <title>&lt;cmath&gt;</title>
+      <link>http://localhost:1313/numerics/cmath/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/numerics/cmath/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;cstdlib&gt;</title>
+      <link>http://localhost:1313/algorithms/cstdlib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/algorithms/cstdlib/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;cstdlib&gt;</title>
+      <link>http://localhost:1313/mem/cstdlib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/mem/cstdlib/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;cstdlib&gt;</title>
+      <link>http://localhost:1313/numerics/cstdlib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/numerics/cstdlib/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;deque&gt;</title>
+      <link>http://localhost:1313/containers/deque/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/containers/deque/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;filesystem&gt;</title>
+      <link>http://localhost:1313/input.output/filesystem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/input.output/filesystem/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;flat_map&gt;</title>
+      <link>http://localhost:1313/containers/flat_map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/containers/flat_map/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;flat_set&gt;</title>
+      <link>http://localhost:1313/containers/flat_set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/containers/flat_set/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;format&gt;</title>
+      <link>http://localhost:1313/utilities/format/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/utilities/format/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;forward_list&gt;</title>
+      <link>http://localhost:1313/containers/forward_list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/containers/forward_list/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;fstream&gt;</title>
+      <link>http://localhost:1313/input.output/fstream/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/input.output/fstream/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;functional&gt;</title>
+      <link>http://localhost:1313/utilities/functional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/utilities/functional/</guid>
+      <description>A function object type is an object type (6.8.1) that can be the type of the postfix-expression in a function call (7.6.1.3, 12.2.2.2).208 A function object is an object of a function object type. In the places where one would expect to pass a pointer to a function to an algorithmic template (Clause 27), the interface is specified to accept a function object. This not only makes algorithmic templates work with pointers to functions, but also enables them to work with arbitrary function objects.</description>
+    </item>
+    <item>
+      <title>&lt;future&gt;</title>
+      <link>http://localhost:1313/thread/future/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/thread/future/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;iostream&gt;</title>
+      <link>http://localhost:1313/input.output/iostream/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/input.output/iostream/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;list&gt;</title>
+      <link>http://localhost:1313/containers/list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/containers/list/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;map&gt;</title>
+      <link>http://localhost:1313/containers/map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/containers/map/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;mdspan&gt;</title>
+      <link>http://localhost:1313/containers/mdspan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/containers/mdspan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;memory&gt;</title>
+      <link>http://localhost:1313/algorithms/memory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/algorithms/memory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;memory&gt;</title>
+      <link>http://localhost:1313/mem/memory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/mem/memory/</guid>
+      <description>The header &amp;lt;memory&amp;gt; defines several types and function templates that describe properties of pointers and pointer-like types, manage memory for containers and other template types, destroy objects, and construct objects in uninitialized memory buffers (20.2.3–20.2.11 and 27.11). The header also defines the templates unique_ptr, shared_ptr, weak_ptr, out_ptr_t, inout_ptr_t, and various function templates that operate on objects of these types (20.3).&#xA;Smart Pointers Memory pointer conversion construct_at&#xA;destroy_at&#xA;template&amp;lt;class T&amp;gt;&#xA;constexpr to_address(T* p) noexcept -&amp;gt; T* template&amp;lt;class Ptr&amp;gt;</description>
+    </item>
+    <item>
+      <title>&lt;mutex&gt;</title>
+      <link>http://localhost:1313/thread/mutex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/thread/mutex/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;numbers&gt;</title>
+      <link>http://localhost:1313/numerics/numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/numerics/numbers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;numeric&gt;</title>
+      <link>http://localhost:1313/algorithms/numeric/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/algorithms/numeric/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;optional&gt;</title>
+      <link>http://localhost:1313/utilities/optional/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/utilities/optional/</guid>
+      <description>Subclause 22.5 describes class template optional that represents optional objects. An optional object is an object that contains the storage for another object and manages the lifetime of this contained object, if any. The contained object may be initialized after the optional object has been initialized, and may be destroyed before the optional object has been destroyed. The initialization state of the contained object is tracked by the optional object.</description>
+    </item>
+    <item>
+      <title>&lt;queue&gt;</title>
+      <link>http://localhost:1313/containers/queue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/containers/queue/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;random&gt;</title>
+      <link>http://localhost:1313/numerics/random/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/numerics/random/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;regex&gt;</title>
+      <link>http://localhost:1313/re/regex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/re/regex/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;semaphore&gt;</title>
+      <link>http://localhost:1313/thread/semaphore/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/thread/semaphore/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;set&gt;</title>
+      <link>http://localhost:1313/containers/set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/containers/set/</guid>
+      <description>The std::set container in C++ is a sorted associative container that stores unique elements. Internally, it is typically implemented as a balanced binary tree (usually a Red-Black Tree). The memory layout of std::set is similar to that of std::map, but since std::set only stores keys (without associated values), its node structure is simpler.&#xA;Methods operations complexity Implementation std::set is typically implemented as a balanced binary tree (usually a Red-Black Tree).</description>
+    </item>
+    <item>
+      <title>&lt;span&gt;</title>
+      <link>http://localhost:1313/containers/span/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/containers/span/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;stack&gt;</title>
+      <link>http://localhost:1313/containers/stack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/containers/stack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;string_view&gt;</title>
+      <link>http://localhost:1313/strings/string_view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/strings/string_view/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;string&gt;</title>
+      <link>http://localhost:1313/strings/string/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/strings/string/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;thread&gt;</title>
+      <link>http://localhost:1313/thread/thread/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/thread/thread/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;tuple&gt;</title>
+      <link>http://localhost:1313/utilities/tuple/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/utilities/tuple/</guid>
+      <description>Subclause 22.4 describes the tuple library that provides a tuple type as the class template tuple that can be instantiated with any number of arguments. Each template argument specifies the type of an element in the tuple. Consequently, tuples are heterogeneous, fixed-size collections of values. An instantiation of tuple with two arguments is similar to an instantiation of pair with the same two arguments. See 22.3.</description>
+    </item>
+    <item>
+      <title>&lt;unordered_map&gt;</title>
+      <link>http://localhost:1313/containers/unordered_map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/containers/unordered_map/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;unordered_set&gt;</title>
+      <link>http://localhost:1313/containers/unordered_set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/containers/unordered_set/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;valarray&gt;</title>
+      <link>http://localhost:1313/numerics/valarray/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/numerics/valarray/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;vector&gt;</title>
+      <link>http://localhost:1313/containers/vector/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/containers/vector/</guid>
+      <description>A vector is a sequence container that supports (amortized) constant time insert and erase operations at the end; insert and erase in the middle take linear time. Storage management is handled automatically, though hints can be given to improve efficiency.&#xA;In C++ Standard Library, std::vector is nothing more than a contiguous region of dynamic memory. The main task of std::vector is to grow the memory region when there is no space left for new elements.</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>http://localhost:1313/about/</guid>
+      <description>About page </description>
+    </item>
+  </channel>
+</rss>

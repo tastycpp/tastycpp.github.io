@@ -6,9 +6,9 @@
 .PHONY: build css serve
 
 serve:
-	./bin/hugo.exe server --buildDrafts -d docs
+	./bin/hugo.exe server --buildDrafts -d build
 build:
-	rm docs -rf && ./bin/hugo.exe -d docs
+	rm build -rf && ./bin/hugo.exe -d build
 
 css:
 	./bin/tailwindcss.exe -i main.css -o static/css/main.css --watch --content "layouts/**/*.html"

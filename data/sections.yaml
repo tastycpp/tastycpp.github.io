@@ -33,5 +33,3 @@ sections:
     title: 'Regular Expressions'
   - name: 'thread'
     title: 'Concurrency'
-  - name: 'plf'
-    title: 'PLF Library'

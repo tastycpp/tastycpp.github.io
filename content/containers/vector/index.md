@@ -1,9 +1,5 @@
 ---
 title: "<vector>"
-#description: "This is a story..."
-#cover: cover.png
-#image: cover.png
-#date: 2024-07-01
 ---
 
 A `vector` is a sequence container that supports (amortized) constant time
@@ -19,18 +15,19 @@ when there is no space left for new elements._
 
 ### capacity
 
-- `empty() const -> bool`
-- `size() const -> size_t` _Returns_: distance(a.begin(), a.end()), i.e. the
-  number of elements in the container. _Complexity_: Constant.
-- `max_size() const -> size_t`
-- `capacity() const -> size_t`
+- [`empty()`]() ` const -> bool`
+- [`size()`]() `const -> size_t`\
+  _Returns_: `distance(a.begin(), a.end())`, i.e. the number of elements in the container.\
+  _Complexity_: Constant.
+- [`max_size()`]() ` const -> size_t`
+- [`capacity()`]() ` const -> size_t`
 
 ### element access
 
-- `at(size_t n) const -> const T&`
-- `back() const -> const T&`
-- `front() const -> const T&`
-- `operator[](size_t n) const -> const T&`
+- [`at(size_t n)`]() ` const -> const T&`
+- [`back()`]() ` const -> const T&`
+- [`front()`]() ` const -> const T&`
+- [`operator[](size_t n)`]() ` const -> const T&`
 
 ### data access
 
