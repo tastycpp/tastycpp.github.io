@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <title>
       Numerics Library | Tasty C&#43;&#43;
     </title>
@@ -14,6 +14,28 @@
     />
 
     
+    
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-GE8XJ8MBDF"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-GE8XJ8MBDF");
+    </script>
+
+    
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="37d16868-5fe7-42b7-a7ac-e297d436bc93"
+    ></script>
+    
 
     <link href="https://fonts.cdnfonts.com/css/lato" rel="stylesheet" />
     <link rel="stylesheet" href="/css/main.css" />
@@ -23,7 +45,7 @@
     <meta property="og:title" content="Numerics Library" />
 <meta property="og:description" content="Website about C&#43;&#43;" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/numerics/" />
+<meta property="og:url" content="https://tastycpp.com/numerics/" />
 
 
 
@@ -82,6 +104,10 @@
     <li>
       <a href="/strings">Strings</a>
       <ul>
+        
+        <li><a href="/strings/cctype/">&lt;cctype&gt;</a></li>
+        
+        <li><a href="/strings/cstring/">&lt;cstring&gt;</a></li>
         
         <li><a href="/strings/string_view/">&lt;string_view&gt;</a></li>
         
@@ -162,6 +188,8 @@
     <li>
       <a href="/input.output">Input/Output</a>
       <ul>
+        
+        <li><a href="/input.output/cstdio/">&lt;cstdio&gt;</a></li>
         
         <li><a href="/input.output/filesystem/">&lt;filesystem&gt;</a></li>
         
@@ -274,29 +302,113 @@
 
 <h2>Numerics Library</h2>
 
-<h2 id="mathematical-functions">Mathematical Functions</h2>
-<p><code>&lt;cmath&gt;</code>, <code>&lt;cstdlib&gt;</code></p>
-<h2 id="random-number-generation">Random Number Generation</h2>
-<p><code>&lt;random&gt;</code></p>
+<p>This Clause describes components that C++ programs may use to perform
+semi-numerical operations.</p>
 <h2 id="numbers">Numbers</h2>
 <p><code>&lt;numbers&gt;</code></p>
+<ul>
+<li><code>e</code></li>
+<li><code>log2e</code></li>
+<li><code>log10e</code></li>
+<li><code>pi</code></li>
+<li><code>...</code></li>
+</ul>
+<h2 id="mathematical-functions">Mathematical Functions</h2>
+<p><code>&lt;cmath&gt;</code>, <code>&lt;cstdlib&gt;</code></p>
+<ul>
+<li><code>abs</code></li>
+<li><code>hypot</code></li>
+<li><code>pow</code></li>
+<li><code>sqrt</code></li>
+<li><code>...</code></li>
+</ul>
+<p><code> </code></p>
+<ul>
+<li><code>acos</code></li>
+<li><code>asin</code></li>
+<li><code>atan</code></li>
+<li><code>atan2</code></li>
+<li><code>...</code></li>
+</ul>
+<h2 id="random-number-generation">Random Number Generation</h2>
+<p><code>&lt;random&gt;</code></p>
+<p>Subclause 28.5 defines a facility for generating (pseudo-)random numbers.</p>
+<h3 id="random-number-distribution">Random Number Distribution</h3>
+<h4 id="uniform-distribution">Uniform Distribution</h4>
+<ul>
+<li><code>uniform_int_distribution</code></li>
+<li><code>uniform_real_distribution</code></li>
+</ul>
+<h4 id="bernoulli-distribution">Bernoulli Distribution</h4>
+<ul>
+<li><code>bernoulli_distribution</code></li>
+<li><code>binomial_distribution</code></li>
+<li><code>geometric_distribution</code></li>
+<li><code>negative_binomial_distribution</code></li>
+</ul>
+<h4 id="poison-distribution">Poison Distribution</h4>
+<ul>
+<li><code>poisson_distribution</code></li>
+<li><code>exponential_distribution</code></li>
+<li><code>gamma_distribution</code></li>
+<li><code>weibull_distribution</code></li>
+<li><code>extreme_value_distribution</code></li>
+</ul>
+<h4 id="normal-distribution">Normal Distribution</h4>
+<ul>
+<li><code>normal_distribution</code></li>
+<li><code>lognormal_distribution</code></li>
+<li><code>chi_squared_distribution</code></li>
+<li><code>cauchy_distribution</code></li>
+<li><code>fisher_f_distribution</code></li>
+<li><code>student_t_distribution</code></li>
+</ul>
+<h4 id="sampling-distribution">Sampling Distribution</h4>
+<ul>
+<li><code>discrete_distribution</code></li>
+<li><code>piecewise_constant_distribution</code></li>
+<li><code>piecewise_linear_distribution</code></li>
+</ul>
+<h3 id="engines-with-predefined-parameters">Engines with Predefined Parameters</h3>
+<ul>
+<li><code>default_random_engine</code></li>
+</ul>
+<p><code> </code></p>
+<ul>
+<li><code>minstd_rand0</code></li>
+<li><code>minstd_rand</code></li>
+<li><code>mt19937</code></li>
+<li><code>mt19937_64</code></li>
+<li><code>ranlux24</code></li>
+<li><code>ranlux48</code></li>
+<li><code>knuth_b</code></li>
+</ul>
+<h3 id="random-number-engines">Random Number Engines</h3>
+<ul>
+<li><code>class linear_congruential_engine&lt;UIntType, a, c, m&gt;</code></li>
+<li><code>class mersenne_twister_engine</code></li>
+<li><code>class subtract_with_carry_engine</code></li>
+</ul>
+<h4 id="adaptors">Adaptors</h4>
+<ul>
+<li><code>discard_block_engine</code></li>
+<li><code>independent_bits_engine</code></li>
+<li><code>shuffle_order_engine</code></li>
+</ul>
 <h2 id="numeric-arrays">Numeric Arrays</h2>
 <p><code>&lt;valarray&gt;</code></p>
-
-
 <ul>
-  
-  <li><a href="/numerics/cmath/">&lt;cmath&gt;</a></li>
-  
-  <li><a href="/numerics/cstdlib/">&lt;cstdlib&gt;</a></li>
-  
-  <li><a href="/numerics/numbers/">&lt;numbers&gt;</a></li>
-  
-  <li><a href="/numerics/random/">&lt;random&gt;</a></li>
-  
-  <li><a href="/numerics/valarray/">&lt;valarray&gt;</a></li>
-  
+<li><code>valarray&lt;T&gt;</code></li>
+<li><code>slice</code></li>
+<li><code>slice_array&lt;T&gt;</code></li>
+<li><code>gslice</code></li>
+<li><code>gslice_array&lt;T&gt;</code></li>
+<li><code>mask_array&lt;T&gt;</code></li>
+<li><code>indirect_array&lt;T&gt;</code></li>
 </ul>
+
+
+
 
 
       </main>

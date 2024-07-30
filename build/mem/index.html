@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <title>
       Memory Management Library | Tasty C&#43;&#43;
     </title>
@@ -14,6 +14,28 @@
     />
 
     
+    
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-GE8XJ8MBDF"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-GE8XJ8MBDF");
+    </script>
+
+    
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="37d16868-5fe7-42b7-a7ac-e297d436bc93"
+    ></script>
+    
 
     <link href="https://fonts.cdnfonts.com/css/lato" rel="stylesheet" />
     <link rel="stylesheet" href="/css/main.css" />
@@ -23,7 +45,7 @@
     <meta property="og:title" content="Memory Management Library" />
 <meta property="og:description" content="Website about C&#43;&#43;" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/mem/" />
+<meta property="og:url" content="https://tastycpp.com/mem/" />
 
 
 
@@ -82,6 +104,10 @@
     <li>
       <a href="/strings">Strings</a>
       <ul>
+        
+        <li><a href="/strings/cctype/">&lt;cctype&gt;</a></li>
+        
+        <li><a href="/strings/cstring/">&lt;cstring&gt;</a></li>
         
         <li><a href="/strings/string_view/">&lt;string_view&gt;</a></li>
         
@@ -162,6 +188,8 @@
     <li>
       <a href="/input.output">Input/Output</a>
       <ul>
+        
+        <li><a href="/input.output/cstdio/">&lt;cstdio&gt;</a></li>
         
         <li><a href="/input.output/filesystem/">&lt;filesystem&gt;</a></li>
         
@@ -275,48 +303,152 @@
 <h2>Memory Management Library</h2>
 
 <p>This Clause describes components for memory management.</p>
-<h2 id="memory">Memory</h2>
 <h2 id="smart-pointers">Smart Pointers</h2>
-<p><code>&lt;memory&gt;</code></p>
+<p><code>#include </code><a href=""><code>&lt;memory&gt;</code></a></p>
+<h4 id="classes">Classes</h4>
+<ul>
+<li>
+<p><a href=""><code>std::unique_ptr</code></a></p>
+<hr>
+<p><code>template&lt;class T, class D = std::default_delete&lt;T&gt;&gt;</code><br>
+<code>class </code><strong><code>unique_ptr</code></strong><code>;</code></p>
+<hr>
+<p><code>template&lt;class T, class D&gt;</code><br>
+<code>class </code><strong><code>unique_ptr</code></strong><code>&lt;T[], D&gt;;</code></p>
+<hr>
+<p>A <em>unique pointer</em> is an object that owns another object through a pointer.
+The object is destroyed when the unique pointer is destroyed (e.g., when
+leaving a block scope).</p>
+</li>
+<li>
+<p><a href=""><code>std::shared_ptr</code></a></p>
+<hr>
 <p><code>template&lt;class T&gt;</code><br>
-<code>class </code> <a href=""><code>unique_ptr</code></a><code>&lt;T&gt;</code></p>
-<ul>
-<li><code>template&lt;class T, class D&gt;</code><br>
-<code>struct hash&lt;unique_ptr&lt;T, D&gt;&gt;</code></li>
-<li><code>template&lt;class T&gt;</code><br>
-<code>struct hash&lt;shared_ptr&lt;T&gt;&gt;</code></li>
+<code>class shared_ptr;</code></p>
+<hr>
+<p>A <em>shared pointer</em> is an object that owns another object through a pointer,
+usually obtained via <code>new</code>. <code>shared_ptr</code> implements semantics of shared
+ownership; the last remaining owner of the pointer is responsible for
+destroying the object, or otherwise releasing the resources associated with
+the stored pointer.</p>
+</li>
+<li>
+<p><a href=""><code>std::weak_ptr</code></a></p>
+<hr>
+<p><code>template&lt;class T&gt;</code><br>
+<code>class weak_ptr;</code></p>
+<hr>
+<p>The <code>weak_ptr</code> class template stores a weak reference to an object that is
+already managed by a <code>shared_ptr</code>.</p>
+</li>
 </ul>
-<p><code> </code></p>
+<h3 id="hash-support">Hash Support</h3>
 <ul>
-<li><a href=""><code>unique_ptr</code></a></li>
-<li><a href=""><code>shared_ptr</code></a></li>
-<li><a href=""><code>weak_ptr</code></a></li>
+<li>
+<p><a href=""><code>std::hash</code></a></p>
+<hr>
+<p><code>template&lt;class T&gt;</code><br>
+<code>struct hash&lt;shared_ptr&lt;T&gt;&gt;</code></p>
+<hr>
+<p><code>template&lt;class T, class D&gt;</code><br>
+<code>struct hash&lt;unique_ptr&lt;T, D&gt;&gt;</code></p>
+<hr>
+<p>The class template <code>hash</code>, used by the unordered associative containers as the
+default hash function.</p>
+</li>
 </ul>
-<h3 id="smart-pointer-adopters">Smart Pointer Adopters</h3>
+<h3 id="adaptors">Adaptors</h3>
 <ul>
-<li><code>inout_ptr</code></li>
-<li><code>inout_ptr_t</code></li>
-<li><code>out_ptr</code></li>
-<li><code>out_ptr_t</code></li>
+<li>
+<p><a href=""><code>std::out_ptr_t</code></a></p>
+<hr>
+<p><code>template&lt;class Smart, class Pointer, class... Args&gt;</code><br>
+<code>class out_ptr_t;</code></p>
+<hr>
+<p><code>out_ptr_t</code> is a class template used to adapt types such as smart pointers
+(20.3) for functions that use output pointer parameters.</p>
+</li>
+<li>
+<p><a href=""><code>std::out_ptr</code></a></p>
+<hr>
+<p><code>template&lt;class Pointer = void, class Smart, class... Args&gt;</code><br>
+<code>auto out_ptr(Smart&amp; s, Args&amp;&amp;... args);</code></p>
+<hr>
+<p><em>Returns</em>: <code>out_ptr_t&lt;Smart, P, Args&amp;&amp;...&gt;(s, std::forward&lt;Args&gt;(args)...)</code>.</p>
+</li>
+<li>
+<p><a href=""><code>std::inout_ptr_t</code></a></p>
+<hr>
+<p><code>template&lt;class Smart, class Pointer, class... Args&gt;</code><br>
+<code>class inout_ptr_t</code></p>
+<hr>
+<p><code>inout_ptr_t</code> is a class template used to adapt types such as smart pointers
+(20.3) for functions that use output pointer parameters whose dereferenced
+values may first be deleted before being set to another allocated value.</p>
+</li>
+<li>
+<p><a href=""><code>std::inout_ptr</code></a></p>
+<hr>
+<p><code>template&lt;class Pointer = void, class Smart, class... Args&gt;</code><br>
+<code>auto inout_ptr(Smart&amp; s, Args&amp;&amp;... args);</code></p>
+<hr>
+<p><em>Returns</em>: <code>inout_ptr_t&lt;Smart, P, Args&amp;&amp;...&gt;(s, std::forward&lt;Args&gt;(args)...)</code>.</p>
+</li>
 </ul>
-<h3 id="c-style-memory-functions">C-Style Memory Functions</h3>
-<p><code>&lt;cstdlib&gt;</code></p>
+<h2 id="c-style-memory-functions">C-Style Memory Functions</h2>
+<p><code>#include </code><a href=""><code>&lt;cstdlib&gt;</code></a></p>
+<h4 id="functions">Functions</h4>
+<p><em>Note</em>: These functions do not attempt to allocate storage by calling
+<code>::operator new()</code> (as it might use these functions itself).</p>
 <ul>
-<li><code>aligned_alloc</code></li>
-<li><code>calloc</code></li>
-<li><code>malloc</code></li>
-<li><code>realloc</code></li>
-<li><code>free</code></li>
+<li>
+<p><a href=""><code>std::aligned_alloc</code></a></p>
+<hr>
+<p><code>void* aligned_alloc(size_t alignment, size_t size);</code></p>
+<hr>
+<p>The <code>aligned_alloc</code> function allocates <code>size</code> bytes and returns a pointer to
+the allocated memory. The memory is not initialized. The <code>size</code> should be a
+multiple of <code>alignment</code>. The memory address will be a multiple of <code>alignment</code>,
+which must be a power of two.</p>
+</li>
+<li>
+<p><a href=""><code>std::calloc</code></a></p>
+<hr>
+<p><code>void* calloc(size_t n, size_t size);</code></p>
+<hr>
+<p>The <code>calloc()</code> function allocates memory for an array of <code>n</code> elements of
+<code>size</code> bytes each and returns a pointer to the allocated memory. The memory is
+set to zero.</p>
+</li>
+<li>
+<p><a href=""><code>std::malloc</code></a></p>
+<hr>
+<p><code>void* malloc(size_t size);</code></p>
+<hr>
+<p>The <code>malloc()</code> function allocates <code>size</code> bytes and returns a pointer to the
+allocated memory. The memory is not initialized.</p>
+</li>
+<li>
+<p><a href=""><code>std::realloc</code></a></p>
+<hr>
+<p><code>void* realloc(void* ptr, size_t size);</code></p>
+<hr>
+<p>The <code>realloc()</code> function changes the size of the memory block pointed to by
+<code>ptr</code> to <code>size</code> bytes. The added memory is not initialized.</p>
+</li>
+<li>
+<p><a href=""><code>std::free</code></a></p>
+<hr>
+<p><code>void free(void* ptr);</code></p>
+<hr>
+<p>The <code>free()</code> function frees the memory space pointed to by <code>ptr</code>, which must
+have been returned by a previous call to <code>malloc()</code>, <code>calloc()</code>, <code>realloc()</code>,
+or <code>aligned_alloc()</code>.</p>
+</li>
 </ul>
 
 
-<ul>
-  
-  <li><a href="/mem/cstdlib/">&lt;cstdlib&gt;</a></li>
-  
-  <li><a href="/mem/memory/">&lt;memory&gt;</a></li>
-  
-</ul>
+
 
 
       </main>

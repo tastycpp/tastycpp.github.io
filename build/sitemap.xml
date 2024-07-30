@@ -2,114 +2,120 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/algorithms/algorithm/</loc>
+    <loc>https://tastycpp.com/algorithms/algorithm/</loc>
   </url><url>
-    <loc>http://localhost:1313/containers/array/</loc>
+    <loc>https://tastycpp.com/containers/array/</loc>
   </url><url>
-    <loc>http://localhost:1313/thread/atomic/</loc>
+    <loc>https://tastycpp.com/thread/atomic/</loc>
   </url><url>
-    <loc>http://localhost:1313/utilities/bit/</loc>
+    <loc>https://tastycpp.com/utilities/bit/</loc>
   </url><url>
-    <loc>http://localhost:1313/utilities/bitset/</loc>
+    <loc>https://tastycpp.com/utilities/bitset/</loc>
   </url><url>
-    <loc>http://localhost:1313/numerics/cmath/</loc>
+    <loc>https://tastycpp.com/strings/cctype/</loc>
   </url><url>
-    <loc>http://localhost:1313/algorithms/cstdlib/</loc>
+    <loc>https://tastycpp.com/numerics/cmath/</loc>
   </url><url>
-    <loc>http://localhost:1313/mem/cstdlib/</loc>
+    <loc>https://tastycpp.com/input.output/cstdio/</loc>
   </url><url>
-    <loc>http://localhost:1313/numerics/cstdlib/</loc>
+    <loc>https://tastycpp.com/algorithms/cstdlib/</loc>
   </url><url>
-    <loc>http://localhost:1313/containers/deque/</loc>
+    <loc>https://tastycpp.com/mem/cstdlib/</loc>
   </url><url>
-    <loc>http://localhost:1313/input.output/filesystem/</loc>
+    <loc>https://tastycpp.com/numerics/cstdlib/</loc>
   </url><url>
-    <loc>http://localhost:1313/containers/flat_map/</loc>
+    <loc>https://tastycpp.com/strings/cstring/</loc>
   </url><url>
-    <loc>http://localhost:1313/containers/flat_set/</loc>
+    <loc>https://tastycpp.com/containers/deque/</loc>
   </url><url>
-    <loc>http://localhost:1313/utilities/format/</loc>
+    <loc>https://tastycpp.com/input.output/filesystem/</loc>
   </url><url>
-    <loc>http://localhost:1313/containers/forward_list/</loc>
+    <loc>https://tastycpp.com/containers/flat_map/</loc>
   </url><url>
-    <loc>http://localhost:1313/input.output/fstream/</loc>
+    <loc>https://tastycpp.com/containers/flat_set/</loc>
   </url><url>
-    <loc>http://localhost:1313/utilities/functional/</loc>
+    <loc>https://tastycpp.com/utilities/format/</loc>
   </url><url>
-    <loc>http://localhost:1313/thread/future/</loc>
+    <loc>https://tastycpp.com/containers/forward_list/</loc>
   </url><url>
-    <loc>http://localhost:1313/input.output/iostream/</loc>
+    <loc>https://tastycpp.com/input.output/fstream/</loc>
   </url><url>
-    <loc>http://localhost:1313/containers/list/</loc>
+    <loc>https://tastycpp.com/utilities/functional/</loc>
   </url><url>
-    <loc>http://localhost:1313/containers/map/</loc>
+    <loc>https://tastycpp.com/thread/future/</loc>
   </url><url>
-    <loc>http://localhost:1313/containers/mdspan/</loc>
+    <loc>https://tastycpp.com/input.output/iostream/</loc>
   </url><url>
-    <loc>http://localhost:1313/algorithms/memory/</loc>
+    <loc>https://tastycpp.com/containers/list/</loc>
   </url><url>
-    <loc>http://localhost:1313/mem/memory/</loc>
+    <loc>https://tastycpp.com/containers/map/</loc>
   </url><url>
-    <loc>http://localhost:1313/thread/mutex/</loc>
+    <loc>https://tastycpp.com/containers/mdspan/</loc>
   </url><url>
-    <loc>http://localhost:1313/numerics/numbers/</loc>
+    <loc>https://tastycpp.com/algorithms/memory/</loc>
   </url><url>
-    <loc>http://localhost:1313/algorithms/numeric/</loc>
+    <loc>https://tastycpp.com/mem/memory/</loc>
   </url><url>
-    <loc>http://localhost:1313/utilities/optional/</loc>
+    <loc>https://tastycpp.com/thread/mutex/</loc>
   </url><url>
-    <loc>http://localhost:1313/containers/queue/</loc>
+    <loc>https://tastycpp.com/numerics/numbers/</loc>
   </url><url>
-    <loc>http://localhost:1313/numerics/random/</loc>
+    <loc>https://tastycpp.com/algorithms/numeric/</loc>
   </url><url>
-    <loc>http://localhost:1313/re/regex/</loc>
+    <loc>https://tastycpp.com/utilities/optional/</loc>
   </url><url>
-    <loc>http://localhost:1313/thread/semaphore/</loc>
+    <loc>https://tastycpp.com/containers/queue/</loc>
   </url><url>
-    <loc>http://localhost:1313/containers/set/</loc>
+    <loc>https://tastycpp.com/numerics/random/</loc>
   </url><url>
-    <loc>http://localhost:1313/containers/span/</loc>
+    <loc>https://tastycpp.com/re/regex/</loc>
   </url><url>
-    <loc>http://localhost:1313/containers/stack/</loc>
+    <loc>https://tastycpp.com/thread/semaphore/</loc>
   </url><url>
-    <loc>http://localhost:1313/strings/string_view/</loc>
+    <loc>https://tastycpp.com/containers/set/</loc>
   </url><url>
-    <loc>http://localhost:1313/strings/string/</loc>
+    <loc>https://tastycpp.com/containers/span/</loc>
   </url><url>
-    <loc>http://localhost:1313/thread/thread/</loc>
+    <loc>https://tastycpp.com/containers/stack/</loc>
   </url><url>
-    <loc>http://localhost:1313/utilities/tuple/</loc>
+    <loc>https://tastycpp.com/strings/string_view/</loc>
   </url><url>
-    <loc>http://localhost:1313/containers/unordered_map/</loc>
+    <loc>https://tastycpp.com/strings/string/</loc>
   </url><url>
-    <loc>http://localhost:1313/containers/unordered_set/</loc>
+    <loc>https://tastycpp.com/thread/thread/</loc>
   </url><url>
-    <loc>http://localhost:1313/numerics/valarray/</loc>
+    <loc>https://tastycpp.com/utilities/tuple/</loc>
   </url><url>
-    <loc>http://localhost:1313/containers/vector/</loc>
+    <loc>https://tastycpp.com/containers/unordered_map/</loc>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://tastycpp.com/containers/unordered_set/</loc>
   </url><url>
-    <loc>http://localhost:1313/algorithms/</loc>
+    <loc>https://tastycpp.com/numerics/valarray/</loc>
   </url><url>
-    <loc>http://localhost:1313/concurrency/</loc>
+    <loc>https://tastycpp.com/containers/vector/</loc>
   </url><url>
-    <loc>http://localhost:1313/thread/</loc>
+    <loc>https://tastycpp.com/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/containers/</loc>
+    <loc>https://tastycpp.com/algorithms/</loc>
   </url><url>
-    <loc>http://localhost:1313/utilities/</loc>
+    <loc>https://tastycpp.com/concurrency/</loc>
   </url><url>
-    <loc>http://localhost:1313/input.output/</loc>
+    <loc>https://tastycpp.com/thread/</loc>
   </url><url>
-    <loc>http://localhost:1313/mem/</loc>
+    <loc>https://tastycpp.com/containers/</loc>
   </url><url>
-    <loc>http://localhost:1313/numerics/</loc>
+    <loc>https://tastycpp.com/utilities/</loc>
   </url><url>
-    <loc>http://localhost:1313/re/</loc>
+    <loc>https://tastycpp.com/input.output/</loc>
   </url><url>
-    <loc>http://localhost:1313/strings/</loc>
+    <loc>https://tastycpp.com/mem/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://tastycpp.com/numerics/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/re/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/strings/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/</loc>
   </url>
 </urlset>

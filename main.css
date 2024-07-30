@@ -119,6 +119,10 @@
     font-weight: 700;
   }
 
+  h4 {
+    font-weight: 700;
+  }
+
   header {
     @apply pb-6;
   }
@@ -132,7 +136,7 @@
   }
 
   p {
-    @apply leading-relaxed mb-6 mt-0;
+    @apply leading-relaxed mb-0 mt-0;
   }
 
   pre {

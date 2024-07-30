@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Algorithms Library on Tasty C&#43;&#43;</title>
-    <link>http://localhost:1313/algorithms/</link>
+    <link>https://tastycpp.com/algorithms/</link>
     <description>Recent content in Algorithms Library on Tasty C&#43;&#43;</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>oleksandr@gituliar.net (Oleksandr Gituliar)</managingEditor>
     <webMaster>oleksandr@gituliar.net (Oleksandr Gituliar)</webMaster>
-    <atom:link href="http://localhost:1313/algorithms/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tastycpp.com/algorithms/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>&lt;algorithm&gt;</title>
-      <link>http://localhost:1313/algorithms/algorithm/</link>
+      <link>https://tastycpp.com/algorithms/algorithm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/algorithms/algorithm/</guid>
+      <guid>https://tastycpp.com/algorithms/algorithm/</guid>
       <description></description>
     </item>
     <item>
       <title>&lt;cstdlib&gt;</title>
-      <link>http://localhost:1313/algorithms/cstdlib/</link>
+      <link>https://tastycpp.com/algorithms/cstdlib/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/algorithms/cstdlib/</guid>
+      <guid>https://tastycpp.com/algorithms/cstdlib/</guid>
       <description></description>
     </item>
     <item>
       <title>&lt;memory&gt;</title>
-      <link>http://localhost:1313/algorithms/memory/</link>
+      <link>https://tastycpp.com/algorithms/memory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/algorithms/memory/</guid>
+      <guid>https://tastycpp.com/algorithms/memory/</guid>
       <description></description>
     </item>
     <item>
       <title>&lt;numeric&gt;</title>
-      <link>http://localhost:1313/algorithms/numeric/</link>
+      <link>https://tastycpp.com/algorithms/numeric/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/algorithms/numeric/</guid>
+      <guid>https://tastycpp.com/algorithms/numeric/</guid>
       <description></description>
     </item>
   </channel>

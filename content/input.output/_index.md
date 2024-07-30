@@ -20,3 +20,16 @@ includes all the headers necessary to use these objects.
 ## File Streams
 
 `<fstream>`
+
+## C-Style Files
+
+`<cstdio>`
+
+- `remove`
+- `rename`
+- `tmpfile`
+- `tmpnam`
+- `fclose`
+- `fflush`
+- `fopen`
+- `...`

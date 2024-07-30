@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Concurrency Library on Tasty C&#43;&#43;</title>
-    <link>http://localhost:1313/thread/</link>
+    <link>https://tastycpp.com/thread/</link>
     <description>Recent content in Concurrency Library on Tasty C&#43;&#43;</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>oleksandr@gituliar.net (Oleksandr Gituliar)</managingEditor>
     <webMaster>oleksandr@gituliar.net (Oleksandr Gituliar)</webMaster>
-    <atom:link href="http://localhost:1313/thread/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tastycpp.com/thread/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>&lt;atomic&gt;</title>
-      <link>http://localhost:1313/thread/atomic/</link>
+      <link>https://tastycpp.com/thread/atomic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/thread/atomic/</guid>
+      <guid>https://tastycpp.com/thread/atomic/</guid>
       <description></description>
     </item>
     <item>
       <title>&lt;future&gt;</title>
-      <link>http://localhost:1313/thread/future/</link>
+      <link>https://tastycpp.com/thread/future/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/thread/future/</guid>
+      <guid>https://tastycpp.com/thread/future/</guid>
       <description></description>
     </item>
     <item>
       <title>&lt;mutex&gt;</title>
-      <link>http://localhost:1313/thread/mutex/</link>
+      <link>https://tastycpp.com/thread/mutex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/thread/mutex/</guid>
+      <guid>https://tastycpp.com/thread/mutex/</guid>
       <description></description>
     </item>
     <item>
       <title>&lt;semaphore&gt;</title>
-      <link>http://localhost:1313/thread/semaphore/</link>
+      <link>https://tastycpp.com/thread/semaphore/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/thread/semaphore/</guid>
+      <guid>https://tastycpp.com/thread/semaphore/</guid>
       <description></description>
     </item>
     <item>
       <title>&lt;thread&gt;</title>
-      <link>http://localhost:1313/thread/thread/</link>
+      <link>https://tastycpp.com/thread/thread/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/thread/thread/</guid>
+      <guid>https://tastycpp.com/thread/thread/</guid>
       <description></description>
     </item>
   </channel>

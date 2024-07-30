@@ -2,116 +2,116 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Containers Library on Tasty C&#43;&#43;</title>
-    <link>http://localhost:1313/containers/</link>
+    <link>https://tastycpp.com/containers/</link>
     <description>Recent content in Containers Library on Tasty C&#43;&#43;</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>oleksandr@gituliar.net (Oleksandr Gituliar)</managingEditor>
     <webMaster>oleksandr@gituliar.net (Oleksandr Gituliar)</webMaster>
-    <atom:link href="http://localhost:1313/containers/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tastycpp.com/containers/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>&lt;array&gt;</title>
-      <link>http://localhost:1313/containers/array/</link>
+      <link>https://tastycpp.com/containers/array/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/containers/array/</guid>
+      <guid>https://tastycpp.com/containers/array/</guid>
       <description></description>
     </item>
     <item>
       <title>&lt;deque&gt;</title>
-      <link>http://localhost:1313/containers/deque/</link>
+      <link>https://tastycpp.com/containers/deque/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/containers/deque/</guid>
+      <guid>https://tastycpp.com/containers/deque/</guid>
       <description></description>
     </item>
     <item>
       <title>&lt;flat_map&gt;</title>
-      <link>http://localhost:1313/containers/flat_map/</link>
+      <link>https://tastycpp.com/containers/flat_map/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/containers/flat_map/</guid>
+      <guid>https://tastycpp.com/containers/flat_map/</guid>
       <description></description>
     </item>
     <item>
       <title>&lt;flat_set&gt;</title>
-      <link>http://localhost:1313/containers/flat_set/</link>
+      <link>https://tastycpp.com/containers/flat_set/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/containers/flat_set/</guid>
+      <guid>https://tastycpp.com/containers/flat_set/</guid>
       <description></description>
     </item>
     <item>
       <title>&lt;forward_list&gt;</title>
-      <link>http://localhost:1313/containers/forward_list/</link>
+      <link>https://tastycpp.com/containers/forward_list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/containers/forward_list/</guid>
+      <guid>https://tastycpp.com/containers/forward_list/</guid>
       <description></description>
     </item>
     <item>
       <title>&lt;list&gt;</title>
-      <link>http://localhost:1313/containers/list/</link>
+      <link>https://tastycpp.com/containers/list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/containers/list/</guid>
+      <guid>https://tastycpp.com/containers/list/</guid>
       <description></description>
     </item>
     <item>
       <title>&lt;map&gt;</title>
-      <link>http://localhost:1313/containers/map/</link>
+      <link>https://tastycpp.com/containers/map/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/containers/map/</guid>
+      <guid>https://tastycpp.com/containers/map/</guid>
       <description></description>
     </item>
     <item>
       <title>&lt;mdspan&gt;</title>
-      <link>http://localhost:1313/containers/mdspan/</link>
+      <link>https://tastycpp.com/containers/mdspan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/containers/mdspan/</guid>
+      <guid>https://tastycpp.com/containers/mdspan/</guid>
       <description></description>
     </item>
     <item>
       <title>&lt;queue&gt;</title>
-      <link>http://localhost:1313/containers/queue/</link>
+      <link>https://tastycpp.com/containers/queue/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/containers/queue/</guid>
+      <guid>https://tastycpp.com/containers/queue/</guid>
       <description></description>
     </item>
     <item>
       <title>&lt;set&gt;</title>
-      <link>http://localhost:1313/containers/set/</link>
+      <link>https://tastycpp.com/containers/set/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/containers/set/</guid>
+      <guid>https://tastycpp.com/containers/set/</guid>
       <description>The std::set container in C++ is a sorted associative container that stores unique elements. Internally, it is typically implemented as a balanced binary tree (usually a Red-Black Tree). The memory layout of std::set is similar to that of std::map, but since std::set only stores keys (without associated values), its node structure is simpler.&#xA;Methods operations complexity Implementation std::set is typically implemented as a balanced binary tree (usually a Red-Black Tree).</description>
     </item>
     <item>
       <title>&lt;span&gt;</title>
-      <link>http://localhost:1313/containers/span/</link>
+      <link>https://tastycpp.com/containers/span/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/containers/span/</guid>
+      <guid>https://tastycpp.com/containers/span/</guid>
       <description></description>
     </item>
     <item>
       <title>&lt;stack&gt;</title>
-      <link>http://localhost:1313/containers/stack/</link>
+      <link>https://tastycpp.com/containers/stack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/containers/stack/</guid>
+      <guid>https://tastycpp.com/containers/stack/</guid>
       <description></description>
     </item>
     <item>
       <title>&lt;unordered_map&gt;</title>
-      <link>http://localhost:1313/containers/unordered_map/</link>
+      <link>https://tastycpp.com/containers/unordered_map/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/containers/unordered_map/</guid>
+      <guid>https://tastycpp.com/containers/unordered_map/</guid>
       <description></description>
     </item>
     <item>
       <title>&lt;unordered_set&gt;</title>
-      <link>http://localhost:1313/containers/unordered_set/</link>
+      <link>https://tastycpp.com/containers/unordered_set/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/containers/unordered_set/</guid>
+      <guid>https://tastycpp.com/containers/unordered_set/</guid>
       <description></description>
     </item>
     <item>
       <title>&lt;vector&gt;</title>
-      <link>http://localhost:1313/containers/vector/</link>
+      <link>https://tastycpp.com/containers/vector/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>http://localhost:1313/containers/vector/</guid>
+      <guid>https://tastycpp.com/containers/vector/</guid>
       <description>A vector is a sequence container that supports (amortized) constant time insert and erase operations at the end; insert and erase in the middle take linear time. Storage management is handled automatically, though hints can be given to improve efficiency.&#xA;In C++ Standard Library, std::vector is nothing more than a contiguous region of dynamic memory. The main task of std::vector is to grow the memory region when there is no space left for new elements.</description>
     </item>
   </channel>
