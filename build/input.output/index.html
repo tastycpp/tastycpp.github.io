@@ -304,28 +304,181 @@
 
 <p>This Clause describes components that C++ programs may use to perform
 input/output operations</p>
-<h2 id="standard-stream-objects">Standard Stream Objects</h2>
-<p><code>&lt;iostream&gt;</code></p>
+<h2 id="io-streams">IO Streams</h2>
+<p><code>#include </code><a href=""><strong><code>&lt;iosfwd&gt;</code></strong></a></p>
+<ul>
+<li><a href=""><strong><code>std::istream</code></strong></a><code> = basic_istream&lt;char&gt;;</code></li>
+<li><code>std::ostream = basic_ostream&lt;char&gt;;</code></li>
+</ul>
+<p><code> </code></p>
+<ul>
+<li>
+<p><a href=""><strong><code>std::basic_istream</code></strong></a></p>
+<p><code>template&lt;class charT, class traits = char_traits&lt;charT&gt;&gt;</code><br>
+<code>class basic_istream;</code></p>
+</li>
+<li>
+<p><a href=""><strong><code>std::basic_ostream</code></strong></a></p>
+<p><code>template&lt;class charT, class traits = char_traits&lt;charT&gt;&gt;</code><br>
+<code>class basic_ostream;</code></p>
+</li>
+</ul>
+<h3 id="standard-stream-objects">Standard Stream Objects</h3>
 <p>The header <code>&lt;iostream&gt;</code> declares objects that associate objects with the
 standard C streams provided for by the functions declared in <code>&lt;cstdio&gt;</code>, and
 includes all the headers necessary to use these objects.</p>
-<h2 id="file-systems">File Systems</h2>
-<p><code>&lt;filesystem&gt;</code></p>
-<h2 id="file-streams">File Streams</h2>
-<p><code>&lt;fstream&gt;</code></p>
-<h2 id="c-style-files">C-Style Files</h2>
-<p><code>&lt;cstdio&gt;</code></p>
+<p><code>#include </code><a href=""><strong><code>&lt;iostream&gt;</code></strong></a></p>
 <ul>
-<li><code>remove</code></li>
-<li><code>rename</code></li>
-<li><code>tmpfile</code></li>
-<li><code>tmpnam</code></li>
-<li><code>fclose</code></li>
-<li><code>fflush</code></li>
-<li><code>fopen</code></li>
-<li><code>...</code></li>
+<li>
+<p><a href=""><strong><code>std::cin</code></strong></a></p>
+<hr>
+<p><code>extern </code><a href=""><code>istream</code></a><code> cin;</code></p>
+<hr>
+<p>The object <strong><code>cin</code></strong> controls input from a stream buffer associated with the
+object <a href=""><code>stdin</code></a>, declared in <a href=""><code>&lt;cstdio&gt;</code></a>.</p>
+</li>
+<li>
+<p><a href=""><strong><code>std::cout</code></strong></a></p>
+<p><code>extern ostream cout;</code></p>
+</li>
+<li>
+<p><a href=""><strong><code>std::cerr</code></strong></a></p>
+<p><code>extern ostream cerr;</code></p>
+</li>
+<li>
+<p><a href=""><strong><code>std::clog</code></strong></a></p>
+<p><code>extern ostream clog;</code></p>
+</li>
 </ul>
-
+<h2 id="file-streams">File Streams</h2>
+<p><code>#include </code><a href=""><strong><code>&lt;fstream&gt;</code></strong></a></p>
+<ul>
+<li><a href=""><strong><code>std::ifstream</code></strong></a><code> = basic_ifstream&lt;char&gt;;</code></li>
+<li><code>std::ofstream = basic_ofstream&lt;char&gt;;</code></li>
+</ul>
+<p><code> </code></p>
+<ul>
+<li>
+<p><a href=""><strong><code>std::basic_ifstream</code></strong></a></p>
+<p><code>template&lt;class charT, class traits = char_traits&lt;charT&gt;&gt;</code><br>
+<code>class basic_ifstream;</code></p>
+</li>
+<li>
+<p><a href=""><strong><code>std::basic_ofstream</code></strong></a></p>
+<p><code>template&lt;class charT, class traits = char_traits&lt;charT&gt;&gt;</code><br>
+<code>class basic_ofstream;</code></p>
+</li>
+</ul>
+<h2 id="filesystem">Filesystem</h2>
+<p><code>#include </code><a href=""><strong><code>&lt;filesystem&gt;</code></strong></a></p>
+<p><code>namespace std::filesystem</code></p>
+<h3 id="classes">Classes</h3>
+<ul>
+<li><a href=""><strong><code>std::filesystem::path</code></strong></a></li>
+</ul>
+<p><code> </code></p>
+<ul>
+<li><a href=""><strong><code>std::filesystem::file_status</code></strong></a></li>
+<li><a href=""><strong><code>std::filesystem::filesystem_error</code></strong></a></li>
+<li><a href=""><strong><code>std::filesystem::space_info</code></strong></a></li>
+</ul>
+<p><code> </code></p>
+<ul>
+<li><a href=""><strong><code>std::filesystem::directory_entry</code></strong></a></li>
+<li><a href=""><strong><code>std::filesystem::directory_iterator</code></strong></a></li>
+<li><a href=""><strong><code>std::filesystem::recursive_directory_iterator</code></strong></a></li>
+</ul>
+<h3 id="functions">Functions</h3>
+<ul>
+<li><code>absolute(const path&amp; p) -&gt; path</code></li>
+<li><code>canonical(const path&amp; p) -&gt; path</code></li>
+<li><code>void copy(const path&amp; from, const path&amp; to);</code></li>
+<li><code>bool copy_file(const path&amp; from, const path&amp; to);</code></li>
+<li><code>void copy_symlink(const path&amp; existing_symlink, const path&amp; new_symlink);</code></li>
+<li><code>bool create_directories(const path&amp; p);</code></li>
+<li><code>bool create_directory(const path&amp; p);</code></li>
+<li><code>void create_directory_symlink(const path&amp; to, const path&amp; new_symlink);</code></li>
+<li><code>void create_hard_link(const path&amp; to, const path&amp; new_hard_link);</code></li>
+<li><code>void create_symlink(const path&amp; to, const path&amp; new_symlink);</code></li>
+<li><code>path current_path();</code></li>
+<li><code>bool equivalent(const path&amp; p1, const path&amp; p2);</code></li>
+<li><code>bool exists(const path&amp; p)</code></li>
+<li><code>uintmax_t file_size(const path&amp; p);</code></li>
+<li><code>uintmax_t hard_link_count(const path&amp; p);</code></li>
+<li><code>bool is_block_file(const path&amp; p)</code></li>
+<li><code>bool is_character_file(const path&amp; p);</code></li>
+<li><code>bool is_directory(const path&amp; p);</code></li>
+<li><code>bool is_empty(const path&amp; p);</code></li>
+<li><code>bool is_fifo(const path&amp; p);</code></li>
+<li><code>bool is_other(const path&amp; p);</code></li>
+<li><code>bool is_regular_file(const path&amp; p);</code></li>
+<li><code>bool is_socket(const path&amp; p);</code></li>
+<li><code>bool is_symlink(const path&amp; p);</code></li>
+<li><code>file_time_type last_write_time(const path&amp; p);</code></li>
+<li><code>void permissions(const path&amp; p, perms prms, perm_options opts=perm_options::replace);</code></li>
+<li><code>path proximate(const path&amp; p, error_code&amp; ec);</code></li>
+<li><code>path read_symlink(const path&amp; p);</code></li>
+<li><code>path relative(const path&amp; p, error_code&amp; ec);</code></li>
+<li><code>bool remove(const path&amp; p);</code></li>
+<li><code>uintmax_t remove_all(const path&amp; p);</code></li>
+<li><code>void rename(const path&amp; from, const path&amp; to);</code></li>
+<li><code>void resize_file(const path&amp; p, uintmax_t size);</code></li>
+<li><code>space_info space(const path&amp; p)</code></li>
+<li><code>file_status status(const path&amp; p);</code></li>
+<li><code>bool status_known(file_status s) noexcept;</code></li>
+<li><code>file_status symlink_status(const path&amp; p);</code></li>
+<li><code>path temp_directory_path();</code></li>
+<li><code>path weakly_canonical(const path&amp; p);</code></li>
+</ul>
+<h2 id="c-style-functions">C-Style Functions</h2>
+<p><code>#include </code><a href=""><strong><code>&lt;cstdio&gt;</code></strong></a></p>
+<p><code>namespace std</code></p>
+<pre tabindex="0"><code>int remove(const char* filename);
+int rename(const char* old_p, const char* new_p);
+FILE* tmpfile();
+char* tmpnam(char* s);
+int fclose(FILE* stream);
+int fflush(FILE* stream);
+FILE* fopen(const char* filename, const char* mode);
+FILE* freopen(const char* filename, const char* mode, FILE* stream);
+void setbuf(FILE* stream, char* buf);
+int setvbuf(FILE* stream, char* buf, int mode, size_t size);
+int fprintf(FILE* stream, const char* format, ...);
+int fscanf(FILE* stream, const char* format, ...);
+int printf(const char* format, ...);
+int scanf(const char* format, ...);
+int snprintf(char* s, size_t n, const char* format, ...);
+int sprintf(char* s, const char* format, ...);
+int sscanf(const char* s, const char* format, ...);
+int vfprintf(FILE* stream, const char* format, va_list arg);
+int vfscanf(FILE* stream, const char* format, va_list arg);
+int vprintf(const char* format, va_list arg);
+int vscanf(const char* format, va_list arg);
+int vsnprintf(char* s, size_t n, const char* format, va_list arg);
+int vsprintf(char* s, const char* format, va_list arg);
+int vsscanf(const char* s, const char* format, va_list arg);
+int fgetc(FILE* stream);
+char* fgets(char* s, int n, FILE* stream);
+int fputc(int c, FILE* stream);
+int fputs(const char* s, FILE* stream);
+int getc(FILE* stream);
+int getchar();
+int putc(int c, FILE* stream);
+int putchar(int c);
+int puts(const char* s);
+int ungetc(int c, FILE* stream);
+size_t fread(void* ptr, size_t size, size_t nmemb, FILE* stream);
+size_t fwrite(const void* ptr, size_t size, size_t nmemb, FILE* stream);
+int fgetpos(FILE* stream, fpos_t* pos);
+int fseek(FILE* stream, long int offset, int whence);
+int fsetpos(FILE* stream, const fpos_t* pos);
+long int ftell(FILE* stream);
+void rewind(FILE* stream);
+void clearerr(FILE* stream);
+int feof(FILE* stream);
+int ferror(FILE* stream);
+void perror(const char* s)
+</code></pre>
 
 
 

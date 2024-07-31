@@ -7,11 +7,60 @@ most widely used algorithms and data structures.
 
 ## Sequence Containers
 
-- `<array>`
-- `<deque>`
-- `<forward_list>`
-- `<list>`
-- `<vector>`
+`#include `[**`<array>`**]()
+
+- [**`std::array`**]()
+
+  ***
+
+  `template<class T, size_t N>`\
+  `struct `**`array`**`;`
+
+  ***
+
+`#include `[**`<deque>`**]()
+
+- [**`std::deque`**]()
+
+  ***
+
+  `template<class T, class Allocator = allocator<T>>`\
+  `class `**`deque`**`;`
+
+  ***
+
+`#include `[**`<forward_list>`**]()
+
+- [**`std::forward_list`**]()
+
+  ***
+
+  `template<class T, class Allocator = allocator<T>>`\
+  `class `**`forward_list`**`;`
+
+  ***
+
+`#include `[**`<list>`**]()
+
+- [**`std::list`**]()
+
+  ***
+
+  `template<class T, class Allocator = allocator<T>>`\
+  `class `**`list`**`;`
+
+  ***
+
+`#include `[**`<vector>`**]()
+
+- [**`std::vector`**]()
+
+  ***
+
+  `template<class T, class Allocator = allocator<T>>`\
+  `class `**`vector`**`;`
+
+  ***
 
 ## Associative Containers (ordered)
 

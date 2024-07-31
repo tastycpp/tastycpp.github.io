@@ -305,12 +305,11 @@
 <p>This Clause describes components that C++ programs may use to perform
 algorithmic operations on containers (Clause 24) and other sequences.</p>
 <h2 id="parallel-algorithms">Parallel Algorithms</h2>
-<p><code>&lt;algorithm&gt;</code></p>
 <p>Subclause 27.3 describes components that C++ programs may use to perform
 operations on containers and other sequences in parallel.</p>
+<p><code>#include </code><a href=""><strong><code>&lt;algorithm&gt;</code></strong></a></p>
 <h3 id="non-modifying-sequence-operations">Non-Modifying Sequence Operations</h3>
 <ul>
-<li><code>all_of</code></li>
 <li><code>any_of</code></li>
 <li><code>none_of</code></li>
 <li><code>contains</code></li>
@@ -319,20 +318,88 @@ operations on containers and other sequences in parallel.</p>
 <li><code>find_last</code></li>
 <li><code>find_last_if</code></li>
 <li><code>find_end</code></li>
-<li><code>...</code></li>
+<li><a href=""><strong><code>adjacent_find</code></strong></a><code> (ForwardIterator first, ForwardIterator last) -&gt; ForwardIterator</code></li>
+<li><a href=""><strong><code>all_of</code></strong></a><code> (InputIterator first, InputIterator last, Predicate pred) -&gt; bool</code></li>
+<li><a href=""><strong><code>count</code></strong></a><code> (InputIterator first, InputIterator last, const T&amp; value) -&gt; typename iterator_traits&lt;InputIterator&gt;::difference_type</code></li>
+<li><a href=""><strong><code>equal</code></strong></a><code> (InputIterator1 first1, InputIterator1 last1, InputIterator2 first2) -&gt; bool</code></li>
+<li><a href=""><strong><code>find_first_of</code></strong></a><code> (InputIterator first1, InputIterator last1, ForwardIterator first2, ForwardIterator last2) -&gt; InputIterator</code></li>
+<li><a href=""><strong><code>is_permutation</code></strong></a><code> (ForwardIterator1 first1, ForwardIterator1 last1, ForwardIterator2 first2) -&gt; bool</code></li>
+<li><a href=""><strong><code>mismatch</code></strong></a><code> (InputIterator1 first1, InputIterator1 last1, InputIterator2 first2) -&gt; pair&lt;InputIterator1, InputIterator2&gt;</code></li>
+<li><a href=""><strong><code>search</code></strong></a><code> (ForwardIterator1 first1, ForwardIterator1 last1, ForwardIterator2 first2, ForwardIterator2 last2) -&gt; ForwardIterator1</code></li>
 </ul>
 <h3 id="modifying-sequence-operations">Modifying Sequence Operations</h3>
 <h4 id="copy">Copy</h4>
 <ul>
-<li><code>copy</code></li>
-<li><code>copy_n</code></li>
-<li><code>copy_if</code></li>
-<li><code>copy_backward</code></li>
+<li><a href=""><strong><code>copy</code></strong></a><code> (InputIterator first, InputIterator last, OutputIterator result) -&gt; OutputIterator</code></li>
+<li><a href=""><strong><code>copy_n</code></strong></a><code> (InputIterator first, Size n, OutputIterator result) -&gt; OutputIterator</code></li>
+<li><a href=""><strong><code>copy_if</code></strong></a><code> (InputIterator first, InputIterator last, OutputIterator result, Predicate pred) -&gt; OutputIterator</code></li>
+<li><a href=""><strong><code>copy_backward</code></strong></a><code> (BidirectionalIterator1 first, BidirectionalIterator1 last, BidirectionalIterator2 result) -&gt; BidirectionalIterator2</code></li>
 </ul>
 <h4 id="move">Move</h4>
 <ul>
-<li><code>move</code></li>
-<li><code>...</code></li>
+<li><a href=""><strong><code>move</code></strong></a><code> (InputIterator first, InputIterator last, OutputIterator result) -&gt; OutputIterator</code></li>
+<li><a href=""><strong><code>move_backward</code></strong></a><code> (BidirectionalIterator1 first, BidirectionalIterator1 last, BidirectionalIterator2 result) -&gt; BidirectionalIterator2</code></li>
+</ul>
+<h4 id="swap">Swap</h4>
+<ul>
+<li><a href=""><strong><code>swap_ranges</code></strong></a><code> (ForwardIterator1 first1, ForwardIterator1 last1, ForwardIterator2 first2) -&gt; ForwardIterator2</code></li>
+<li><a href=""><strong><code>iter_swap</code></strong></a><code> (ForwardIterator1 a, ForwardIterator2 b) -&gt; void</code></li>
+</ul>
+<h4 id="transform">Transform</h4>
+<ul>
+<li><a href=""><strong><code>transform</code></strong></a><code> (InputIterator first1, InputIterator last1, OutputIterator result, UnaryOperation op) -&gt; OutputIterator</code></li>
+</ul>
+<h4 id="replace">Replace</h4>
+<ul>
+<li><a href=""><strong><code>replace</code></strong></a><code> (ForwardIterator first, ForwardIterator last, const T&amp; old_value, const T&amp; new_value) -&gt; void</code></li>
+<li><a href=""><strong><code>replace_if</code></strong></a><code> (ForwardIterator first, ForwardIterator last, Predicate pred, const T&amp; new_value) -&gt; void</code></li>
+<li><a href=""><strong><code>replace_copy</code></strong></a><code> (InputIterator first, InputIterator last, OutputIterator result, const T&amp; old_value, const T&amp; new_value) -&gt; OutputIterator</code></li>
+<li><a href=""><strong><code>replace_copy_if</code></strong></a><code> (InputIterator first, InputIterator last, OutputIterator result, Predicate pred, const T&amp; new_value) -&gt; OutputIterator</code></li>
+</ul>
+<h4 id="fill">Fill</h4>
+<ul>
+<li><a href=""><strong><code>fill</code></strong></a><code> (ForwardIterator first, ForwardIterator last, const T&amp; value) -&gt; void</code></li>
+<li><a href=""><strong><code>fill_n</code></strong></a><code> (OutputIterator first, Size n, const T&amp; value) -&gt; OutputIterator</code></li>
+</ul>
+<h4 id="generate">Generate</h4>
+<ul>
+<li><a href=""><strong><code>generate</code></strong></a><code> (ForwardIterator first, ForwardIterator last, Generator gen) -&gt; void</code></li>
+<li><a href=""><strong><code>generate_n</code></strong></a><code> (OutputIterator first, Size n, Generator gen) -&gt; OutputIterator</code></li>
+</ul>
+<h4 id="remove">Remove</h4>
+<ul>
+<li><a href=""><strong><code>remove</code></strong></a><code> (ForwardIterator first, ForwardIterator last, const T&amp; value) -&gt; ForwardIterator</code></li>
+<li><a href=""><strong><code>remove_if</code></strong></a><code> (ForwardIterator first, ForwardIterator last, Predicate pred) -&gt; ForwardIterator</code></li>
+<li><a href=""><strong><code>remove_copy</code></strong></a><code> (InputIterator first, InputIterator last, OutputIterator result, const T&amp; value) -&gt; OutputIterator</code></li>
+<li><a href=""><strong><code>remove_copy_if</code></strong></a><code> (InputIterator first, InputIterator last, OutputIterator result, Predicate pred) -&gt; OutputIterator</code></li>
+</ul>
+<h4 id="unique">Unique</h4>
+<ul>
+<li><a href=""><strong><code>unique</code></strong></a><code> (ForwardIterator first, ForwardIterator last) -&gt; ForwardIterator</code></li>
+<li><a href=""><strong><code>unique_copy</code></strong></a><code> (InputIterator first, InputIterator last, OutputIterator result) -&gt; OutputIterator</code></li>
+</ul>
+<h4 id="reverse">Reverse</h4>
+<ul>
+<li><a href=""><strong><code>reverse</code></strong></a><code> (BidirectionalIterator first, BidirectionalIterator last) -&gt; void</code></li>
+<li><a href=""><strong><code>reverse_copy</code></strong></a><code> (BidirectionalIterator first, BidirectionalIterator last, OutputIterator result) -&gt; OutputIterator</code></li>
+</ul>
+<h4 id="rotate">Rotate</h4>
+<ul>
+<li><a href=""><strong><code>rotate</code></strong></a><code> (ForwardIterator first, ForwardIterator middle, ForwardIterator last) -&gt; ForwardIterator</code></li>
+<li><a href=""><strong><code>rotate_copy</code></strong></a><code> (ForwardIterator first, ForwardIterator middle, ForwardIterator last, OutputIterator result) -&gt; OutputIterator</code></li>
+</ul>
+<h4 id="sample">Sample</h4>
+<ul>
+<li><a href=""><strong><code>sample</code></strong></a><code> (PopulationIterator first, PopulationIterator last, SampleIterator out, Distance n, UniformRandomBitGenerator&amp;&amp; g) -&gt; SampleIterator</code></li>
+</ul>
+<h4 id="shuffle">Shuffle</h4>
+<ul>
+<li><a href=""><strong><code>shuffle</code></strong></a><code> (RandomAccessIterator first, RandomAccessIterator last, UniformRandomBitGenerator&amp;&amp; g) -&gt; void</code></li>
+</ul>
+<h4 id="shift">Shift</h4>
+<ul>
+<li><a href=""><strong><code>shift_left</code></strong></a><code> (ForwardIterator first, ForwardIterator last, typename iterator_traits&lt;ForwardIterator&gt;::difference_type n) -&gt; ForwardIterator</code></li>
+<li><a href=""><strong><code>shift_right</code></strong></a><code> (ForwardIterator first, ForwardIterator last, typename iterator_traits&lt;ForwardIterator&gt;::difference_type n) -&gt; ForwardIterator</code></li>
 </ul>
 <h3 id="sorting-and-related-operations">Sorting and Related Operations</h3>
 <h4 id="sort">Sort</h4>
@@ -384,7 +451,7 @@ operations on containers and other sequences in parallel.</p>
 <li><code>uninitialized_copy</code></li>
 <li><code>uninitialized_move</code></li>
 <li><code>uninitialized_fill</code></li>
-<li><code>construct_att</code></li>
+<li><code>construct_at</code></li>
 <li><code>destroy</code></li>
 </ul>
 <h2 id="c-style-functions">C-Style Functions</h2>

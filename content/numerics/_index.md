@@ -33,11 +33,23 @@ semi-numerical operations.
 - `atan2`
 - `...`
 
+## Numeric Arrays
+
+`#include `[**`<valarray>`**]()
+
+- `valarray<T>`
+- `slice`
+- `slice_array<T>`
+- `gslice`
+- `gslice_array<T>`
+- `mask_array<T>`
+- `indirect_array<T>`
+
 ## Random Number Generation
 
-`<random>`
-
 Subclause 28.5 defines a facility for generating (pseudo-)random numbers.
+
+`#include `[**`<random>`**]()
 
 ### Random Number Distribution
 
@@ -101,15 +113,3 @@ Subclause 28.5 defines a facility for generating (pseudo-)random numbers.
 - `discard_block_engine`
 - `independent_bits_engine`
 - `shuffle_order_engine`
-
-## Numeric Arrays
-
-`<valarray>`
-
-- `valarray<T>`
-- `slice`
-- `slice_array<T>`
-- `gslice`
-- `gslice_array<T>`
-- `mask_array<T>`
-- `indirect_array<T>`
