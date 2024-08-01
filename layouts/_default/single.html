@@ -1,7 +1,7 @@
 {{ define "content" }}
 
 <article>
-  <header class="gh-canvas">
+  <header class="">
     <h1 class="" itemprop="name headline">{{ .Title }}</h1>
 
     {{ if .Params.Description }}
@@ -9,13 +9,11 @@
     {{ end }}
   </header>
 
-  <section class="gh-canvas mb-8" itemprop="articleBody">
-    {{ .Content }}
-  </section>
+  <section class="mb-8" itemprop="articleBody">{{ .Content }}</section>
 
   {{ if eq hugo.Environment "production" }}
-  <div class="gh-canvas">
-    <div class="gh-width-wide mb-8">
+  <div class="">
+    <div class="mb-8">
       <script
         src="https://giscus.app/client.js"
         data-repo="tastycodedev/tastycodedev.github.io"

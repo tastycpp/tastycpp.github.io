@@ -48,19 +48,18 @@
   </head>
 
   <body>
-    <div class="flex flex-col xl:flex-row px-6 lg:px-0 gh-content mx-auto">
-      <!-- Sidebar -->
-      {{ partial "sidebar.html" . }}
+    <!-- <div class="flex flex-col xl:flex-row px-6 lg:px-0 gh-content mx-auto"> -->
+    <div class="flex justify-center min-h-screen">
+      <div class="flex mx-auto">
+        <!-- Sidebar -->
+        {{ partial "sidebar.html" . }}
 
-      <main class="mx-auto">
-        <!-- Header -->
-        {{ partial "header.html" . }}
-
-        <!-- Content -->
-        {{ block "content" . }} {{ .Content }} {{ end }}
-      </main>
+        <main class="flex-1 tc-content">
+          <!-- Content -->
+          {{ block "content" . }} {{ .Content }} {{ end }}
+        </main>
+      </div>
     </div>
-
     <script>
       document.querySelectorAll('a[href^="http"]').forEach(function (e) {
         e.setAttribute("target", "_blank");

@@ -666,34 +666,16 @@ a:hover img {
   opacity: 0.7;
 }
 
+.active {
+  font-weight: 700;
+}
+
 .tc-blog-description {
   font-style: italic;
 }
 
-.tc-nav {
-  font-weight: 900;
-}
-
-.tc-nav a {
-  color: inherit;
-}
-
-.tc-nav a:hover {
-  opacity: 0.7;
-  text-decoration: none;
-}
-
-.tc-sidebar {
-  width: var(--sidebar-width);
-  font-weight: 400;
-}
-
-.tc-sidebar-text {
-  font-weight: 500;
-}
-
-.tc-sidebar-text b {
-  font-weight: 700;
+.tc-content {
+  width: 80ch;
 }
 
 .tc-sidebar-social {
@@ -729,34 +711,9 @@ a:hover img {
   }
 }
 
-.gh-canvas {
-  --main: var(--content-main);
-  --wide: var(--content-wide);
-  --full: calc(
-      (
-          var(--container-width) - 1 * var(--sidebar-width) -
-            var(--content-main) - 2 * var(--content-wide)
-        ) / 2
-    );
-}
-
 .gh-content {
   max-width: var(--container-width);
   word-break: break-word;
-}
-
-.gh-canvas {
-  display: grid;
-  grid-template-columns:
-      [full-start] var(--full)
-      [wide-start] var(--wide)
-      [main-start] var(--main) [main-end]
-      var(--wide) [wide-end]
-      var(--full) [full-end];
-}
-
-.gh-canvas > * {
-  grid-column: main;
 }
 
 @media screen and (max-width: 768px) {
@@ -928,12 +885,20 @@ a:hover img {
   display: inline-flex;
 }
 
-.hidden {
-  display: none;
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-16 {
   width: 4rem;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .scale-x-\[-1\] {
@@ -953,6 +918,10 @@ a:hover img {
   align-content: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -967,6 +936,10 @@ a:hover img {
   border-radius: 9999px;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -975,6 +948,11 @@ a:hover img {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pt-9 {
@@ -1004,6 +982,11 @@ a:hover img {
 
 .tracking-tight {
   letter-spacing: -0.025em;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -1039,10 +1022,6 @@ a:hover img {
 }
 
 @media (min-width: 1280px) {
-  .xl\:block {
-    display: block;
-  }
-
   .xl\:hidden {
     display: none;
   }

@@ -53,10 +53,12 @@
   </head>
 
   <body>
-    <div class="flex flex-col xl:flex-row px-6 lg:px-0 gh-content mx-auto">
-      
-      <aside class="hidden xl:block tc-sidebar sticky top-0 mb-auto">
-  <div class="text-justify tc-nav tc-sidebar-text">
+    
+    <div class="flex justify-center min-h-screen">
+      <div class="flex mx-auto">
+        
+        <aside class="w-64 text-white flex flex-col sticky top-0 mb-auto">
+  <div class="text-justify w-64">
     <a
       class="block font-black hover:underline text-2xl md:text-3xl no-underline tracking-tight"
       style="text-underline-offset: 6px"
@@ -69,176 +71,110 @@
     </a>
   </div>
 
-  <ul>
-     
-    <li>
-      <a href="/mem">Memory Management</a>
-      <ul>
+  
+
+  <nav class="flex-1 py-4">
+    <ul>
+       
+      <li>
         
-        <li><a href="/mem/memory/">&lt;memory&gt;</a></li>
+        <a href="/mem">Memory Management</a>
         
-        <li><a href="/mem/c-functions/">C-Style Functions</a></li>
+      </li>
+      
+      <li>
         
-        <li><a href="/mem/shared_ptr/">shared_ptr</a></li>
+        <a href="/utilities">General Utilities</a>
         
-        <li><a href="/mem/unique_ptr/">unique_ptr</a></li>
+      </li>
+      
+      <li>
         
-        <li><a href="/mem/weak_ptr/">weak_ptr</a></li>
+        <a href="/strings">Strings</a>
         
-      </ul>
-    </li>
-    
-    <li>
-      <a href="/utilities">General Utilities</a>
-      <ul>
+      </li>
+      
+      <li>
         
-        <li><a href="/utilities/bit/">&lt;bit&gt;</a></li>
+        <a href="/containers">Containers</a>
         
-        <li><a href="/utilities/bitset/">&lt;bitset&gt;</a></li>
+      </li>
+      
+      <li>
         
-        <li><a href="/utilities/format/">&lt;format&gt;</a></li>
+        <a href="/algorithms">Algorithms</a>
         
-        <li><a href="/utilities/functional/">&lt;functional&gt;</a></li>
+      </li>
+      
+      <li>
         
-        <li><a href="/utilities/optional/">&lt;optional&gt;</a></li>
+        <a href="/numerics" class="active">Numerics</a>
+        <ul>
+          
+          <li>
+            <a
+              href="/numerics/cmath/"
+              class=""
+              >&lt;cmath&gt;</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/numerics/cstdlib/"
+              class=""
+              >&lt;cstdlib&gt;</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/numerics/numbers/"
+              class=""
+              >&lt;numbers&gt;</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/numerics/random/"
+              class=""
+              >&lt;random&gt;</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/numerics/valarray/"
+              class=""
+              >&lt;valarray&gt;</a
+            >
+          </li>
+          
+        </ul>
         
-        <li><a href="/utilities/tuple/">&lt;tuple&gt;</a></li>
+      </li>
+      
+      <li>
         
-      </ul>
-    </li>
-    
-    <li>
-      <a href="/strings">Strings</a>
-      <ul>
+        <a href="/input.output">Input/Output</a>
         
-        <li><a href="/strings/cctype/">&lt;cctype&gt;</a></li>
+      </li>
+      
+      <li>
         
-        <li><a href="/strings/cstring/">&lt;cstring&gt;</a></li>
+        <a href="/re">Regular Expressions</a>
         
-        <li><a href="/strings/string_view/">&lt;string_view&gt;</a></li>
+      </li>
+      
+      <li>
         
-        <li><a href="/strings/string/">&lt;string&gt;</a></li>
+        <a href="/thread">Concurrency</a>
         
-      </ul>
-    </li>
-    
-    <li>
-      <a href="/containers">Containers</a>
-      <ul>
-        
-        <li><a href="/containers/array/">array</a></li>
-        
-        <li><a href="/containers/deque/">deque</a></li>
-        
-        <li><a href="/containers/flat_map/">flat_map</a></li>
-        
-        <li><a href="/containers/flat_set/">flat_set</a></li>
-        
-        <li><a href="/containers/forward_list/">forward_list</a></li>
-        
-        <li><a href="/containers/list/">list</a></li>
-        
-        <li><a href="/containers/map/">map</a></li>
-        
-        <li><a href="/containers/mdspan/">mdspan</a></li>
-        
-        <li><a href="/containers/queue/">queue</a></li>
-        
-        <li><a href="/containers/set/">set</a></li>
-        
-        <li><a href="/containers/span/">span</a></li>
-        
-        <li><a href="/containers/stack/">stack</a></li>
-        
-        <li><a href="/containers/unordered_map/">unordered_map</a></li>
-        
-        <li><a href="/containers/unordered_set/">unordered_set</a></li>
-        
-        <li><a href="/containers/vector/">vector</a></li>
-        
-      </ul>
-    </li>
-    
-    <li>
-      <a href="/algorithms">Algorithms</a>
-      <ul>
-        
-        <li><a href="/algorithms/algorithm/">&lt;algorithm&gt;</a></li>
-        
-        <li><a href="/algorithms/cstdlib/">&lt;cstdlib&gt;</a></li>
-        
-        <li><a href="/algorithms/memory/">&lt;memory&gt;</a></li>
-        
-        <li><a href="/algorithms/numeric/">&lt;numeric&gt;</a></li>
-        
-      </ul>
-    </li>
-    
-    <li>
-      <a href="/numerics">Numerics</a>
-      <ul>
-        
-        <li><a href="/numerics/cmath/">&lt;cmath&gt;</a></li>
-        
-        <li><a href="/numerics/cstdlib/">&lt;cstdlib&gt;</a></li>
-        
-        <li><a href="/numerics/numbers/">&lt;numbers&gt;</a></li>
-        
-        <li><a href="/numerics/random/">&lt;random&gt;</a></li>
-        
-        <li><a href="/numerics/valarray/">&lt;valarray&gt;</a></li>
-        
-      </ul>
-    </li>
-    
-    <li>
-      <a href="/input.output">Input/Output</a>
-      <ul>
-        
-        <li><a href="/input.output/cstdio/">&lt;cstdio&gt;</a></li>
-        
-        <li><a href="/input.output/filesystem/">&lt;filesystem&gt;</a></li>
-        
-        <li><a href="/input.output/fstream/">&lt;fstream&gt;</a></li>
-        
-        <li><a href="/input.output/iostream/">&lt;iostream&gt;</a></li>
-        
-      </ul>
-    </li>
-    
-    <li>
-      <a href="/re">Regular Expressions</a>
-      <ul>
-        
-        <li><a href="/re/regex/">regex</a></li>
-        
-        <li><a href="/re/regex_match/">regex_match</a></li>
-        
-        <li><a href="/re/regex_replace/">regex_replace</a></li>
-        
-        <li><a href="/re/regex_search/">regex_search</a></li>
-        
-      </ul>
-    </li>
-    
-    <li>
-      <a href="/thread">Concurrency</a>
-      <ul>
-        
-        <li><a href="/thread/atomic/">&lt;atomic&gt;</a></li>
-        
-        <li><a href="/thread/future/">&lt;future&gt;</a></li>
-        
-        <li><a href="/thread/mutex/">&lt;mutex&gt;</a></li>
-        
-        <li><a href="/thread/semaphore/">&lt;semaphore&gt;</a></li>
-        
-        <li><a href="/thread/thread/">&lt;thread&gt;</a></li>
-        
-      </ul>
-    </li>
-    
-  </ul>
+      </li>
+      
+    </ul>
+  </nav>
 
   <div class="flex flex-row content-center my-auto">
     <div class="flex flex-col my-auto">
@@ -275,42 +211,9 @@
 </aside>
 
 
-      <main class="mx-auto">
-        
-        <nav class="tc-nav gh-canvas">
-  <div class="flex flex-row justify-between gh-width-wide">
-    <div class="block xl:hidden pt-9 flex flex-row space-x-3 md:space-x-5">
-      <a
-        href="https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=gituliar"
-        target="_blank"
-        title="LinkedIn"
-        class="tc-sidebar-social"
-      >
-        <img src="/img/brands/linkedin.svg" />
-      </a>
-      <a
-        href="https://github.com/gituliar"
-        target="_blank"
-        title="GitHub"
-        class="tc-sidebar-social"
-      >
-        <img src="/img/brands/github.svg" />
-      </a>
-      <a
-        href="https://twitter.com/OGituliar"
-        target="_blank"
-        title="Twitter"
-        class="tc-sidebar-social"
-      >
-        <img src="/img/brands/x-twitter.svg" />
-      </a>
-    </div>
-  </div>
-</nav>
-
-
-        
-        
+        <main class="flex-1 tc-content">
+          
+          
 
 <h2>Numerics Library</h2>
 
@@ -423,9 +326,9 @@ semi-numerical operations.</p>
 
 
 
-      </main>
+        </main>
+      </div>
     </div>
-
     <script>
       document.querySelectorAll('a[href^="http"]').forEach(function (e) {
         e.setAttribute("target", "_blank");
