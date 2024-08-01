@@ -166,10 +166,6 @@
     @apply list-disc list-outside mb-4;
   }
 
-  a:hover img {
-    opacity: 0.7;
-  }
-
   .active {
     font-weight: 700;
   }
@@ -182,15 +178,12 @@
     width: 80ch;
   }
 
-  .tc-nav {
-    font-weight: 900;
+  .tc-sidebar-title * {
+    @apply font-black md:text-3xl text-2xl tracking-tight;
+    color: var(--color-primary-text);
   }
-
-  .tc-nav a {
-    color: inherit;
-  }
-  .tc-nav a:hover {
-    opacity: 0.7;
+  .tc-sidebar-title:hover * {
+    opacity: 0.8;
     text-decoration: none;
   }
 
@@ -203,8 +196,8 @@
     width: 25px;
     @apply mr-4;
   }
-  .tc-sidebar-social img:hover {
-    /* transform: scale(1.25); */
+  .tc-sidebar-social:hover img {
+    transform: scale(1.25);
   }
 
   /* 5. Layout

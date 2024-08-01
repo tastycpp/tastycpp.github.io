@@ -662,10 +662,6 @@ ul {
   list-style-type: disc;
 }
 
-a:hover img {
-  opacity: 0.7;
-}
-
 .active {
   font-weight: 700;
 }
@@ -678,6 +674,29 @@ a:hover img {
   width: 80ch;
 }
 
+.tc-sidebar-title * {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+}
+
+@media (min-width: 768px) {
+  .tc-sidebar-title * {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+.tc-sidebar-title * {
+  color: var(--color-primary-text);
+}
+
+.tc-sidebar-title:hover * {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
 .tc-sidebar-social {
   text-decoration: none;
 }
@@ -688,8 +707,8 @@ a:hover img {
   margin-right: 1rem;
 }
 
-.tc-sidebar-social img:hover {
-  /* transform: scale(1.25); */
+.tc-sidebar-social:hover img {
+  transform: scale(1.25);
 }
 
 /* 5. Layout
@@ -843,14 +862,14 @@ a:hover img {
   margin-right: auto;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .mb-1 {
@@ -867,6 +886,10 @@ a:hover img {
 
 .ml-auto {
   margin-left: auto;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .block {
@@ -936,18 +959,9 @@ a:hover img {
   border-radius: 9999px;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .py-4 {
@@ -955,8 +969,26 @@ a:hover img {
   padding-bottom: 1rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
 .pt-9 {
   padding-top: 2.25rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .text-justify {
@@ -967,34 +999,13 @@ a:hover img {
   vertical-align: middle;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.font-black {
-  font-weight: 900;
-}
-
 .font-bold {
   font-weight: 700;
-}
-
-.tracking-tight {
-  letter-spacing: -0.025em;
 }
 
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.no-underline {
-  text-decoration-line: none;
-}
-
-.hover\:underline:hover {
-  text-decoration-line: underline;
 }
 
 @media (min-width: 768px) {
@@ -1006,11 +1017,6 @@ a:hover img {
     --tw-space-x-reverse: 0;
     margin-right: calc(1.25rem * var(--tw-space-x-reverse));
     margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 }
 
