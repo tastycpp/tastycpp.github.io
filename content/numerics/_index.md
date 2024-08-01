@@ -7,7 +7,7 @@ semi-numerical operations.
 
 ## Numbers
 
-`<numbers>`
+`#include `[**`<numbers>`**]()
 
 - `e`
 - `log2e`
@@ -17,7 +17,7 @@ semi-numerical operations.
 
 ## Mathematical Functions
 
-`<cmath>`, `<cstdlib>`
+`#include `[**`<cstdlib>`**]()
 
 - `abs`
 - `hypot`
@@ -25,7 +25,7 @@ semi-numerical operations.
 - `sqrt`
 - `...`
 
-` `
+`#include `[**`<cmath>`**]()
 
 - `acos`
 - `asin`

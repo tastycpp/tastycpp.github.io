@@ -1,3 +1,3 @@
 ---
-title: "<flat_set>"
+title: "flat_set"
 ---

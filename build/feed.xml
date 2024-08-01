@@ -17,13 +17,6 @@
       <description></description>
     </item>
     <item>
-      <title>&lt;array&gt;</title>
-      <link>https://tastycpp.com/containers/array/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/array/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>&lt;atomic&gt;</title>
       <link>https://tastycpp.com/thread/atomic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
@@ -74,13 +67,6 @@
     </item>
     <item>
       <title>&lt;cstdlib&gt;</title>
-      <link>https://tastycpp.com/mem/cstdlib/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/mem/cstdlib/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>&lt;cstdlib&gt;</title>
       <link>https://tastycpp.com/numerics/cstdlib/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/numerics/cstdlib/</guid>
@@ -94,13 +80,6 @@
       <description></description>
     </item>
     <item>
-      <title>&lt;deque&gt;</title>
-      <link>https://tastycpp.com/containers/deque/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/deque/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>&lt;filesystem&gt;</title>
       <link>https://tastycpp.com/input.output/filesystem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
@@ -108,31 +87,10 @@
       <description></description>
     </item>
     <item>
-      <title>&lt;flat_map&gt;</title>
-      <link>https://tastycpp.com/containers/flat_map/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/flat_map/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>&lt;flat_set&gt;</title>
-      <link>https://tastycpp.com/containers/flat_set/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/flat_set/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>&lt;format&gt;</title>
       <link>https://tastycpp.com/utilities/format/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/utilities/format/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>&lt;forward_list&gt;</title>
-      <link>https://tastycpp.com/containers/forward_list/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/forward_list/</guid>
       <description></description>
     </item>
     <item>
@@ -161,27 +119,6 @@
       <link>https://tastycpp.com/input.output/iostream/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/input.output/iostream/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>&lt;list&gt;</title>
-      <link>https://tastycpp.com/containers/list/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/list/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>&lt;map&gt;</title>
-      <link>https://tastycpp.com/containers/map/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/map/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>&lt;mdspan&gt;</title>
-      <link>https://tastycpp.com/containers/mdspan/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/mdspan/</guid>
       <description></description>
     </item>
     <item>
@@ -227,13 +164,6 @@
       <description>Subclause 22.5 describes class template optional that represents optional objects. An optional object is an object that contains the storage for another object and manages the lifetime of this contained object, if any. The contained object may be initialized after the optional object has been initialized, and may be destroyed before the optional object has been destroyed. The initialization state of the contained object is tracked by the optional object.</description>
     </item>
     <item>
-      <title>&lt;queue&gt;</title>
-      <link>https://tastycpp.com/containers/queue/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/queue/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>&lt;random&gt;</title>
       <link>https://tastycpp.com/numerics/random/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
@@ -241,38 +171,10 @@
       <description></description>
     </item>
     <item>
-      <title>&lt;regex&gt;</title>
-      <link>https://tastycpp.com/re/regex/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/re/regex/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>&lt;semaphore&gt;</title>
       <link>https://tastycpp.com/thread/semaphore/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/thread/semaphore/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>&lt;set&gt;</title>
-      <link>https://tastycpp.com/containers/set/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/set/</guid>
-      <description>The std::set container in C++ is a sorted associative container that stores unique elements. Internally, it is typically implemented as a balanced binary tree (usually a Red-Black Tree). The memory layout of std::set is similar to that of std::map, but since std::set only stores keys (without associated values), its node structure is simpler.&#xA;Methods operations complexity Implementation std::set is typically implemented as a balanced binary tree (usually a Red-Black Tree).</description>
-    </item>
-    <item>
-      <title>&lt;span&gt;</title>
-      <link>https://tastycpp.com/containers/span/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/span/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>&lt;stack&gt;</title>
-      <link>https://tastycpp.com/containers/stack/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/stack/</guid>
       <description></description>
     </item>
     <item>
@@ -304,20 +206,6 @@
       <description>Subclause 22.4 describes the tuple library that provides a tuple type as the class template tuple that can be instantiated with any number of arguments. Each template argument specifies the type of an element in the tuple. Consequently, tuples are heterogeneous, fixed-size collections of values. An instantiation of tuple with two arguments is similar to an instantiation of pair with the same two arguments. See 22.3.</description>
     </item>
     <item>
-      <title>&lt;unordered_map&gt;</title>
-      <link>https://tastycpp.com/containers/unordered_map/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/unordered_map/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>&lt;unordered_set&gt;</title>
-      <link>https://tastycpp.com/containers/unordered_set/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/unordered_set/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>&lt;valarray&gt;</title>
       <link>https://tastycpp.com/numerics/valarray/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
@@ -325,18 +213,172 @@
       <description></description>
     </item>
     <item>
-      <title>&lt;vector&gt;</title>
+      <title>About</title>
+      <link>https://tastycpp.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/about/</guid>
+      <description>About page </description>
+    </item>
+    <item>
+      <title>array</title>
+      <link>https://tastycpp.com/containers/array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/array/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C-Style Functions</title>
+      <link>https://tastycpp.com/mem/c-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/mem/c-functions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>deque</title>
+      <link>https://tastycpp.com/containers/deque/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/deque/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>flat_map</title>
+      <link>https://tastycpp.com/containers/flat_map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/flat_map/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>flat_set</title>
+      <link>https://tastycpp.com/containers/flat_set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/flat_set/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>forward_list</title>
+      <link>https://tastycpp.com/containers/forward_list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/forward_list/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>list</title>
+      <link>https://tastycpp.com/containers/list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/list/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>map</title>
+      <link>https://tastycpp.com/containers/map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/map/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>mdspan</title>
+      <link>https://tastycpp.com/containers/mdspan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/mdspan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>queue</title>
+      <link>https://tastycpp.com/containers/queue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/queue/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>regex</title>
+      <link>https://tastycpp.com/re/regex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/re/regex/</guid>
+      <description>std::basic_regex </description>
+    </item>
+    <item>
+      <title>regex_match</title>
+      <link>https://tastycpp.com/re/regex_match/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/re/regex_match/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>regex_replace</title>
+      <link>https://tastycpp.com/re/regex_replace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/re/regex_replace/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>regex_search</title>
+      <link>https://tastycpp.com/re/regex_search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/re/regex_search/</guid>
+      <description>std::regex_search </description>
+    </item>
+    <item>
+      <title>set</title>
+      <link>https://tastycpp.com/containers/set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/set/</guid>
+      <description>The std::set container in C++ is a sorted associative container that stores unique elements. Internally, it is typically implemented as a balanced binary tree (usually a Red-Black Tree). The memory layout of std::set is similar to that of std::map, but since std::set only stores keys (without associated values), its node structure is simpler.&#xA;Methods operations complexity Implementation std::set is typically implemented as a balanced binary tree (usually a Red-Black Tree).</description>
+    </item>
+    <item>
+      <title>shared_ptr</title>
+      <link>https://tastycpp.com/mem/shared_ptr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/mem/shared_ptr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>span</title>
+      <link>https://tastycpp.com/containers/span/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/span/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>stack</title>
+      <link>https://tastycpp.com/containers/stack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/stack/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>unique_ptr</title>
+      <link>https://tastycpp.com/mem/unique_ptr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/mem/unique_ptr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>unordered_map</title>
+      <link>https://tastycpp.com/containers/unordered_map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/unordered_map/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>unordered_set</title>
+      <link>https://tastycpp.com/containers/unordered_set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/unordered_set/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>vector</title>
       <link>https://tastycpp.com/containers/vector/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/containers/vector/</guid>
       <description>A vector is a sequence container that supports (amortized) constant time insert and erase operations at the end; insert and erase in the middle take linear time. Storage management is handled automatically, though hints can be given to improve efficiency.&#xA;In C++ Standard Library, std::vector is nothing more than a contiguous region of dynamic memory. The main task of std::vector is to grow the memory region when there is no space left for new elements.</description>
     </item>
     <item>
-      <title>About</title>
-      <link>https://tastycpp.com/about/</link>
+      <title>weak_ptr</title>
+      <link>https://tastycpp.com/mem/weak_ptr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/about/</guid>
-      <description>About page </description>
+      <guid>https://tastycpp.com/mem/weak_ptr/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

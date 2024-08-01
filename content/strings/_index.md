@@ -2,7 +2,7 @@
 title: "Strings Library"
 ---
 
-## String classes
+## String Classes
 
 `#include `[**`<string>`**]()
 
@@ -47,7 +47,7 @@ title: "Strings Library"
 
   ***
 
-## C-Style String Functions
+## C-Style Functions
 
 `#include `[**`<cctype>`**]()
 

@@ -1,3 +1,3 @@
 ---
-title: "<flat_map>"
+title: "flat_map"
 ---

@@ -1,5 +1,5 @@
 ---
-title: "<set>"
+title: "set"
 #description: "This is a story..."
 #cover: cover.png
 #image: cover.png

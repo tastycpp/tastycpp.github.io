@@ -1,3 +1,3 @@
 ---
-title: "<map>"
+title: "map"
 ---

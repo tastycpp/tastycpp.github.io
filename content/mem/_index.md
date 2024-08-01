@@ -123,11 +123,9 @@ This Clause describes components for memory management.
 
   _Returns_: `inout_ptr_t<Smart, P, Args&&...>(s, std::forward<Args>(args)...)`.
 
-## C-Style Memory Functions
+## C-Style Functions
 
 `#include `[`<cstdlib>`]()
-
-#### Functions
 
 _Note_: These functions do not attempt to allocate storage by calling
 `::operator new()` (as it might use these functions itself).

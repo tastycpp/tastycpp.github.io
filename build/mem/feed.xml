@@ -10,18 +10,39 @@
     <webMaster>oleksandr@gituliar.net (Oleksandr Gituliar)</webMaster>
     <atom:link href="https://tastycpp.com/mem/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>&lt;cstdlib&gt;</title>
-      <link>https://tastycpp.com/mem/cstdlib/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/mem/cstdlib/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>&lt;memory&gt;</title>
       <link>https://tastycpp.com/mem/memory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/mem/memory/</guid>
       <description>The header &amp;lt;memory&amp;gt; defines several types and function templates that describe properties of pointers and pointer-like types, manage memory for containers and other template types, destroy objects, and construct objects in uninitialized memory buffers (20.2.3–20.2.11 and 27.11). The header also defines the templates unique_ptr, shared_ptr, weak_ptr, out_ptr_t, inout_ptr_t, and various function templates that operate on objects of these types (20.3).&#xA;Smart Pointers Memory pointer conversion construct_at&#xA;destroy_at&#xA;template&amp;lt;class T&amp;gt;&#xA;constexpr to_address(T* p) noexcept -&amp;gt; T* template&amp;lt;class Ptr&amp;gt;</description>
+    </item>
+    <item>
+      <title>C-Style Functions</title>
+      <link>https://tastycpp.com/mem/c-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/mem/c-functions/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>shared_ptr</title>
+      <link>https://tastycpp.com/mem/shared_ptr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/mem/shared_ptr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>unique_ptr</title>
+      <link>https://tastycpp.com/mem/unique_ptr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/mem/unique_ptr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>weak_ptr</title>
+      <link>https://tastycpp.com/mem/weak_ptr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/mem/weak_ptr/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

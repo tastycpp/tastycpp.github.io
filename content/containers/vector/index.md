@@ -1,5 +1,5 @@
 ---
-title: "<vector>"
+title: "vector"
 ---
 
 A `vector` is a sequence container that supports (amortized) constant time

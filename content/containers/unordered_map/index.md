@@ -1,3 +1,3 @@
 ---
-title: "<unordered_map>"
+title: "unordered_map"
 ---

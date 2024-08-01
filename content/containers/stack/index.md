@@ -1,3 +1,3 @@
 ---
-title: "<stack>"
+title: "stack"
 ---

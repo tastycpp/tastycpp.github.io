@@ -1,3 +1,3 @@
 ---
-title: "<queue>"
+title: "queue"
 ---

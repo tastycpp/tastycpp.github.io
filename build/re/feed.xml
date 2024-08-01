@@ -10,11 +10,32 @@
     <webMaster>oleksandr@gituliar.net (Oleksandr Gituliar)</webMaster>
     <atom:link href="https://tastycpp.com/re/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>&lt;regex&gt;</title>
+      <title>regex</title>
       <link>https://tastycpp.com/re/regex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/re/regex/</guid>
+      <description>std::basic_regex </description>
+    </item>
+    <item>
+      <title>regex_match</title>
+      <link>https://tastycpp.com/re/regex_match/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/re/regex_match/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>regex_replace</title>
+      <link>https://tastycpp.com/re/regex_replace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/re/regex_replace/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>regex_search</title>
+      <link>https://tastycpp.com/re/regex_search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/re/regex_search/</guid>
+      <description>std::regex_search </description>
     </item>
   </channel>
 </rss>

@@ -1,3 +1,3 @@
 ---
-title: "<deque>"
+title: "deque"
 ---

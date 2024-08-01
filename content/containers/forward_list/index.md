@@ -1,3 +1,3 @@
 ---
-title: "<forward_list>"
+title: "forward_list"
 ---
