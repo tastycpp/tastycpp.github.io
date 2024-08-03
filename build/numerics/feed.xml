@@ -10,11 +10,25 @@
     <webMaster>oleksandr@gituliar.net (Oleksandr Gituliar)</webMaster>
     <atom:link href="https://tastycpp.com/numerics/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>&lt;cmath&gt;</title>
-      <link>https://tastycpp.com/numerics/cmath/</link>
+      <title>Numbers</title>
+      <link>https://tastycpp.com/numerics/numbers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/numerics/cmath/</guid>
-      <description></description>
+      <guid>https://tastycpp.com/numerics/numbers/</guid>
+      <description>Numbers #include &amp;lt;numbers&amp;gt;&#xA;e log2e log10e pi ... </description>
+    </item>
+    <item>
+      <title>Random Numbers</title>
+      <link>https://tastycpp.com/numerics/random/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/numerics/random/</guid>
+      <description>Random Number Generation Subclause 28.5 defines a facility for generating (pseudo-)random numbers.&#xA;#include &amp;lt;random&amp;gt;&#xA;Random Number Distribution Uniform Distribution uniform_int_distribution uniform_real_distribution Bernoulli Distribution bernoulli_distribution binomial_distribution geometric_distribution negative_binomial_distribution Poison Distribution poisson_distribution exponential_distribution gamma_distribution weibull_distribution extreme_value_distribution Normal Distribution normal_distribution lognormal_distribution chi_squared_distribution cauchy_distribution fisher_f_distribution student_t_distribution Sampling Distribution discrete_distribution piecewise_constant_distribution piecewise_linear_distribution Engines with Predefined Parameters default_random_engine minstd_rand0 minstd_rand mt19937 mt19937_64 ranlux24 ranlux48 knuth_b Random Number Engines class linear_congruential_engine&amp;lt;UIntType, a, c, m&amp;gt; class mersenne_twister_engine class subtract_with_carry_engine Adaptors discard_block_engine independent_bits_engine shuffle_order_engine </description>
+    </item>
+    <item>
+      <title>Numeric Arrays</title>
+      <link>https://tastycpp.com/numerics/valarray/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/numerics/valarray/</guid>
+      <description>Numeric Arrays #include &amp;lt;valarray&amp;gt;&#xA;valarray&amp;lt;T&amp;gt; slice slice_array&amp;lt;T&amp;gt; gslice gslice_array&amp;lt;T&amp;gt; mask_array&amp;lt;T&amp;gt; indirect_array&amp;lt;T&amp;gt; </description>
     </item>
     <item>
       <title>&lt;cstdlib&gt;</title>
@@ -24,24 +38,10 @@
       <description></description>
     </item>
     <item>
-      <title>&lt;numbers&gt;</title>
-      <link>https://tastycpp.com/numerics/numbers/</link>
+      <title>&lt;cmath&gt;</title>
+      <link>https://tastycpp.com/numerics/cmath/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/numerics/numbers/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>&lt;random&gt;</title>
-      <link>https://tastycpp.com/numerics/random/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/numerics/random/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>&lt;valarray&gt;</title>
-      <link>https://tastycpp.com/numerics/valarray/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/numerics/valarray/</guid>
+      <guid>https://tastycpp.com/numerics/cmath/</guid>
       <description></description>
     </item>
   </channel>

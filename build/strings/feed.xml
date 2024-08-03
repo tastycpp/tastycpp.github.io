@@ -10,32 +10,25 @@
     <webMaster>oleksandr@gituliar.net (Oleksandr Gituliar)</webMaster>
     <atom:link href="https://tastycpp.com/strings/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>&lt;cctype&gt;</title>
-      <link>https://tastycpp.com/strings/cctype/</link>
+      <title>std::string</title>
+      <link>https://tastycpp.com/strings/string/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/strings/cctype/</guid>
+      <guid>https://tastycpp.com/strings/string/</guid>
       <description></description>
     </item>
     <item>
-      <title>&lt;cstring&gt;</title>
-      <link>https://tastycpp.com/strings/cstring/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/strings/cstring/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>&lt;string_view&gt;</title>
+      <title>std::string_view</title>
       <link>https://tastycpp.com/strings/string_view/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/strings/string_view/</guid>
       <description></description>
     </item>
     <item>
-      <title>&lt;string&gt;</title>
-      <link>https://tastycpp.com/strings/string/</link>
+      <title>C Functions</title>
+      <link>https://tastycpp.com/strings/c/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/strings/string/</guid>
-      <description></description>
+      <guid>https://tastycpp.com/strings/c/</guid>
+      <description>C-Style Functions #include &amp;lt;cctype&amp;gt;&#xA;isalnum (int c) -&amp;gt; int isalpha (int c) -&amp;gt; int isblank (int c) -&amp;gt; int iscntrl (int c) -&amp;gt; int isdigit (int c) -&amp;gt; int isgraph (int c) -&amp;gt; int islower (int c) -&amp;gt; int isprint (int c) -&amp;gt; int ispunct (int c) -&amp;gt; int isspace (int c) -&amp;gt; int isupper (int c) -&amp;gt; int isxdigit (int c) -&amp;gt; int tolower (int c) -&amp;gt; int toupper (int c) -&amp;gt; int #include &amp;lt;cstring&amp;gt;</description>
     </item>
   </channel>
 </rss>

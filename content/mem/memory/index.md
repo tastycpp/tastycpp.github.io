@@ -1,5 +1,6 @@
 ---
 title: "<memory>"
+weight: 5
 ---
 
 The header `<memory>` defines several types and function templates that describe

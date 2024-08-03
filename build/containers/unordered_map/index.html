@@ -10,7 +10,7 @@
     <meta name="author" content="Oleksandr Gituliar" />
     <meta
       name="description"
-      content=""
+      content="std::unordered_map Methods construct / copy unordered_map operator= iterators begin / end cbegin / cend capacity empty max_size size modifiers clear emplace emplace_hint erase extract insert insert_or_assign merge try_emplace swap observers hash_function key_eq map operations contains count equal_range find element access at operator[] bucket interface bucket_count max_bucket_count bucket_size bucket begin / end cbegin / cend hash policy load_factor max_load_factor rehash reserve Implementation Size Layout Reference Examples "
     />
 
     
@@ -43,7 +43,7 @@
     <link rel="icon" href="/favicon.ico" />
 
     <meta property="og:title" content="unordered_map" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="std::unordered_map Methods construct / copy unordered_map operator= iterators begin / end cbegin / cend capacity empty max_size size modifiers clear emplace emplace_hint erase extract insert insert_or_assign merge try_emplace swap observers hash_function key_eq map operations contains count equal_range find element access at operator[] bucket interface bucket_count max_bucket_count bucket_size bucket begin / end cbegin / cend hash policy load_factor max_load_factor rehash reserve Implementation Size Layout Reference Examples " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tastycpp.com/containers/unordered_map/" /><meta property="article:section" content="containers" />
 
@@ -106,38 +106,6 @@
         
         <a href="/containers" class="active">Containers</a>
         <ul>
-          
-          <li>
-            <a
-              href="/containers/array/"
-              class=""
-              >array</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/containers/deque/"
-              class=""
-              >deque</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/containers/flat_map/"
-              class=""
-              >flat_map</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/containers/flat_set/"
-              class=""
-              >flat_set</a
-            >
-          </li>
           
           <li>
             <a
@@ -205,6 +173,46 @@
           
           <li>
             <a
+              href="/containers/array/"
+              class=""
+              >std::array</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/containers/deque/"
+              class=""
+              >std::deque</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/containers/flat_map/"
+              class=""
+              >std::flat_map</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/containers/flat_set/"
+              class=""
+              >std::flat_set</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/containers/unordered_set/"
+              class=""
+              >std::unordered_set</a
+            >
+          </li>
+          
+          <li>
+            <a
               href="/containers/unordered_map/"
               class="active"
               >unordered_map</a
@@ -213,9 +221,17 @@
           
           <li>
             <a
-              href="/containers/unordered_set/"
+              href="/containers/unordered_multimap/"
               class=""
-              >unordered_set</a
+              >unordered_multimap</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/containers/unordered_multiset/"
+              class=""
+              >unordered_multiset</a
             >
           </li>
           
@@ -292,13 +308,81 @@
           
 
 <article>
-  <header class="">
-    <h1 class="" itemprop="name headline">unordered_map</h1>
+  
 
-    
-  </header>
-
-  <section class="mb-8" itemprop="articleBody"></section>
+  <section class="mb-8" itemprop="articleBody"><h1 id="stdunordered_map">std::unordered_map</h1>
+<h2 id="methods">Methods</h2>
+<h3 id="construct--copy">construct / copy</h3>
+<ul>
+<li><code>unordered_map</code></li>
+</ul>
+<p><code> </code></p>
+<ul>
+<li><code>operator=</code></li>
+</ul>
+<h3 id="iterators">iterators</h3>
+<ul>
+<li><code>begin </code>/<code> end</code></li>
+<li><code>cbegin </code>/<code> cend</code></li>
+</ul>
+<h3 id="capacity">capacity</h3>
+<ul>
+<li><code>empty</code></li>
+<li><code>max_size</code></li>
+<li><code>size</code></li>
+</ul>
+<h3 id="modifiers">modifiers</h3>
+<ul>
+<li><code>clear</code></li>
+<li><code>emplace</code></li>
+<li><code>emplace_hint</code></li>
+<li><code>erase</code></li>
+<li><code>extract</code></li>
+<li><code>insert</code></li>
+<li><code>insert_or_assign</code></li>
+<li><code>merge</code></li>
+<li><code>try_emplace</code></li>
+<li><code>swap</code></li>
+</ul>
+<h3 id="observers">observers</h3>
+<ul>
+<li><code>hash_function</code></li>
+<li><code>key_eq</code></li>
+</ul>
+<h3 id="map-operations">map operations</h3>
+<ul>
+<li><code>contains</code></li>
+<li><code>count</code></li>
+<li><code>equal_range</code></li>
+<li><code>find</code></li>
+</ul>
+<h3 id="element-access">element access</h3>
+<ul>
+<li><code>at</code></li>
+<li><code>operator[]</code></li>
+</ul>
+<h3 id="bucket-interface">bucket interface</h3>
+<ul>
+<li><code>bucket_count</code></li>
+<li><code>max_bucket_count</code></li>
+<li><code>bucket_size</code></li>
+<li><code>bucket</code></li>
+<li><code>begin </code>/<code> end</code></li>
+<li><code>cbegin </code>/<code> cend</code></li>
+</ul>
+<h3 id="hash-policy">hash policy</h3>
+<ul>
+<li><code>load_factor</code></li>
+<li><code>max_load_factor</code></li>
+<li><code>rehash</code></li>
+<li><code>reserve</code></li>
+</ul>
+<h2 id="implementation">Implementation</h2>
+<h3 id="size">Size</h3>
+<h3 id="layout">Layout</h3>
+<h2 id="reference">Reference</h2>
+<h2 id="examples">Examples</h2>
+</section>
 
   
   <div class="">

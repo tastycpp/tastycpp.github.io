@@ -1,3 +1,3 @@
 ---
-title: "regex_replace"
+title: "std::regex_replace"
 ---

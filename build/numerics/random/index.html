@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <title>
-      &lt;random&gt; | Tasty C&#43;&#43;
+      Random Numbers | Tasty C&#43;&#43;
     </title>
 
     <meta charset="utf-8" />
@@ -10,7 +10,9 @@
     <meta name="author" content="Oleksandr Gituliar" />
     <meta
       name="description"
-      content=""
+      content="Random Number Generation Subclause 28.5 defines a facility for generating (pseudo-)random numbers.
+#include &lt;random&gt;
+Random Number Distribution Uniform Distribution uniform_int_distribution uniform_real_distribution Bernoulli Distribution bernoulli_distribution binomial_distribution geometric_distribution negative_binomial_distribution Poison Distribution poisson_distribution exponential_distribution gamma_distribution weibull_distribution extreme_value_distribution Normal Distribution normal_distribution lognormal_distribution chi_squared_distribution cauchy_distribution fisher_f_distribution student_t_distribution Sampling Distribution discrete_distribution piecewise_constant_distribution piecewise_linear_distribution Engines with Predefined Parameters default_random_engine minstd_rand0 minstd_rand mt19937 mt19937_64 ranlux24 ranlux48 knuth_b Random Number Engines class linear_congruential_engine&lt;UIntType, a, c, m&gt; class mersenne_twister_engine class subtract_with_carry_engine Adaptors discard_block_engine independent_bits_engine shuffle_order_engine "
     />
 
     
@@ -42,8 +44,10 @@
     <link rel="stylesheet" href="/css/code.css" />
     <link rel="icon" href="/favicon.ico" />
 
-    <meta property="og:title" content="&lt;random&gt;" />
-<meta property="og:description" content="" />
+    <meta property="og:title" content="Random Numbers" />
+<meta property="og:description" content="Random Number Generation Subclause 28.5 defines a facility for generating (pseudo-)random numbers.
+#include &lt;random&gt;
+Random Number Distribution Uniform Distribution uniform_int_distribution uniform_real_distribution Bernoulli Distribution bernoulli_distribution binomial_distribution geometric_distribution negative_binomial_distribution Poison Distribution poisson_distribution exponential_distribution gamma_distribution weibull_distribution extreme_value_distribution Normal Distribution normal_distribution lognormal_distribution chi_squared_distribution cauchy_distribution fisher_f_distribution student_t_distribution Sampling Distribution discrete_distribution piecewise_constant_distribution piecewise_linear_distribution Engines with Predefined Parameters default_random_engine minstd_rand0 minstd_rand mt19937 mt19937_64 ranlux24 ranlux48 knuth_b Random Number Engines class linear_congruential_engine&lt;UIntType, a, c, m&gt; class mersenne_twister_engine class subtract_with_carry_engine Adaptors discard_block_engine independent_bits_engine shuffle_order_engine " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tastycpp.com/numerics/random/" /><meta property="article:section" content="numerics" />
 
@@ -85,9 +89,25 @@
           
           <li>
             <a
-              href="/numerics/cmath/"
+              href="/numerics/numbers/"
               class=""
-              >&lt;cmath&gt;</a
+              >Numbers</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/numerics/random/"
+              class="active"
+              >Random Numbers</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/numerics/valarray/"
+              class=""
+              >Numeric Arrays</a
             >
           </li>
           
@@ -101,25 +121,9 @@
           
           <li>
             <a
-              href="/numerics/numbers/"
+              href="/numerics/cmath/"
               class=""
-              >&lt;numbers&gt;</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/numerics/random/"
-              class="active"
-              >&lt;random&gt;</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/numerics/valarray/"
-              class=""
-              >&lt;valarray&gt;</a
+              >&lt;cmath&gt;</a
             >
           </li>
           
@@ -212,13 +216,74 @@
           
 
 <article>
-  <header class="">
-    <h1 class="" itemprop="name headline">&lt;random&gt;</h1>
+  
 
-    
-  </header>
-
-  <section class="mb-8" itemprop="articleBody"></section>
+  <section class="mb-8" itemprop="articleBody"><h1 id="random-number-generation">Random Number Generation</h1>
+<p>Subclause 28.5 defines a facility for generating (pseudo-)random numbers.</p>
+<p><code>#include </code><a href=""><strong><code>&lt;random&gt;</code></strong></a></p>
+<h3 id="random-number-distribution">Random Number Distribution</h3>
+<h4 id="uniform-distribution">Uniform Distribution</h4>
+<ul>
+<li><code>uniform_int_distribution</code></li>
+<li><code>uniform_real_distribution</code></li>
+</ul>
+<h4 id="bernoulli-distribution">Bernoulli Distribution</h4>
+<ul>
+<li><code>bernoulli_distribution</code></li>
+<li><code>binomial_distribution</code></li>
+<li><code>geometric_distribution</code></li>
+<li><code>negative_binomial_distribution</code></li>
+</ul>
+<h4 id="poison-distribution">Poison Distribution</h4>
+<ul>
+<li><code>poisson_distribution</code></li>
+<li><code>exponential_distribution</code></li>
+<li><code>gamma_distribution</code></li>
+<li><code>weibull_distribution</code></li>
+<li><code>extreme_value_distribution</code></li>
+</ul>
+<h4 id="normal-distribution">Normal Distribution</h4>
+<ul>
+<li><code>normal_distribution</code></li>
+<li><code>lognormal_distribution</code></li>
+<li><code>chi_squared_distribution</code></li>
+<li><code>cauchy_distribution</code></li>
+<li><code>fisher_f_distribution</code></li>
+<li><code>student_t_distribution</code></li>
+</ul>
+<h4 id="sampling-distribution">Sampling Distribution</h4>
+<ul>
+<li><code>discrete_distribution</code></li>
+<li><code>piecewise_constant_distribution</code></li>
+<li><code>piecewise_linear_distribution</code></li>
+</ul>
+<h3 id="engines-with-predefined-parameters">Engines with Predefined Parameters</h3>
+<ul>
+<li><code>default_random_engine</code></li>
+</ul>
+<p><code> </code></p>
+<ul>
+<li><code>minstd_rand0</code></li>
+<li><code>minstd_rand</code></li>
+<li><code>mt19937</code></li>
+<li><code>mt19937_64</code></li>
+<li><code>ranlux24</code></li>
+<li><code>ranlux48</code></li>
+<li><code>knuth_b</code></li>
+</ul>
+<h3 id="random-number-engines">Random Number Engines</h3>
+<ul>
+<li><code>class linear_congruential_engine&lt;UIntType, a, c, m&gt;</code></li>
+<li><code>class mersenne_twister_engine</code></li>
+<li><code>class subtract_with_carry_engine</code></li>
+</ul>
+<h4 id="adaptors">Adaptors</h4>
+<ul>
+<li><code>discard_block_engine</code></li>
+<li><code>independent_bits_engine</code></li>
+<li><code>shuffle_order_engine</code></li>
+</ul>
+</section>
 
   
   <div class="">

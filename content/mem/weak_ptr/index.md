@@ -1,3 +1,4 @@
 ---
-title: "weak_ptr"
+title: "std::weak_ptr"
+weight: 3
 ---

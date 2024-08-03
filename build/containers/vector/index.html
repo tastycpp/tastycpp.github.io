@@ -10,7 +10,7 @@
     <meta name="author" content="Oleksandr Gituliar" />
     <meta
       name="description"
-      content="A vector is a sequence container that supports (amortized) constant time insert and erase operations at the end; insert and erase in the middle take linear time. Storage management is handled automatically, though hints can be given to improve efficiency.
+      content="std::vector A vector is a sequence container that supports (amortized) constant time insert and erase operations at the end; insert and erase in the middle take linear time. Storage management is handled automatically, though hints can be given to improve efficiency.
 In C&#43;&#43; Standard Library, std::vector is nothing more than a contiguous region of dynamic memory. The main task of std::vector is to grow the memory region when there is no space left for new elements."
     />
 
@@ -44,7 +44,7 @@ In C&#43;&#43; Standard Library, std::vector is nothing more than a contiguous r
     <link rel="icon" href="/favicon.ico" />
 
     <meta property="og:title" content="vector" />
-<meta property="og:description" content="A vector is a sequence container that supports (amortized) constant time insert and erase operations at the end; insert and erase in the middle take linear time. Storage management is handled automatically, though hints can be given to improve efficiency.
+<meta property="og:description" content="std::vector A vector is a sequence container that supports (amortized) constant time insert and erase operations at the end; insert and erase in the middle take linear time. Storage management is handled automatically, though hints can be given to improve efficiency.
 In C&#43;&#43; Standard Library, std::vector is nothing more than a contiguous region of dynamic memory. The main task of std::vector is to grow the memory region when there is no space left for new elements." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tastycpp.com/containers/vector/" /><meta property="article:section" content="containers" />
@@ -108,38 +108,6 @@ In C&#43;&#43; Standard Library, std::vector is nothing more than a contiguous r
         
         <a href="/containers" class="active">Containers</a>
         <ul>
-          
-          <li>
-            <a
-              href="/containers/array/"
-              class=""
-              >array</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/containers/deque/"
-              class=""
-              >deque</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/containers/flat_map/"
-              class=""
-              >flat_map</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/containers/flat_set/"
-              class=""
-              >flat_set</a
-            >
-          </li>
           
           <li>
             <a
@@ -207,6 +175,46 @@ In C&#43;&#43; Standard Library, std::vector is nothing more than a contiguous r
           
           <li>
             <a
+              href="/containers/array/"
+              class=""
+              >std::array</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/containers/deque/"
+              class=""
+              >std::deque</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/containers/flat_map/"
+              class=""
+              >std::flat_map</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/containers/flat_set/"
+              class=""
+              >std::flat_set</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/containers/unordered_set/"
+              class=""
+              >std::unordered_set</a
+            >
+          </li>
+          
+          <li>
+            <a
               href="/containers/unordered_map/"
               class=""
               >unordered_map</a
@@ -215,9 +223,17 @@ In C&#43;&#43; Standard Library, std::vector is nothing more than a contiguous r
           
           <li>
             <a
-              href="/containers/unordered_set/"
+              href="/containers/unordered_multimap/"
               class=""
-              >unordered_set</a
+              >unordered_multimap</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/containers/unordered_multiset/"
+              class=""
+              >unordered_multiset</a
             >
           </li>
           
@@ -294,13 +310,10 @@ In C&#43;&#43; Standard Library, std::vector is nothing more than a contiguous r
           
 
 <article>
-  <header class="">
-    <h1 class="" itemprop="name headline">vector</h1>
+  
 
-    
-  </header>
-
-  <section class="mb-8" itemprop="articleBody"><p>A <code>vector</code> is a sequence container that supports (amortized) constant time
+  <section class="mb-8" itemprop="articleBody"><h1 id="stdvector">std::vector</h1>
+<p>A <code>vector</code> is a sequence container that supports (amortized) constant time
 insert and erase operations at the end; insert and erase in the middle take
 linear time. Storage management is handled automatically, though hints can be
 given to improve efficiency.</p>
@@ -308,44 +321,46 @@ given to improve efficiency.</p>
 of dynamic memory. The main task of std::vector is to grow the memory region
 when there is no space left for new elements.</em></p>
 <h2 id="methods">Methods</h2>
-<h3 id="capacity">capacity</h3>
+<h3 id="construct">construct</h3>
+<h3 id="copy">copy</h3>
+<h3 id="iterate">iterate</h3>
+<h3 id="none">capacity</h3>
 <ul>
-<li><a href=""><code>empty()</code></a> <code> const -&gt; bool</code></li>
-<li><a href=""><code>size()</code></a> <code>const -&gt; size_t</code><br>
-<em>Returns</em>: <code>distance(a.begin(), a.end())</code>, i.e. the number of elements in the container.<br>
-<em>Complexity</em>: Constant.</li>
-<li><a href=""><code>max_size()</code></a> <code> const -&gt; size_t</code></li>
-<li><a href=""><code>capacity()</code></a> <code> const -&gt; size_t</code></li>
+<li><a href="#capacity"><code>capacity</code></a></li>
+<li><a href="#empty"><code>empty</code></a></li>
+<li><a href="#max_size"><code>max_size</code></a></li>
+<li><code>reserve</code></li>
+<li><code>resize</code></li>
+<li><code>shrink_to_fit</code></li>
+<li><a href="#size"><code>size</code></a></li>
 </ul>
-<h3 id="element-access">element access</h3>
+<h3 id="access">access</h3>
 <ul>
-<li><a href=""><code>at(size_t n)</code></a> <code> const -&gt; const T&amp;</code></li>
-<li><a href=""><code>back()</code></a> <code> const -&gt; const T&amp;</code></li>
-<li><a href=""><code>front()</code></a> <code> const -&gt; const T&amp;</code></li>
-<li><a href=""><code>operator[](size_t n)</code></a> <code> const -&gt; const T&amp;</code></li>
-</ul>
-<h3 id="data-access">data access</h3>
-<ul>
-<li><code>data() const noexcept -&gt; const T*</code></li>
-</ul>
-<h3 id="modifiers">modifiers</h3>
-<ul>
-<li><code>append_range(R&amp;&amp; rg) -&gt; void</code></li>
-<li><code>emplace_back(Args&amp;... args) -&gt; T&amp;</code></li>
-<li><code>pop_back() -&gt; void</code></li>
-<li><code>push_back(const T&amp;) -&gt; void</code></li>
-<li><code>push_back(T&amp;&amp;) -&gt; void</code></li>
+<li><a href="#at"><code>at</code></a></li>
+<li><a href="#back"><code>back</code></a></li>
+<li><a href="#front"><code>front</code></a></li>
+<li><a href="#operator_at"><code>operator[]</code></a></li>
 </ul>
 <p><code> </code></p>
 <ul>
-<li><code>emplace(const_iterator position, Args&amp;&amp;... args) -&gt; iterator</code></li>
-<li><code>insert(iterator position, const T&amp;) -&gt; iterator</code></li>
-<li><code>insert(const_iterator position, T&amp;&amp; x) -&gt; iterator</code></li>
-<li><code>insert(const_iterator position, size_type n, const T&amp; x) -&gt; iterator</code></li>
-<li><code>template&lt;class InputIterator&gt; insert(const_iterator position, InputIterator first, InputIterator last) -&gt; iterator</code></li>
-<li><code>constexpr erase(const_iterator position) -&gt; iterator</code></li>
-<li><code>swap(vector&amp;) -&gt; void</code></li>
-<li><code>clear() noexcept -&gt; void</code></li>
+<li><a href="#data"><code>data</code></a></li>
+</ul>
+<h3 id="modify">modify</h3>
+<ul>
+<li><a href="#append_range"><code>append_range</code></a></li>
+<li><a href="#clear"><code>clear</code></a></li>
+<li><a href="#emplace"><code>emplace</code></a></li>
+<li><a href="#emplace_bacl"><code>emplace_back</code></a></li>
+<li><a href="#erase"><code>erase</code></a></li>
+<li><a href="#insert"><code>insert</code></a></li>
+<li><a href="#pop_back"><code>pop_back</code></a></li>
+<li><a href="#push_back"><code>push_back</code></a></li>
+<li><a href="#swap"><code>swap</code></a></li>
+</ul>
+<h2 id="functions">Functions</h2>
+<ul>
+<li><a href="#erase"><code>erase</code></a></li>
+<li><a href="#erase_if"><code>erase_if</code></a></li>
 </ul>
 <h2 id="implementation">Implementation</h2>
 <p><code>std::vector</code> is a contiguous region of memory.</p>
@@ -374,6 +389,11 @@ indicates the end of the allocated storage space, not necessarily the end of
 the current elements.</p>
 </li>
 </ul>
+<h3 id="size">Size</h3>
+<ul>
+<li>24 bytes (64-bit)</li>
+<li>12 bytes (32-bit)</li>
+</ul>
 <h3 id="layout">Layout</h3>
 <pre tabindex="0"><code>myFirst     myLast      myEnd
   |           |           |
@@ -381,18 +401,188 @@ the current elements.</p>
 +---+---+---+---+---+---+
 | 1 | 2 | 3 |   |   |   |
 +---+---+---+---+---+---+
-</code></pre><h3 id="size">Size</h3>
+</code></pre><h2 id="similar-containers">Similar Containers</h2>
 <ul>
-<li>24 bytes (64-bit)</li>
-<li>12 bytes (32-bit)</li>
+<li><a href=""><code>plf::colony</code></a></li>
+<li><a href=""><code>std::hive</code></a> (since C++20)</li>
 </ul>
-<h2 id="example">Example</h2>
+<h2 id="reference">Reference</h2>
+<h3 id="none">capacity</h3>
+<ul>
+<li>
+<h4 id="empty"><code>empty</code></h4>
+<ul>
+<li><code>bool </code><strong><code>empty</code></strong><code> () const</code></li>
+</ul>
+</li>
+<li>
+<h4 id="size-1"><code>size</code></h4>
+<ul>
+<li><code>size_t </code><strong><code>size</code></strong><code> () const</code></li>
+</ul>
+<p><em>Returns</em>: The number of elements in the vector, i.e.,
+<code>distance(v.begin(), v.end())</code>. <br>
+<em>Complexity</em>: O(1)<br>
+<em>Examples</em>: &hellip;</p>
+</li>
+<li>
+<h4 id="max_size"><code>max_size</code></h4>
+<ul>
+<li><code>size_t </code><strong><code>max_size</code></strong><code> () const</code></li>
+</ul>
+</li>
+<li>
+<h4 id="capacity"><code>capacity</code></h4>
+<ul>
+<li><code>size_t </code><strong><code>capacity</code></strong><code> () const</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="element-access">element access</h3>
+<ul>
+<li>
+<h4 id="at"><code>at</code></h4>
+<ul>
+<li><code>const T&amp; </code><strong><code>at</code></strong><code> (size_t n) const</code></li>
+</ul>
+</li>
+<li>
+<h4 id="back"><code>back</code></h4>
+<ul>
+<li><code>const T&amp; </code><strong><code>back</code></strong><code> () const</code></li>
+</ul>
+</li>
+<li>
+<h4 id="front"><code>front</code></h4>
+<ul>
+<li><code>const T&amp; </code><strong><code>front</code></strong><code> () const</code></li>
+</ul>
+</li>
+<li>
+<h4 id="operator_at"><code>operator[]</code></h4>
+<ul>
+<li><code>const T&amp; </code><strong><code>operator[]</code></strong><code> (size_t n) const</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="data-access">data access</h3>
+<ul>
+<li>
+<h4 id="data"><code>data</code></h4>
+<ul>
+<li><code>const T* </code><strong><code>data</code></strong><code> () const noexcept</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="modifiers">modifiers</h3>
+<ul>
+<li>
+<h4 id="append_range"><code>append_range</code></h4>
+<ul>
+<li><code>void </code><strong><code>append_range</code></strong><code> (R&amp;&amp; rg)</code></li>
+</ul>
+</li>
+<li>
+<h4 id="clear"><code>clear</code></h4>
+<ul>
+<li><code>void </code><strong><code>clear</code></strong><code> () noexcept</code></li>
+</ul>
+</li>
+<li>
+<h4 id="emplace"><code>emplace</code></h4>
+<ul>
+<li><code>template&lt;class... Args&gt;</code><br>
+<code>constexpr iterator </code><strong><code>emplace</code></strong><code> (const_iterator position, Args&amp;&amp;... args);</code></li>
+</ul>
+</li>
+<li>
+<h4 id="emplace_back"><code>emplace_back</code></h4>
+<ul>
+<li><code>template&lt;class... Args&gt;</code><br>
+<code>constexpr reference </code><strong><code>emplace_back</code></strong><code> (Args&amp;&amp;... args);</code></li>
+</ul>
+</li>
+<li>
+<h4 id="erase"><code>erase</code></h4>
+<ul>
+<li><code>constexpr iterator </code><strong><code>erase</code></strong><code> (const_iterator position)</code></li>
+</ul>
+</li>
+<li>
+<h4 id="insert"><code>insert</code></h4>
+<ul>
+<li>
+<p><code>constexpr iterator </code><strong><code>insert</code></strong><code> (iterator pos, const T&amp;)</code></p>
+</li>
+<li>
+<p><code>constexpr iterator </code><strong><code>insert</code></strong><code> (const_iterator pos, T&amp;&amp; x)</code></p>
+</li>
+<li>
+<p><code>constexpr iterator </code><strong><code>insert</code></strong><code> (const_iterator pos, size_type n, const T&amp; x)</code></p>
+</li>
+<li>
+<p><code>template&lt;class InputIterator&gt;</code><br>
+<code>constexpr iterator </code><strong><code>insert</code></strong><code> (const_iterator pos, InputIterator first, InputIterator last)</code></p>
+</li>
+</ul>
+</li>
+<li>
+<h4 id="pop_back"><code>pop_back</code></h4>
+<ul>
+<li><code>constexpr void </code><strong><code>pop_back</code></strong><code> ()</code></li>
+</ul>
+</li>
+<li>
+<h4 id="push_back"><code>push_back</code></h4>
+<ul>
+<li>
+<p><code>constexpr void </code><strong><code>push_back</code></strong><code> (const T&amp; x);</code></p>
+</li>
+<li>
+<p><code>constexpr void </code><strong><code>push_back</code></strong><code> (T&amp;&amp; x);</code></p>
+</li>
+</ul>
+</li>
+<li>
+<h4 id="swap"><code>swap</code></h4>
+<ul>
+<li><code>constexpr void </code><strong><code>swap</code></strong><code> (vector&amp; other) noexcept</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="functions-1">Functions</h3>
+<ul>
+<li>
+<h4 id="erase-1"><code>erase</code></h4>
+<ul>
+<li>
+<p><code>template&lt;class T, class Allocator, class U&gt;</code><br>
+<code>constexpr auto </code><strong><code>erase</code></strong><code> (vector&lt;T, Allocator&gt;&amp; c, const U&amp; value) -&gt; typename vector&lt;T, Allocator&gt;::size_type;</code></p>
+<p><em>Effects</em>: Equivalent to:</p>
+<pre tabindex="0"><code>auto it = remove(c.begin(), c.end(), value);
+auto r = distance(it, c.end());
+c.erase(it, c.end());
+return r;
+</code></pre></li>
+</ul>
+</li>
+<li>
+<h4 id="erase_if"><code>erase_if</code></h4>
+<ul>
+<li>
+<p><code>template&lt;class T, class Allocator, class Predicate&gt;</code><br>
+<code>constexpr auto </code><strong><code>erase_if</code></strong><code> (vector&lt;T, Allocator&gt;&amp; c, Predicate pred) -&gt; typename vector&lt;T, Allocator&gt;::size_type;</code></p>
+<p><em>Effects</em>: Equivalent to:</p>
+<pre tabindex="0"><code>auto it = remove_if(c.begin(), c.end(), pred);
+auto r = distance(it, c.end());
+c.erase(it, c.end());
+return r;
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<h2 id="examples">Examples</h2>
 <p><em>show/hide</em></p>
-<h2 id="related-containers">Related Containers</h2>
-<ul>
-<li><code>plf::colony</code></li>
-<li><code>std::hive</code> (since C++20)</li>
-</ul>
 </section>
 
   

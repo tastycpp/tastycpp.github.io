@@ -1,3 +1,4 @@
 ---
-title: "shared_ptr"
+title: "std::shared_ptr"
+weight: 2
 ---

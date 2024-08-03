@@ -83,9 +83,25 @@
           
           <li>
             <a
-              href="/numerics/cmath/"
+              href="/numerics/numbers/"
               class=""
-              >&lt;cmath&gt;</a
+              >Numbers</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/numerics/random/"
+              class=""
+              >Random Numbers</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/numerics/valarray/"
+              class=""
+              >Numeric Arrays</a
             >
           </li>
           
@@ -99,25 +115,9 @@
           
           <li>
             <a
-              href="/numerics/numbers/"
+              href="/numerics/cmath/"
               class=""
-              >&lt;numbers&gt;</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/numerics/random/"
-              class=""
-              >&lt;random&gt;</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/numerics/valarray/"
-              class=""
-              >&lt;valarray&gt;</a
+              >&lt;cmath&gt;</a
             >
           </li>
           
@@ -213,15 +213,6 @@
 
 <p>This Clause describes components that C++ programs may use to perform
 semi-numerical operations.</p>
-<h2 id="numbers">Numbers</h2>
-<p><code>#include </code><a href=""><strong><code>&lt;numbers&gt;</code></strong></a></p>
-<ul>
-<li><code>e</code></li>
-<li><code>log2e</code></li>
-<li><code>log10e</code></li>
-<li><code>pi</code></li>
-<li><code>...</code></li>
-</ul>
 <h2 id="mathematical-functions">Mathematical Functions</h2>
 <p><code>#include </code><a href=""><strong><code>&lt;cstdlib&gt;</code></strong></a></p>
 <ul>
@@ -238,82 +229,6 @@ semi-numerical operations.</p>
 <li><code>atan</code></li>
 <li><code>atan2</code></li>
 <li><code>...</code></li>
-</ul>
-<h2 id="numeric-arrays">Numeric Arrays</h2>
-<p><code>#include </code><a href=""><strong><code>&lt;valarray&gt;</code></strong></a></p>
-<ul>
-<li><code>valarray&lt;T&gt;</code></li>
-<li><code>slice</code></li>
-<li><code>slice_array&lt;T&gt;</code></li>
-<li><code>gslice</code></li>
-<li><code>gslice_array&lt;T&gt;</code></li>
-<li><code>mask_array&lt;T&gt;</code></li>
-<li><code>indirect_array&lt;T&gt;</code></li>
-</ul>
-<h2 id="random-number-generation">Random Number Generation</h2>
-<p>Subclause 28.5 defines a facility for generating (pseudo-)random numbers.</p>
-<p><code>#include </code><a href=""><strong><code>&lt;random&gt;</code></strong></a></p>
-<h3 id="random-number-distribution">Random Number Distribution</h3>
-<h4 id="uniform-distribution">Uniform Distribution</h4>
-<ul>
-<li><code>uniform_int_distribution</code></li>
-<li><code>uniform_real_distribution</code></li>
-</ul>
-<h4 id="bernoulli-distribution">Bernoulli Distribution</h4>
-<ul>
-<li><code>bernoulli_distribution</code></li>
-<li><code>binomial_distribution</code></li>
-<li><code>geometric_distribution</code></li>
-<li><code>negative_binomial_distribution</code></li>
-</ul>
-<h4 id="poison-distribution">Poison Distribution</h4>
-<ul>
-<li><code>poisson_distribution</code></li>
-<li><code>exponential_distribution</code></li>
-<li><code>gamma_distribution</code></li>
-<li><code>weibull_distribution</code></li>
-<li><code>extreme_value_distribution</code></li>
-</ul>
-<h4 id="normal-distribution">Normal Distribution</h4>
-<ul>
-<li><code>normal_distribution</code></li>
-<li><code>lognormal_distribution</code></li>
-<li><code>chi_squared_distribution</code></li>
-<li><code>cauchy_distribution</code></li>
-<li><code>fisher_f_distribution</code></li>
-<li><code>student_t_distribution</code></li>
-</ul>
-<h4 id="sampling-distribution">Sampling Distribution</h4>
-<ul>
-<li><code>discrete_distribution</code></li>
-<li><code>piecewise_constant_distribution</code></li>
-<li><code>piecewise_linear_distribution</code></li>
-</ul>
-<h3 id="engines-with-predefined-parameters">Engines with Predefined Parameters</h3>
-<ul>
-<li><code>default_random_engine</code></li>
-</ul>
-<p><code> </code></p>
-<ul>
-<li><code>minstd_rand0</code></li>
-<li><code>minstd_rand</code></li>
-<li><code>mt19937</code></li>
-<li><code>mt19937_64</code></li>
-<li><code>ranlux24</code></li>
-<li><code>ranlux48</code></li>
-<li><code>knuth_b</code></li>
-</ul>
-<h3 id="random-number-engines">Random Number Engines</h3>
-<ul>
-<li><code>class linear_congruential_engine&lt;UIntType, a, c, m&gt;</code></li>
-<li><code>class mersenne_twister_engine</code></li>
-<li><code>class subtract_with_carry_engine</code></li>
-</ul>
-<h4 id="adaptors">Adaptors</h4>
-<ul>
-<li><code>discard_block_engine</code></li>
-<li><code>independent_bits_engine</code></li>
-<li><code>shuffle_order_engine</code></li>
 </ul>
 
 

@@ -588,7 +588,9 @@ h3 {
 }
 
 h4 {
-  font-weight: 700;
+  margin-top: 0.5em;
+  font-weight: 900;
+  color: green;
 }
 
 header {
@@ -867,11 +869,6 @@ ul {
   margin-bottom: auto;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -886,10 +883,6 @@ ul {
 
 .ml-auto {
   margin-left: auto;
-}
-
-.mt-4 {
-  margin-top: 1rem;
 }
 
 .block {
@@ -974,21 +967,12 @@ ul {
   padding-bottom: 1.5rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .pt-9 {
   padding-top: 2.25rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
 }
 
 .text-justify {

@@ -10,6 +10,97 @@
     <webMaster>oleksandr@gituliar.net (Oleksandr Gituliar)</webMaster>
     <atom:link href="https://tastycpp.com/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Numbers</title>
+      <link>https://tastycpp.com/numerics/numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/numerics/numbers/</guid>
+      <description>Numbers #include &amp;lt;numbers&amp;gt;&#xA;e log2e log10e pi ... </description>
+    </item>
+    <item>
+      <title>std::string</title>
+      <link>https://tastycpp.com/strings/string/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/strings/string/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>std::unique_ptr</title>
+      <link>https://tastycpp.com/mem/unique_ptr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/mem/unique_ptr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Random Numbers</title>
+      <link>https://tastycpp.com/numerics/random/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/numerics/random/</guid>
+      <description>Random Number Generation Subclause 28.5 defines a facility for generating (pseudo-)random numbers.&#xA;#include &amp;lt;random&amp;gt;&#xA;Random Number Distribution Uniform Distribution uniform_int_distribution uniform_real_distribution Bernoulli Distribution bernoulli_distribution binomial_distribution geometric_distribution negative_binomial_distribution Poison Distribution poisson_distribution exponential_distribution gamma_distribution weibull_distribution extreme_value_distribution Normal Distribution normal_distribution lognormal_distribution chi_squared_distribution cauchy_distribution fisher_f_distribution student_t_distribution Sampling Distribution discrete_distribution piecewise_constant_distribution piecewise_linear_distribution Engines with Predefined Parameters default_random_engine minstd_rand0 minstd_rand mt19937 mt19937_64 ranlux24 ranlux48 knuth_b Random Number Engines class linear_congruential_engine&amp;lt;UIntType, a, c, m&amp;gt; class mersenne_twister_engine class subtract_with_carry_engine Adaptors discard_block_engine independent_bits_engine shuffle_order_engine </description>
+    </item>
+    <item>
+      <title>std::shared_ptr</title>
+      <link>https://tastycpp.com/mem/shared_ptr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/mem/shared_ptr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>std::string_view</title>
+      <link>https://tastycpp.com/strings/string_view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/strings/string_view/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C Functions</title>
+      <link>https://tastycpp.com/strings/c/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/strings/c/</guid>
+      <description>C-Style Functions #include &amp;lt;cctype&amp;gt;&#xA;isalnum (int c) -&amp;gt; int isalpha (int c) -&amp;gt; int isblank (int c) -&amp;gt; int iscntrl (int c) -&amp;gt; int isdigit (int c) -&amp;gt; int isgraph (int c) -&amp;gt; int islower (int c) -&amp;gt; int isprint (int c) -&amp;gt; int ispunct (int c) -&amp;gt; int isspace (int c) -&amp;gt; int isupper (int c) -&amp;gt; int isxdigit (int c) -&amp;gt; int tolower (int c) -&amp;gt; int toupper (int c) -&amp;gt; int #include &amp;lt;cstring&amp;gt;</description>
+    </item>
+    <item>
+      <title>Numeric Arrays</title>
+      <link>https://tastycpp.com/numerics/valarray/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/numerics/valarray/</guid>
+      <description>Numeric Arrays #include &amp;lt;valarray&amp;gt;&#xA;valarray&amp;lt;T&amp;gt; slice slice_array&amp;lt;T&amp;gt; gslice gslice_array&amp;lt;T&amp;gt; mask_array&amp;lt;T&amp;gt; indirect_array&amp;lt;T&amp;gt; </description>
+    </item>
+    <item>
+      <title>std::weak_ptr</title>
+      <link>https://tastycpp.com/mem/weak_ptr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/mem/weak_ptr/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;cstdlib&gt;</title>
+      <link>https://tastycpp.com/numerics/cstdlib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/numerics/cstdlib/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C Functions</title>
+      <link>https://tastycpp.com/mem/c/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/mem/c/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;cmath&gt;</title>
+      <link>https://tastycpp.com/numerics/cmath/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/numerics/cmath/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>&lt;memory&gt;</title>
+      <link>https://tastycpp.com/mem/memory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/mem/memory/</guid>
+      <description>The header &amp;lt;memory&amp;gt; defines several types and function templates that describe properties of pointers and pointer-like types, manage memory for containers and other template types, destroy objects, and construct objects in uninitialized memory buffers (20.2.3–20.2.11 and 27.11). The header also defines the templates unique_ptr, shared_ptr, weak_ptr, out_ptr_t, inout_ptr_t, and various function templates that operate on objects of these types (20.3).&#xA;Smart Pointers Memory pointer conversion construct_at&#xA;destroy_at&#xA;template&amp;lt;class T&amp;gt;&#xA;constexpr to_address(T* p) noexcept -&amp;gt; T* template&amp;lt;class Ptr&amp;gt;</description>
+    </item>
+    <item>
       <title>&lt;algorithm&gt;</title>
       <link>https://tastycpp.com/algorithms/algorithm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
@@ -38,20 +129,6 @@
       <description>The header defines a class template and several related functions for representing and manipulating fixed-size sequences of bits.</description>
     </item>
     <item>
-      <title>&lt;cctype&gt;</title>
-      <link>https://tastycpp.com/strings/cctype/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/strings/cctype/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>&lt;cmath&gt;</title>
-      <link>https://tastycpp.com/numerics/cmath/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/numerics/cmath/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>&lt;cstdio&gt;</title>
       <link>https://tastycpp.com/input.output/cstdio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
@@ -63,20 +140,6 @@
       <link>https://tastycpp.com/algorithms/cstdlib/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/algorithms/cstdlib/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>&lt;cstdlib&gt;</title>
-      <link>https://tastycpp.com/numerics/cstdlib/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/numerics/cstdlib/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>&lt;cstring&gt;</title>
-      <link>https://tastycpp.com/strings/cstring/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/strings/cstring/</guid>
       <description></description>
     </item>
     <item>
@@ -129,24 +192,10 @@
       <description></description>
     </item>
     <item>
-      <title>&lt;memory&gt;</title>
-      <link>https://tastycpp.com/mem/memory/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/mem/memory/</guid>
-      <description>The header &amp;lt;memory&amp;gt; defines several types and function templates that describe properties of pointers and pointer-like types, manage memory for containers and other template types, destroy objects, and construct objects in uninitialized memory buffers (20.2.3–20.2.11 and 27.11). The header also defines the templates unique_ptr, shared_ptr, weak_ptr, out_ptr_t, inout_ptr_t, and various function templates that operate on objects of these types (20.3).&#xA;Smart Pointers Memory pointer conversion construct_at&#xA;destroy_at&#xA;template&amp;lt;class T&amp;gt;&#xA;constexpr to_address(T* p) noexcept -&amp;gt; T* template&amp;lt;class Ptr&amp;gt;</description>
-    </item>
-    <item>
       <title>&lt;mutex&gt;</title>
       <link>https://tastycpp.com/thread/mutex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/thread/mutex/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>&lt;numbers&gt;</title>
-      <link>https://tastycpp.com/numerics/numbers/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/numerics/numbers/</guid>
       <description></description>
     </item>
     <item>
@@ -164,31 +213,10 @@
       <description>Subclause 22.5 describes class template optional that represents optional objects. An optional object is an object that contains the storage for another object and manages the lifetime of this contained object, if any. The contained object may be initialized after the optional object has been initialized, and may be destroyed before the optional object has been destroyed. The initialization state of the contained object is tracked by the optional object.</description>
     </item>
     <item>
-      <title>&lt;random&gt;</title>
-      <link>https://tastycpp.com/numerics/random/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/numerics/random/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>&lt;semaphore&gt;</title>
       <link>https://tastycpp.com/thread/semaphore/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/thread/semaphore/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>&lt;string_view&gt;</title>
-      <link>https://tastycpp.com/strings/string_view/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/strings/string_view/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>&lt;string&gt;</title>
-      <link>https://tastycpp.com/strings/string/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/strings/string/</guid>
       <description></description>
     </item>
     <item>
@@ -206,53 +234,11 @@
       <description>Subclause 22.4 describes the tuple library that provides a tuple type as the class template tuple that can be instantiated with any number of arguments. Each template argument specifies the type of an element in the tuple. Consequently, tuples are heterogeneous, fixed-size collections of values. An instantiation of tuple with two arguments is similar to an instantiation of pair with the same two arguments. See 22.3.</description>
     </item>
     <item>
-      <title>&lt;valarray&gt;</title>
-      <link>https://tastycpp.com/numerics/valarray/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/numerics/valarray/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>About</title>
       <link>https://tastycpp.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/about/</guid>
       <description>About page </description>
-    </item>
-    <item>
-      <title>array</title>
-      <link>https://tastycpp.com/containers/array/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/array/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>C-Style Functions</title>
-      <link>https://tastycpp.com/mem/c-functions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/mem/c-functions/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>deque</title>
-      <link>https://tastycpp.com/containers/deque/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/deque/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>flat_map</title>
-      <link>https://tastycpp.com/containers/flat_map/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/flat_map/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>flat_set</title>
-      <link>https://tastycpp.com/containers/flat_set/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/flat_set/</guid>
-      <description></description>
     </item>
     <item>
       <title>forward_list</title>
@@ -273,7 +259,7 @@
       <link>https://tastycpp.com/containers/map/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/containers/map/</guid>
-      <description></description>
+      <description>std::map Methods construct / copy map operator= iterators begin / end cbegin / cend rbegin / rend crbegin / crend capacity empty max_size size access at operator[] modifiers clear emplace emplace_hint erase extract insert insert_or_assign merge try_emplace swap map operations contains count equal_range find map lower_bound upper_bound observers key_comp value_comp Implementation Size Layout Reference Examples </description>
     </item>
     <item>
       <title>mdspan</title>
@@ -290,46 +276,11 @@
       <description></description>
     </item>
     <item>
-      <title>regex</title>
-      <link>https://tastycpp.com/re/regex/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/re/regex/</guid>
-      <description>std::basic_regex </description>
-    </item>
-    <item>
-      <title>regex_match</title>
-      <link>https://tastycpp.com/re/regex_match/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/re/regex_match/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>regex_replace</title>
-      <link>https://tastycpp.com/re/regex_replace/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/re/regex_replace/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>regex_search</title>
-      <link>https://tastycpp.com/re/regex_search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/re/regex_search/</guid>
-      <description>std::regex_search </description>
-    </item>
-    <item>
       <title>set</title>
       <link>https://tastycpp.com/containers/set/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/containers/set/</guid>
       <description>The std::set container in C++ is a sorted associative container that stores unique elements. Internally, it is typically implemented as a balanced binary tree (usually a Red-Black Tree). The memory layout of std::set is similar to that of std::map, but since std::set only stores keys (without associated values), its node structure is simpler.&#xA;Methods operations complexity Implementation std::set is typically implemented as a balanced binary tree (usually a Red-Black Tree).</description>
-    </item>
-    <item>
-      <title>shared_ptr</title>
-      <link>https://tastycpp.com/mem/shared_ptr/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/mem/shared_ptr/</guid>
-      <description></description>
     </item>
     <item>
       <title>span</title>
@@ -346,10 +297,66 @@
       <description></description>
     </item>
     <item>
-      <title>unique_ptr</title>
-      <link>https://tastycpp.com/mem/unique_ptr/</link>
+      <title>std::array</title>
+      <link>https://tastycpp.com/containers/array/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/mem/unique_ptr/</guid>
+      <guid>https://tastycpp.com/containers/array/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>std::deque</title>
+      <link>https://tastycpp.com/containers/deque/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/deque/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>std::flat_map</title>
+      <link>https://tastycpp.com/containers/flat_map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/flat_map/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>std::flat_set</title>
+      <link>https://tastycpp.com/containers/flat_set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/flat_set/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>std::regex</title>
+      <link>https://tastycpp.com/re/regex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/re/regex/</guid>
+      <description>std::basic_regex </description>
+    </item>
+    <item>
+      <title>std::regex_match</title>
+      <link>https://tastycpp.com/re/regex_match/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/re/regex_match/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>std::regex_replace</title>
+      <link>https://tastycpp.com/re/regex_replace/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/re/regex_replace/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>std::regex_search</title>
+      <link>https://tastycpp.com/re/regex_search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/re/regex_search/</guid>
+      <description>std::regex_search </description>
+    </item>
+    <item>
+      <title>std::unordered_set</title>
+      <link>https://tastycpp.com/containers/unordered_set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/unordered_set/</guid>
       <description></description>
     </item>
     <item>
@@ -357,13 +364,20 @@
       <link>https://tastycpp.com/containers/unordered_map/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/containers/unordered_map/</guid>
+      <description>std::unordered_map Methods construct / copy unordered_map operator= iterators begin / end cbegin / cend capacity empty max_size size modifiers clear emplace emplace_hint erase extract insert insert_or_assign merge try_emplace swap observers hash_function key_eq map operations contains count equal_range find element access at operator[] bucket interface bucket_count max_bucket_count bucket_size bucket begin / end cbegin / cend hash policy load_factor max_load_factor rehash reserve Implementation Size Layout Reference Examples </description>
+    </item>
+    <item>
+      <title>unordered_multimap</title>
+      <link>https://tastycpp.com/containers/unordered_multimap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/unordered_multimap/</guid>
       <description></description>
     </item>
     <item>
-      <title>unordered_set</title>
-      <link>https://tastycpp.com/containers/unordered_set/</link>
+      <title>unordered_multiset</title>
+      <link>https://tastycpp.com/containers/unordered_multiset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/unordered_set/</guid>
+      <guid>https://tastycpp.com/containers/unordered_multiset/</guid>
       <description></description>
     </item>
     <item>
@@ -371,14 +385,7 @@
       <link>https://tastycpp.com/containers/vector/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/containers/vector/</guid>
-      <description>A vector is a sequence container that supports (amortized) constant time insert and erase operations at the end; insert and erase in the middle take linear time. Storage management is handled automatically, though hints can be given to improve efficiency.&#xA;In C++ Standard Library, std::vector is nothing more than a contiguous region of dynamic memory. The main task of std::vector is to grow the memory region when there is no space left for new elements.</description>
-    </item>
-    <item>
-      <title>weak_ptr</title>
-      <link>https://tastycpp.com/mem/weak_ptr/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/mem/weak_ptr/</guid>
-      <description></description>
+      <description>std::vector A vector is a sequence container that supports (amortized) constant time insert and erase operations at the end; insert and erase in the middle take linear time. Storage management is handled automatically, though hints can be given to improve efficiency.&#xA;In C++ Standard Library, std::vector is nothing more than a contiguous region of dynamic memory. The main task of std::vector is to grow the memory region when there is no space left for new elements.</description>
     </item>
   </channel>
 </rss>

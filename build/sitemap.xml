@@ -2,6 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://tastycpp.com/numerics/numbers/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/strings/string/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/mem/unique_ptr/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/numerics/random/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/mem/shared_ptr/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/strings/string_view/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/strings/c/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/numerics/valarray/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/mem/weak_ptr/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/numerics/cstdlib/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/mem/c/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/numerics/cmath/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/mem/memory/</loc>
+  </url><url>
     <loc>https://tastycpp.com/algorithms/algorithm/</loc>
   </url><url>
     <loc>https://tastycpp.com/thread/atomic/</loc>
@@ -10,17 +36,9 @@
   </url><url>
     <loc>https://tastycpp.com/utilities/bitset/</loc>
   </url><url>
-    <loc>https://tastycpp.com/strings/cctype/</loc>
-  </url><url>
-    <loc>https://tastycpp.com/numerics/cmath/</loc>
-  </url><url>
     <loc>https://tastycpp.com/input.output/cstdio/</loc>
   </url><url>
     <loc>https://tastycpp.com/algorithms/cstdlib/</loc>
-  </url><url>
-    <loc>https://tastycpp.com/numerics/cstdlib/</loc>
-  </url><url>
-    <loc>https://tastycpp.com/strings/cstring/</loc>
   </url><url>
     <loc>https://tastycpp.com/input.output/filesystem/</loc>
   </url><url>
@@ -36,49 +54,27 @@
   </url><url>
     <loc>https://tastycpp.com/algorithms/memory/</loc>
   </url><url>
-    <loc>https://tastycpp.com/mem/memory/</loc>
-  </url><url>
     <loc>https://tastycpp.com/thread/mutex/</loc>
-  </url><url>
-    <loc>https://tastycpp.com/numerics/numbers/</loc>
   </url><url>
     <loc>https://tastycpp.com/algorithms/numeric/</loc>
   </url><url>
     <loc>https://tastycpp.com/utilities/optional/</loc>
   </url><url>
-    <loc>https://tastycpp.com/numerics/random/</loc>
-  </url><url>
     <loc>https://tastycpp.com/thread/semaphore/</loc>
-  </url><url>
-    <loc>https://tastycpp.com/strings/string_view/</loc>
-  </url><url>
-    <loc>https://tastycpp.com/strings/string/</loc>
   </url><url>
     <loc>https://tastycpp.com/thread/thread/</loc>
   </url><url>
     <loc>https://tastycpp.com/utilities/tuple/</loc>
   </url><url>
-    <loc>https://tastycpp.com/numerics/valarray/</loc>
-  </url><url>
     <loc>https://tastycpp.com/about/</loc>
   </url><url>
     <loc>https://tastycpp.com/algorithms/</loc>
-  </url><url>
-    <loc>https://tastycpp.com/containers/array/</loc>
-  </url><url>
-    <loc>https://tastycpp.com/mem/c-functions/</loc>
   </url><url>
     <loc>https://tastycpp.com/concurrency/</loc>
   </url><url>
     <loc>https://tastycpp.com/thread/</loc>
   </url><url>
     <loc>https://tastycpp.com/containers/</loc>
-  </url><url>
-    <loc>https://tastycpp.com/containers/deque/</loc>
-  </url><url>
-    <loc>https://tastycpp.com/containers/flat_map/</loc>
-  </url><url>
-    <loc>https://tastycpp.com/containers/flat_set/</loc>
   </url><url>
     <loc>https://tastycpp.com/containers/forward_list/</loc>
   </url><url>
@@ -98,6 +94,22 @@
   </url><url>
     <loc>https://tastycpp.com/containers/queue/</loc>
   </url><url>
+    <loc>https://tastycpp.com/re/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/containers/set/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/containers/span/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/containers/stack/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/containers/array/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/containers/deque/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/containers/flat_map/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/containers/flat_set/</loc>
+  </url><url>
     <loc>https://tastycpp.com/re/regex/</loc>
   </url><url>
     <loc>https://tastycpp.com/re/regex_match/</loc>
@@ -106,28 +118,18 @@
   </url><url>
     <loc>https://tastycpp.com/re/regex_search/</loc>
   </url><url>
-    <loc>https://tastycpp.com/re/</loc>
-  </url><url>
-    <loc>https://tastycpp.com/containers/set/</loc>
-  </url><url>
-    <loc>https://tastycpp.com/mem/shared_ptr/</loc>
-  </url><url>
-    <loc>https://tastycpp.com/containers/span/</loc>
-  </url><url>
-    <loc>https://tastycpp.com/containers/stack/</loc>
+    <loc>https://tastycpp.com/containers/unordered_set/</loc>
   </url><url>
     <loc>https://tastycpp.com/strings/</loc>
   </url><url>
     <loc>https://tastycpp.com/</loc>
   </url><url>
-    <loc>https://tastycpp.com/mem/unique_ptr/</loc>
-  </url><url>
     <loc>https://tastycpp.com/containers/unordered_map/</loc>
   </url><url>
-    <loc>https://tastycpp.com/containers/unordered_set/</loc>
+    <loc>https://tastycpp.com/containers/unordered_multimap/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/containers/unordered_multiset/</loc>
   </url><url>
     <loc>https://tastycpp.com/containers/vector/</loc>
-  </url><url>
-    <loc>https://tastycpp.com/mem/weak_ptr/</loc>
   </url>
 </urlset>

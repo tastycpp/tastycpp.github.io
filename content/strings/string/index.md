@@ -1,3 +1,4 @@
 ---
-title: "<string>"
+title: "std::string"
+weight: 1
 ---

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>
+      C Functions | Tasty C&#43;&#43;
+    </title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Oleksandr Gituliar" />
+    <meta
+      name="description"
+      content="C-Style Functions #include &lt;cctype&gt;
+isalnum (int c) -&gt; int isalpha (int c) -&gt; int isblank (int c) -&gt; int iscntrl (int c) -&gt; int isdigit (int c) -&gt; int isgraph (int c) -&gt; int islower (int c) -&gt; int isprint (int c) -&gt; int ispunct (int c) -&gt; int isspace (int c) -&gt; int isupper (int c) -&gt; int isxdigit (int c) -&gt; int tolower (int c) -&gt; int toupper (int c) -&gt; int #include &lt;cstring&gt;"
+    />
+
+    
+    
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-GE8XJ8MBDF"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-GE8XJ8MBDF");
+    </script>
+
+    
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="37d16868-5fe7-42b7-a7ac-e297d436bc93"
+    ></script>
+    
+
+    <link href="https://fonts.cdnfonts.com/css/lato" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/code.css" />
+    <link rel="icon" href="/favicon.ico" />
+
+    <meta property="og:title" content="C Functions" />
+<meta property="og:description" content="C-Style Functions #include &lt;cctype&gt;
+isalnum (int c) -&gt; int isalpha (int c) -&gt; int isblank (int c) -&gt; int iscntrl (int c) -&gt; int isdigit (int c) -&gt; int isgraph (int c) -&gt; int islower (int c) -&gt; int isprint (int c) -&gt; int ispunct (int c) -&gt; int isspace (int c) -&gt; int isupper (int c) -&gt; int isxdigit (int c) -&gt; int tolower (int c) -&gt; int toupper (int c) -&gt; int #include &lt;cstring&gt;" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://tastycpp.com/strings/c/" /><meta property="article:section" content="strings" />
+
+
+
+
+
+    
+  </head>
+
+  <body>
+    
+    <div class="flex justify-center min-h-screen">
+      <div class="flex mx-auto">
+        
+        <aside class="w-64 text-white flex flex-col sticky pt-4 top-0 mb-auto">
+  <div class="text-justify w-64 tc-sidebar-title">
+    <a class="block" href="/">
+      <img src="/img/logo/logo-64x64.png" class="inline-flex md:me-2" />
+      <span class="align-middle inline-block"> Tasty C&#43;&#43; </span>
+    </a>
+  </div>
+
+  
+
+  <nav class="flex-1 py-4">
+    <ul>
+       
+      <li>
+        
+        <a href="/mem">Memory</a>
+        
+      </li>
+      
+      <li>
+        
+        <a href="/numerics">Numerics</a>
+        
+      </li>
+      
+      <li>
+        
+        <a href="/strings" class="active">Strings</a>
+        <ul>
+          
+          <li>
+            <a
+              href="/strings/string/"
+              class=""
+              >std::string</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/strings/string_view/"
+              class=""
+              >std::string_view</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/strings/c/"
+              class="active"
+              >C Functions</a
+            >
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li>
+        
+        <a href="/input.output">Input/Output</a>
+        
+      </li>
+      
+      <li>
+        
+        <a href="/thread">Concurrency</a>
+        
+      </li>
+      
+      <li>
+        
+        <a href="/containers">Containers</a>
+        
+      </li>
+      
+      <li>
+        
+        <a href="/algorithms">Algorithms</a>
+        
+      </li>
+      
+      <li>
+        
+        <a href="/re">Regular Expressions</a>
+        
+      </li>
+      
+      <li>
+        
+        <a href="/utilities">Utilities</a>
+        
+      </li>
+      
+    </ul>
+  </nav>
+
+  <div class="flex flex-row content-center my-auto">
+    <div class="flex flex-col my-auto">
+      <div class="font-bold mb-1">Follow on</div>
+      <div class="flex flex-row sjjpace-x-5">
+        <a
+          href="https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=gituliar"
+          target="_blank"
+          title="LinkedIn"
+          class="tc-sidebar-social"
+        >
+          <img src="/img/brands/linkedin.svg" />
+        </a>
+        <a
+          href="https://github.com/gituliar"
+          target="_blank"
+          title="GitHub"
+          class="tc-sidebar-social"
+        >
+          <img src="/img/brands/github.svg" />
+        </a>
+        <a
+          href="https://twitter.com/OGituliar"
+          target="_blank"
+          title="Twitter"
+          class="tc-sidebar-social"
+        >
+          <img src="/img/brands/x-twitter.svg" />
+        </a>
+      </div>
+    </div>
+    
+  </div>
+</aside>
+
+
+        <main class="flex-1 tc-content pt-4">
+          
+          
+
+<article>
+  
+
+  <section class="mb-8" itemprop="articleBody"><h1 id="c-style-functions">C-Style Functions</h1>
+<p><code>#include </code><a href=""><strong><code>&lt;cctype&gt;</code></strong></a></p>
+<ul>
+<li><a href=""><strong><code>isalnum</code></strong></a><code> (int c) -&gt; int</code></li>
+<li><a href=""><strong><code>isalpha</code></strong></a><code> (int c) -&gt; int</code></li>
+<li><a href=""><strong><code>isblank</code></strong></a><code> (int c) -&gt; int</code></li>
+<li><a href=""><strong><code>iscntrl</code></strong></a><code> (int c) -&gt; int</code></li>
+<li><a href=""><strong><code>isdigit</code></strong></a><code> (int c) -&gt; int</code></li>
+<li><a href=""><strong><code>isgraph</code></strong></a><code> (int c) -&gt; int</code></li>
+<li><a href=""><strong><code>islower</code></strong></a><code> (int c) -&gt; int</code></li>
+<li><a href=""><strong><code>isprint</code></strong></a><code> (int c) -&gt; int</code></li>
+<li><a href=""><strong><code>ispunct</code></strong></a><code> (int c) -&gt; int</code></li>
+<li><a href=""><strong><code>isspace</code></strong></a><code> (int c) -&gt; int</code></li>
+<li><a href=""><strong><code>isupper</code></strong></a><code> (int c) -&gt; int</code></li>
+<li><a href=""><strong><code>isxdigit</code></strong></a><code> (int c) -&gt; int</code></li>
+<li><a href=""><strong><code>tolower</code></strong></a><code> (int c) -&gt; int</code></li>
+<li><a href=""><strong><code>toupper</code></strong></a><code> (int c) -&gt; int</code></li>
+</ul>
+<p><code>#include </code><a href=""><strong><code>&lt;cstring&gt;</code></strong></a></p>
+<p><code> </code></p>
+<ul>
+<li><a href=""><strong><code>memchr</code></strong></a><code> (const void* s, int c, size_t n) -&gt; const void*</code></li>
+<li><a href=""><strong><code>memchr</code></strong></a><code> (void* s, int c, size_t n) -&gt; void*</code></li>
+<li><a href=""><strong><code>memcmp</code></strong></a><code> (const void* s1, const void* s2, size_t n) -&gt; int</code></li>
+<li><a href=""><strong><code>memcpy</code></strong></a><code> (void* dst, const void* src, size_t n) -&gt; void*</code></li>
+<li><a href=""><strong><code>memmove</code></strong></a><code> (void* dst, const void* src, size_t n) -&gt; void*</code></li>
+<li><a href=""><strong><code>memset</code></strong></a><code> (void* dst, int c, size_t n) -&gt; void*</code></li>
+</ul>
+<p><code> </code></p>
+<ul>
+<li><a href=""><strong><code>strcat</code></strong></a><code> (char* dst, const char* src) -&gt; char*</code></li>
+<li><a href=""><strong><code>strchr</code></strong></a><code> (const char* s, int c) -&gt; const char*</code></li>
+<li><a href=""><strong><code>strchr</code></strong></a><code> (char* s, int c) -&gt; char*</code></li>
+<li><a href=""><strong><code>strcmp</code></strong></a><code> (const char* s1, const char* s2) -&gt; int</code></li>
+<li><a href=""><strong><code>strcoll</code></strong></a><code> (const char* s1, const char* s2) -&gt; int</code></li>
+<li><a href=""><strong><code>strcpy</code></strong></a><code> (char* dst, const char* src) -&gt; char*</code></li>
+<li><a href=""><strong><code>strcspn</code></strong></a><code> (const char* s1, const char* s2) -&gt; size_t</code></li>
+<li><a href=""><strong><code>strerror</code></strong></a><code> (int errnum) -&gt; char*</code></li>
+<li><a href=""><strong><code>strlen</code></strong></a><code> (const char* s) -&gt; size_t</code></li>
+<li><a href=""><strong><code>strncat</code></strong></a><code> (char* dst, const char* src, size_t n) -&gt; char*</code></li>
+<li><a href=""><strong><code>strncmp</code></strong></a><code> (const char* s1, const char* s2, size_t n) -&gt; int</code></li>
+<li><a href=""><strong><code>strncpy</code></strong></a><code> (char* dst, const char* src, size_t n) -&gt; char*</code></li>
+<li><a href=""><strong><code>strpbrk</code></strong></a><code> (const char* s1, const char* s2) -&gt; const char*</code></li>
+<li><a href=""><strong><code>strpbrk</code></strong></a><code> (char* s1, char* s2) -&gt; char*</code></li>
+<li><a href=""><strong><code>strrchr</code></strong></a><code> (const char* s, int c) -&gt; const char*</code></li>
+<li><a href=""><strong><code>strrchr</code></strong></a><code> (char* s, int c) -&gt; char*</code></li>
+<li><a href=""><strong><code>strspn</code></strong></a><code> (const char* s1, const char* s2) -&gt; size_t</code></li>
+<li><a href=""><strong><code>strstr</code></strong></a><code> (const char* s1, const char* s2) -&gt; const char*</code></li>
+<li><a href=""><strong><code>strstr</code></strong></a><code> (char* s1, char* s2) -&gt; char*</code></li>
+<li><a href=""><strong><code>strtok</code></strong></a><code> (char* s1, char* s2) -&gt; char*</code></li>
+<li><a href=""><strong><code>strxfrm</code></strong></a><code> (char* dst, const char* src, size_t n) -&gt; size_t</code></li>
+</ul>
+</section>
+
+  
+  <div class="">
+    <div class="mb-8">
+      <script
+        src="https://giscus.app/client.js"
+        data-repo="tastycodedev/tastycodedev.github.io"
+        data-repo-id="R_kgDOMFMNRg"
+        data-category="General"
+        data-category-id="DIC_kwDOMFMNRs4Cf4I9"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light_high_contrast"
+        data-lang="en"
+        crossorigin="anonymous"
+        async
+      ></script>
+    </div>
+  </div>
+  
+</article>
+
+
+        </main>
+      </div>
+    </div>
+    <script>
+      document.querySelectorAll('a[href^="http"]').forEach(function (e) {
+        e.setAttribute("target", "_blank");
+      });
+    </script>
+  </body>
+</html>

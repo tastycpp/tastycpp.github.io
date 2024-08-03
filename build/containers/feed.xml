@@ -10,34 +10,6 @@
     <webMaster>oleksandr@gituliar.net (Oleksandr Gituliar)</webMaster>
     <atom:link href="https://tastycpp.com/containers/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>array</title>
-      <link>https://tastycpp.com/containers/array/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/array/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>deque</title>
-      <link>https://tastycpp.com/containers/deque/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/deque/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>flat_map</title>
-      <link>https://tastycpp.com/containers/flat_map/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/flat_map/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>flat_set</title>
-      <link>https://tastycpp.com/containers/flat_set/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/flat_set/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>forward_list</title>
       <link>https://tastycpp.com/containers/forward_list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
@@ -56,7 +28,7 @@
       <link>https://tastycpp.com/containers/map/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/containers/map/</guid>
-      <description></description>
+      <description>std::map Methods construct / copy map operator= iterators begin / end cbegin / cend rbegin / rend crbegin / crend capacity empty max_size size access at operator[] modifiers clear emplace emplace_hint erase extract insert insert_or_assign merge try_emplace swap map operations contains count equal_range find map lower_bound upper_bound observers key_comp value_comp Implementation Size Layout Reference Examples </description>
     </item>
     <item>
       <title>mdspan</title>
@@ -94,17 +66,59 @@
       <description></description>
     </item>
     <item>
+      <title>std::array</title>
+      <link>https://tastycpp.com/containers/array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/array/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>std::deque</title>
+      <link>https://tastycpp.com/containers/deque/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/deque/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>std::flat_map</title>
+      <link>https://tastycpp.com/containers/flat_map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/flat_map/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>std::flat_set</title>
+      <link>https://tastycpp.com/containers/flat_set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/flat_set/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>std::unordered_set</title>
+      <link>https://tastycpp.com/containers/unordered_set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/unordered_set/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>unordered_map</title>
       <link>https://tastycpp.com/containers/unordered_map/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/containers/unordered_map/</guid>
+      <description>std::unordered_map Methods construct / copy unordered_map operator= iterators begin / end cbegin / cend capacity empty max_size size modifiers clear emplace emplace_hint erase extract insert insert_or_assign merge try_emplace swap observers hash_function key_eq map operations contains count equal_range find element access at operator[] bucket interface bucket_count max_bucket_count bucket_size bucket begin / end cbegin / cend hash policy load_factor max_load_factor rehash reserve Implementation Size Layout Reference Examples </description>
+    </item>
+    <item>
+      <title>unordered_multimap</title>
+      <link>https://tastycpp.com/containers/unordered_multimap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/unordered_multimap/</guid>
       <description></description>
     </item>
     <item>
-      <title>unordered_set</title>
-      <link>https://tastycpp.com/containers/unordered_set/</link>
+      <title>unordered_multiset</title>
+      <link>https://tastycpp.com/containers/unordered_multiset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/unordered_set/</guid>
+      <guid>https://tastycpp.com/containers/unordered_multiset/</guid>
       <description></description>
     </item>
     <item>
@@ -112,7 +126,7 @@
       <link>https://tastycpp.com/containers/vector/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/containers/vector/</guid>
-      <description>A vector is a sequence container that supports (amortized) constant time insert and erase operations at the end; insert and erase in the middle take linear time. Storage management is handled automatically, though hints can be given to improve efficiency.&#xA;In C++ Standard Library, std::vector is nothing more than a contiguous region of dynamic memory. The main task of std::vector is to grow the memory region when there is no space left for new elements.</description>
+      <description>std::vector A vector is a sequence container that supports (amortized) constant time insert and erase operations at the end; insert and erase in the middle take linear time. Storage management is handled automatically, though hints can be given to improve efficiency.&#xA;In C++ Standard Library, std::vector is nothing more than a contiguous region of dynamic memory. The main task of std::vector is to grow the memory region when there is no space left for new elements.</description>
     </item>
   </channel>
 </rss>

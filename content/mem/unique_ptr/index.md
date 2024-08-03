@@ -1,3 +1,4 @@
 ---
-title: "unique_ptr"
+title: "std::unique_ptr"
+weight: 1
 ---
