@@ -38,27 +38,30 @@
     {{ end }}
 
     <link href="https://fonts.cdnfonts.com/css/lato" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/code.css" />
     <link rel="icon" href="/favicon.ico" />
 
-    {{ template "_internal/opengraph.html" . }}
+    {{ with resources.Get "css/main.css" | resources.ToCSS | resources.Minify |
+    resources.Fingerprint }}
+    <link
+      rel="stylesheet"
+      href="{{ .Permalink }}"
+      integrity="{{ .Data.Integrity }}"
+    />
+    {{ end }} {{ template "_internal/opengraph.html" . }}
 
     <!-- {% seo %} -->
   </head>
 
   <body>
     <!-- <div class="flex flex-col xl:flex-row px-6 lg:px-0 gh-content mx-auto"> -->
-    <div class="flex justify-center min-h-screen">
-      <div class="flex mx-auto">
-        <!-- Sidebar -->
-        {{ partial "sidebar.html" . }}
+    <div class="tc-body">
+      <!-- Sidebar -->
+      {{ partial "sidebar.html" . }}
 
-        <main class="flex-1 tc-content pt-4">
-          <!-- Content -->
-          {{ block "content" . }} {{ .Content }} {{ end }}
-        </main>
-      </div>
+      <main class="tc-content">
+        <!-- Content -->
+        {{ block "content" . }} {{ .Content }} {{ end }}
+      </main>
     </div>
     <script>
       document.querySelectorAll('a[href^="http"]').forEach(function (e) {

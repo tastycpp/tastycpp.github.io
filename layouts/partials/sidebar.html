@@ -1,14 +1,15 @@
-<aside class="w-64 text-white flex flex-col sticky pt-4 top-0 mb-auto">
-  <div class="text-justify w-64 tc-sidebar-title">
-    <a class="block" href="/">
-      <img src="/img/logo/logo-64x64.png" class="inline-flex md:me-2" />
-      <span class="align-middle inline-block"> {{ .Site.Title }} </span>
+<!-- <aside class="w-64 text-white flex flex-col sticky pt-4 top-0 mb-auto"> -->
+<aside class="tc-sidebar">
+  <h1 class="tc-sidebar-title">
+    <a class="" href="/">
+      <img src="/img/logo/logo-64x64.png" class="" />
+      <span class=""> {{ .Site.Title }} </span>
     </a>
-  </div>
+  </h1>
 
   {{ $currentSection := .Section }}
 
-  <nav class="flex-1 py-4">
+  <nav>
     <ul>
       {{ $sections := index .Site.Data.sections "sections" }} {{ range $sections
       }}
@@ -34,7 +35,7 @@
     </ul>
   </nav>
 
-  <div class="flex flex-row content-center my-auto">
+  <!-- <div class="flex flex-row content-center my-auto">
     <div class="flex flex-col my-auto">
       <div class="font-bold mb-1">Follow on</div>
       <div class="flex flex-row sjjpace-x-5">
@@ -64,11 +65,5 @@
         </a>
       </div>
     </div>
-    <!-- <div class="ml-auto inline-block">
-      <img
-        src="/img/profile-64x64.png"
-        class="w-16 rounded-full scale-x-[-1]"
-      />
-    </div> -->
-  </div>
+  </div> -->
 </aside>

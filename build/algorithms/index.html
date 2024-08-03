@@ -38,15 +38,23 @@
     
 
     <link href="https://fonts.cdnfonts.com/css/lato" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/code.css" />
     <link rel="icon" href="/favicon.ico" />
 
-    <meta property="og:title" content="Algorithms Library" />
-<meta property="og:description" content="Website about C&#43;&#43;" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://tastycpp.com/algorithms/" />
-
+    
+    <link
+      rel="stylesheet"
+      href="https://tastycpp.com/css/main.min.b824e224ff9a3edd3660483c2bc4c237e29cd287695f4b943431509826efeda9.css"
+      integrity="sha256-uCTiJP&#43;aPt02YEg8K8TCN&#43;Kc0odpX0uUNDFQmCbv7ak="
+    />
+     <meta property="og:url" content="https://tastycpp.com/algorithms/">
+  <meta property="og:site_name" content="Tasty C&#43;&#43;">
+  <meta property="og:title" content="Algorithms Library">
+  <meta property="og:description" content="This Clause describes components that C&#43;&#43; programs may use to perform algorithmic operations on containers (Clause 24) and other sequences.
+Parallel Algorithms Subclause 27.3 describes components that C&#43;&#43; programs may use to perform operations on containers and other sequences in parallel.
+#include &lt;algorithm&gt;
+Non-Modifying Sequence Operations any_of none_of contains for_each find find_last find_last_if find_end adjacent_find (ForwardIterator first, ForwardIterator last) -&gt; ForwardIterator all_of (InputIterator first, InputIterator last, Predicate pred) -&gt; bool count (InputIterator first, InputIterator last, const T&amp; value) -&gt; typename iterator_traits&lt;InputIterator&gt;::difference_type equal (InputIterator1 first1, InputIterator1 last1, InputIterator2 first2) -&gt; bool find_first_of (InputIterator first1, InputIterator last1, ForwardIterator first2, ForwardIterator last2) -&gt; InputIterator is_permutation (ForwardIterator1 first1, ForwardIterator1 last1, ForwardIterator2 first2) -&gt; bool mismatch (InputIterator1 first1, InputIterator1 last1, InputIterator2 first2) -&gt; pair&lt;InputIterator1, InputIterator2&gt; search (ForwardIterator1 first1, ForwardIterator1 last1, ForwardIterator2 first2, ForwardIterator2 last2) -&gt; ForwardIterator1 Modifying Sequence Operations Copy copy (InputIterator first, InputIterator last, OutputIterator result) -&gt; OutputIterator copy_n (InputIterator first, Size n, OutputIterator result) -&gt; OutputIterator copy_if (InputIterator first, InputIterator last, OutputIterator result, Predicate pred) -&gt; OutputIterator copy_backward (BidirectionalIterator1 first, BidirectionalIterator1 last, BidirectionalIterator2 result) -&gt; BidirectionalIterator2 Move move (InputIterator first, InputIterator last, OutputIterator result) -&gt; OutputIterator move_backward (BidirectionalIterator1 first, BidirectionalIterator1 last, BidirectionalIterator2 result) -&gt; BidirectionalIterator2 Swap swap_ranges (ForwardIterator1 first1, ForwardIterator1 last1, ForwardIterator2 first2) -&gt; ForwardIterator2 iter_swap (ForwardIterator1 a, ForwardIterator2 b) -&gt; void Transform transform (InputIterator first1, InputIterator last1, OutputIterator result, UnaryOperation op) -&gt; OutputIterator Replace replace (ForwardIterator first, ForwardIterator last, const T&amp; old_value, const T&amp; new_value) -&gt; void replace_if (ForwardIterator first, ForwardIterator last, Predicate pred, const T&amp; new_value) -&gt; void replace_copy (InputIterator first, InputIterator last, OutputIterator result, const T&amp; old_value, const T&amp; new_value) -&gt; OutputIterator replace_copy_if (InputIterator first, InputIterator last, OutputIterator result, Predicate pred, const T&amp; new_value) -&gt; OutputIterator Fill fill (ForwardIterator first, ForwardIterator last, const T&amp; value) -&gt; void fill_n (OutputIterator first, Size n, const T&amp; value) -&gt; OutputIterator Generate generate (ForwardIterator first, ForwardIterator last, Generator gen) -&gt; void generate_n (OutputIterator first, Size n, Generator gen) -&gt; OutputIterator Remove remove (ForwardIterator first, ForwardIterator last, const T&amp; value) -&gt; ForwardIterator remove_if (ForwardIterator first, ForwardIterator last, Predicate pred) -&gt; ForwardIterator remove_copy (InputIterator first, InputIterator last, OutputIterator result, const T&amp; value) -&gt; OutputIterator remove_copy_if (InputIterator first, InputIterator last, OutputIterator result, Predicate pred) -&gt; OutputIterator Unique unique (ForwardIterator first, ForwardIterator last) -&gt; ForwardIterator unique_copy (InputIterator first, InputIterator last, OutputIterator result) -&gt; OutputIterator Reverse reverse (BidirectionalIterator first, BidirectionalIterator last) -&gt; void reverse_copy (BidirectionalIterator first, BidirectionalIterator last, OutputIterator result) -&gt; OutputIterator Rotate rotate (ForwardIterator first, ForwardIterator middle, ForwardIterator last) -&gt; ForwardIterator rotate_copy (ForwardIterator first, ForwardIterator middle, ForwardIterator last, OutputIterator result) -&gt; OutputIterator Sample sample (PopulationIterator first, PopulationIterator last, SampleIterator out, Distance n, UniformRandomBitGenerator&amp;&amp; g) -&gt; SampleIterator Shuffle shuffle (RandomAccessIterator first, RandomAccessIterator last, UniformRandomBitGenerator&amp;&amp; g) -&gt; void Shift shift_left (ForwardIterator first, ForwardIterator last, typename iterator_traits&lt;ForwardIterator&gt;::difference_type n) -&gt; ForwardIterator shift_right (ForwardIterator first, ForwardIterator last, typename iterator_traits&lt;ForwardIterator&gt;::difference_type n) -&gt; ForwardIterator Sorting and Related Operations Sort sort stable_sort partial_sort partial_sort_copy is_sorted Nth Element nth_element Binary Search lower_bound upper_bound equal_range binary_search Partitions is_partitioned partition .">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
 
 
     
@@ -54,20 +62,20 @@
 
   <body>
     
-    <div class="flex justify-center min-h-screen">
-      <div class="flex mx-auto">
-        
-        <aside class="w-64 text-white flex flex-col sticky pt-4 top-0 mb-auto">
-  <div class="text-justify w-64 tc-sidebar-title">
-    <a class="block" href="/">
-      <img src="/img/logo/logo-64x64.png" class="inline-flex md:me-2" />
-      <span class="align-middle inline-block"> Tasty C&#43;&#43; </span>
+    <div class="tc-body">
+      
+      
+<aside class="tc-sidebar">
+  <h1 class="tc-sidebar-title">
+    <a class="" href="/">
+      <img src="/img/logo/logo-64x64.png" class="" />
+      <span class=""> Tasty C&#43;&#43; </span>
     </a>
-  </div>
+  </h1>
 
   
 
-  <nav class="flex-1 py-4">
+  <nav>
     <ul>
        
       <li>
@@ -162,44 +170,13 @@
     </ul>
   </nav>
 
-  <div class="flex flex-row content-center my-auto">
-    <div class="flex flex-col my-auto">
-      <div class="font-bold mb-1">Follow on</div>
-      <div class="flex flex-row sjjpace-x-5">
-        <a
-          href="https://www.linkedin.com/mynetwork/discovery-see-all/?usecase=PEOPLE_FOLLOWS&followMember=gituliar"
-          target="_blank"
-          title="LinkedIn"
-          class="tc-sidebar-social"
-        >
-          <img src="/img/brands/linkedin.svg" />
-        </a>
-        <a
-          href="https://github.com/gituliar"
-          target="_blank"
-          title="GitHub"
-          class="tc-sidebar-social"
-        >
-          <img src="/img/brands/github.svg" />
-        </a>
-        <a
-          href="https://twitter.com/OGituliar"
-          target="_blank"
-          title="Twitter"
-          class="tc-sidebar-social"
-        >
-          <img src="/img/brands/x-twitter.svg" />
-        </a>
-      </div>
-    </div>
-    
-  </div>
+  
 </aside>
 
 
-        <main class="flex-1 tc-content pt-4">
-          
-          
+      <main class="tc-content">
+        
+        
 
 <h2>Algorithms Library</h2>
 
@@ -361,13 +338,8 @@ operations on containers and other sequences in parallel.</p>
 <li><code>bsearch</code></li>
 <li><code>qsort</code></li>
 </ul>
-
-
-
-
-
-        </main>
-      </div>
+ 
+      </main>
     </div>
     <script>
       document.querySelectorAll('a[href^="http"]').forEach(function (e) {
