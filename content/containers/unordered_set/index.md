@@ -1,3 +1,3 @@
 ---
-title: "std::unordered_set"
+title: "unordered_set"
 ---

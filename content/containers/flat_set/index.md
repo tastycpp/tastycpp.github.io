@@ -1,3 +1,3 @@
 ---
-title: "std::flat_set"
+title: "flat_set"
 ---

@@ -24,11 +24,11 @@
       <description></description>
     </item>
     <item>
-      <title>std::unique_ptr</title>
+      <title>unique_ptr</title>
       <link>https://tastycpp.com/mem/unique_ptr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/mem/unique_ptr/</guid>
-      <description></description>
+      <description>std::unique_ptr A unique_ptr is &amp;hellip;&#xA;Methods construct unique_ptr assign / copy operator= observe get get_deleter operator* operator-&amp;gt; operator bool modify release reset swap Functions create make_unique hash hash adopt out_ptr out_ptr_t inout_ptr inout_ptr_t Implementation std::unique_ptr is &amp;hellip;&#xA;1template&amp;lt;typename T&amp;gt; 2class uniqur_ptr { 3private: 4 T* xxx; 5} Size 16 bytes (64-bit) 8 bytes (32-bit) Layout Similar Containers Reference construct unique_ptr () noexcept&#xA;unique_ptr (pointer p) noexcept&#xA;unique_ptr (const unique_ptr&amp;amp;) = delete</description>
     </item>
     <item>
       <title>Random Numbers</title>
@@ -38,11 +38,11 @@
       <description>Random Number Generation Subclause 28.5 defines a facility for generating (pseudo-)random numbers.&#xA;#include &amp;lt;random&amp;gt;&#xA;Random Number Distribution Uniform Distribution uniform_int_distribution uniform_real_distribution Bernoulli Distribution bernoulli_distribution binomial_distribution geometric_distribution negative_binomial_distribution Poison Distribution poisson_distribution exponential_distribution gamma_distribution weibull_distribution extreme_value_distribution Normal Distribution normal_distribution lognormal_distribution chi_squared_distribution cauchy_distribution fisher_f_distribution student_t_distribution Sampling Distribution discrete_distribution piecewise_constant_distribution piecewise_linear_distribution Engines with Predefined Parameters default_random_engine minstd_rand0 minstd_rand mt19937 mt19937_64 ranlux24 ranlux48 knuth_b Random Number Engines class linear_congruential_engine&amp;lt;UIntType, a, c, m&amp;gt; class mersenne_twister_engine class subtract_with_carry_engine Adaptors discard_block_engine independent_bits_engine shuffle_order_engine </description>
     </item>
     <item>
-      <title>std::shared_ptr</title>
+      <title>shared_ptr</title>
       <link>https://tastycpp.com/mem/shared_ptr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/mem/shared_ptr/</guid>
-      <description></description>
+      <description>std::shared_ptr The shared_ptr class template stores a pointer, usually obtained via new.&#xA;Related Classes enable_shared_from_this Methods construct shared_ptr assign / copy operator= observe get operator* operator-&amp;gt; operator[] operator bool owner_before use_count modify reset swap Functions create make_shared compare operator== cast static_pointer_cast modify swap input / output operator&amp;lt;&amp;lt; Implementation std::unique_ptr is &amp;hellip;&#xA;1template&amp;lt;typename T&amp;gt; 2class shared_ptr { 3private: 4 T* xxx; 5} Size n bytes (64-bit) n/2 bytes (32-bit) Layout Similar Containers Reference construct unique_ptr () noexcept</description>
     </item>
     <item>
       <title>std::string_view</title>
@@ -66,11 +66,11 @@
       <description>Numeric Arrays #include &amp;lt;valarray&amp;gt;&#xA;valarray&amp;lt;T&amp;gt; slice slice_array&amp;lt;T&amp;gt; gslice gslice_array&amp;lt;T&amp;gt; mask_array&amp;lt;T&amp;gt; indirect_array&amp;lt;T&amp;gt; </description>
     </item>
     <item>
-      <title>std::weak_ptr</title>
+      <title>weak_ptr</title>
       <link>https://tastycpp.com/mem/weak_ptr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/mem/weak_ptr/</guid>
-      <description></description>
+      <description>std::weak_ptr The weak_ptr class template stores a weak reference to an object that is already managed by a shared_ptr.&#xA;Methods construct weak_ptr assign / copy operator= observe expired lock owner_before use_count modify reset swap Functions modify swap Implementation std::unique_ptr is &amp;hellip;&#xA;1template&amp;lt;typename T&amp;gt; 2class weak_ptr { 3private: 4 T* xxx; 5} Size n bytes (64-bit) n/2 bytes (32-bit) Layout Similar Containers Reference construct unique_ptr () noexcept&#xA;unique_ptr (pointer p) noexcept</description>
     </item>
     <item>
       <title>&lt;cstdlib&gt;</title>
@@ -84,7 +84,7 @@
       <link>https://tastycpp.com/mem/c/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/mem/c/</guid>
-      <description></description>
+      <description>C Functions #include &amp;lt;cstdlib&amp;gt;&#xA;The header &amp;lt;memory&amp;gt; defines several types and function templates that describe properties of pointers and pointer-like types, manage memory for containers and other template types, destroy objects, and construct objects in uninitialized memory buffers (20.2.3–20.2.11 and 27.11). The header also defines the templates unique_ptr, shared_ptr, weak_ptr, out_ptr_t, inout_ptr_t, and various function templates that operate on objects of these types (20.3).&#xA;create std::calloc&#xA;void* calloc(size_t n, size_t size);</description>
     </item>
     <item>
       <title>&lt;cmath&gt;</title>
@@ -92,13 +92,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/numerics/cmath/</guid>
       <description></description>
-    </item>
-    <item>
-      <title>&lt;memory&gt;</title>
-      <link>https://tastycpp.com/mem/memory/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/mem/memory/</guid>
-      <description>The header &amp;lt;memory&amp;gt; defines several types and function templates that describe properties of pointers and pointer-like types, manage memory for containers and other template types, destroy objects, and construct objects in uninitialized memory buffers (20.2.3–20.2.11 and 27.11). The header also defines the templates unique_ptr, shared_ptr, weak_ptr, out_ptr_t, inout_ptr_t, and various function templates that operate on objects of these types (20.3).&#xA;Smart Pointers Memory pointer conversion construct_at&#xA;destroy_at&#xA;template&amp;lt;class T&amp;gt;&#xA;constexpr to_address(T* p) noexcept -&amp;gt; T* template&amp;lt;class Ptr&amp;gt;</description>
     </item>
     <item>
       <title>&lt;algorithm&gt;</title>
@@ -241,6 +234,34 @@
       <description>About page </description>
     </item>
     <item>
+      <title>array</title>
+      <link>https://tastycpp.com/containers/array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/array/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>deque</title>
+      <link>https://tastycpp.com/containers/deque/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/deque/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>flat_map</title>
+      <link>https://tastycpp.com/containers/flat_map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/flat_map/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>flat_set</title>
+      <link>https://tastycpp.com/containers/flat_set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/flat_set/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>forward_list</title>
       <link>https://tastycpp.com/containers/forward_list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
@@ -297,34 +318,6 @@
       <description></description>
     </item>
     <item>
-      <title>std::array</title>
-      <link>https://tastycpp.com/containers/array/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/array/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>std::deque</title>
-      <link>https://tastycpp.com/containers/deque/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/deque/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>std::flat_map</title>
-      <link>https://tastycpp.com/containers/flat_map/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/flat_map/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>std::flat_set</title>
-      <link>https://tastycpp.com/containers/flat_set/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/flat_set/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>std::regex</title>
       <link>https://tastycpp.com/re/regex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
@@ -353,13 +346,6 @@
       <description>std::regex_search </description>
     </item>
     <item>
-      <title>std::unordered_set</title>
-      <link>https://tastycpp.com/containers/unordered_set/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/unordered_set/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>unordered_map</title>
       <link>https://tastycpp.com/containers/unordered_map/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
@@ -378,6 +364,13 @@
       <link>https://tastycpp.com/containers/unordered_multiset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/containers/unordered_multiset/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>unordered_set</title>
+      <link>https://tastycpp.com/containers/unordered_set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/unordered_set/</guid>
       <description></description>
     </item>
     <item>

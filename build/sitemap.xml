@@ -26,8 +26,6 @@
   </url><url>
     <loc>https://tastycpp.com/numerics/cmath/</loc>
   </url><url>
-    <loc>https://tastycpp.com/mem/memory/</loc>
-  </url><url>
     <loc>https://tastycpp.com/algorithms/algorithm/</loc>
   </url><url>
     <loc>https://tastycpp.com/thread/atomic/</loc>
@@ -70,11 +68,19 @@
   </url><url>
     <loc>https://tastycpp.com/algorithms/</loc>
   </url><url>
+    <loc>https://tastycpp.com/containers/array/</loc>
+  </url><url>
     <loc>https://tastycpp.com/concurrency/</loc>
   </url><url>
     <loc>https://tastycpp.com/thread/</loc>
   </url><url>
     <loc>https://tastycpp.com/containers/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/containers/deque/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/containers/flat_map/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/containers/flat_set/</loc>
   </url><url>
     <loc>https://tastycpp.com/containers/forward_list/</loc>
   </url><url>
@@ -102,14 +108,6 @@
   </url><url>
     <loc>https://tastycpp.com/containers/stack/</loc>
   </url><url>
-    <loc>https://tastycpp.com/containers/array/</loc>
-  </url><url>
-    <loc>https://tastycpp.com/containers/deque/</loc>
-  </url><url>
-    <loc>https://tastycpp.com/containers/flat_map/</loc>
-  </url><url>
-    <loc>https://tastycpp.com/containers/flat_set/</loc>
-  </url><url>
     <loc>https://tastycpp.com/re/regex/</loc>
   </url><url>
     <loc>https://tastycpp.com/re/regex_match/</loc>
@@ -117,8 +115,6 @@
     <loc>https://tastycpp.com/re/regex_replace/</loc>
   </url><url>
     <loc>https://tastycpp.com/re/regex_search/</loc>
-  </url><url>
-    <loc>https://tastycpp.com/containers/unordered_set/</loc>
   </url><url>
     <loc>https://tastycpp.com/strings/</loc>
   </url><url>
@@ -129,6 +125,8 @@
     <loc>https://tastycpp.com/containers/unordered_multimap/</loc>
   </url><url>
     <loc>https://tastycpp.com/containers/unordered_multiset/</loc>
+  </url><url>
+    <loc>https://tastycpp.com/containers/unordered_set/</loc>
   </url><url>
     <loc>https://tastycpp.com/containers/vector/</loc>
   </url>

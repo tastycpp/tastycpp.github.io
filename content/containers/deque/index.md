@@ -1,3 +1,3 @@
 ---
-title: "std::deque"
+title: "deque"
 ---

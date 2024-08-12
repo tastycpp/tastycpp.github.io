@@ -1,3 +1,3 @@
 ---
-title: "std::array"
+title: "array"
 ---

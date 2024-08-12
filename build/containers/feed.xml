@@ -10,6 +10,34 @@
     <webMaster>oleksandr@gituliar.net (Oleksandr Gituliar)</webMaster>
     <atom:link href="https://tastycpp.com/containers/feed.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>array</title>
+      <link>https://tastycpp.com/containers/array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/array/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>deque</title>
+      <link>https://tastycpp.com/containers/deque/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/deque/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>flat_map</title>
+      <link>https://tastycpp.com/containers/flat_map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/flat_map/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>flat_set</title>
+      <link>https://tastycpp.com/containers/flat_set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/flat_set/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>forward_list</title>
       <link>https://tastycpp.com/containers/forward_list/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
@@ -66,41 +94,6 @@
       <description></description>
     </item>
     <item>
-      <title>std::array</title>
-      <link>https://tastycpp.com/containers/array/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/array/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>std::deque</title>
-      <link>https://tastycpp.com/containers/deque/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/deque/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>std::flat_map</title>
-      <link>https://tastycpp.com/containers/flat_map/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/flat_map/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>std::flat_set</title>
-      <link>https://tastycpp.com/containers/flat_set/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/flat_set/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>std::unordered_set</title>
-      <link>https://tastycpp.com/containers/unordered_set/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
-      <guid>https://tastycpp.com/containers/unordered_set/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>unordered_map</title>
       <link>https://tastycpp.com/containers/unordered_map/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
@@ -119,6 +112,13 @@
       <link>https://tastycpp.com/containers/unordered_multiset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/containers/unordered_multiset/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>unordered_set</title>
+      <link>https://tastycpp.com/containers/unordered_set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
+      <guid>https://tastycpp.com/containers/unordered_set/</guid>
       <description></description>
     </item>
     <item>

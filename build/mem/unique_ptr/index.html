@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <title>
-      std::unique_ptr | Tasty C&#43;&#43;
+      unique_ptr | Tasty C&#43;&#43;
     </title>
 
     <meta charset="utf-8" />
@@ -10,7 +10,11 @@
     <meta name="author" content="Oleksandr Gituliar" />
     <meta
       name="description"
-      content=""
+      content="std::unique_ptr A unique_ptr is &hellip;
+Methods construct unique_ptr assign / copy operator= observe get get_deleter operator* operator-&gt; operator bool modify release reset swap Functions create make_unique hash hash adopt out_ptr out_ptr_t inout_ptr inout_ptr_t Implementation std::unique_ptr is &hellip;
+1template&lt;typename T&gt; 2class uniqur_ptr { 3private: 4 T* xxx; 5} Size 16 bytes (64-bit) 8 bytes (32-bit) Layout Similar Containers Reference construct unique_ptr () noexcept
+unique_ptr (pointer p) noexcept
+unique_ptr (const unique_ptr&amp;) = delete"
     />
 
     
@@ -43,13 +47,17 @@
     
     <link
       rel="stylesheet"
-      href="https://tastycpp.com/css/main.min.b824e224ff9a3edd3660483c2bc4c237e29cd287695f4b943431509826efeda9.css"
-      integrity="sha256-uCTiJP&#43;aPt02YEg8K8TCN&#43;Kc0odpX0uUNDFQmCbv7ak="
+      href="https://tastycpp.com/css/main.min.39fe6aec9f731a0274a739a27309c6e68ed9ed6d83b30a1173630bb29570f612.css"
+      integrity="sha256-Of5q7J9zGgJ0pzmicwnG5o7Z7W2DswoRc2MLspVw9hI="
     />
      <meta property="og:url" content="https://tastycpp.com/mem/unique_ptr/">
   <meta property="og:site_name" content="Tasty C&#43;&#43;">
-  <meta property="og:title" content="std::unique_ptr">
-  <meta property="og:description" content="Website about C&#43;&#43;">
+  <meta property="og:title" content="unique_ptr">
+  <meta property="og:description" content="std::unique_ptr A unique_ptr is …
+Methods construct unique_ptr assign / copy operator= observe get get_deleter operator* operator-&gt; operator bool modify release reset swap Functions create make_unique hash hash adopt out_ptr out_ptr_t inout_ptr inout_ptr_t Implementation std::unique_ptr is …
+1template&lt;typename T&gt; 2class uniqur_ptr { 3private: 4 T* xxx; 5} Size 16 bytes (64-bit) 8 bytes (32-bit) Layout Similar Containers Reference construct unique_ptr () noexcept
+unique_ptr (pointer p) noexcept
+unique_ptr (const unique_ptr&amp;) = delete">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="mem">
@@ -85,7 +93,7 @@
             <a
               href="/mem/unique_ptr/"
               class="active"
-              >std::unique_ptr</a
+              >unique_ptr</a
             >
           </li>
           
@@ -93,7 +101,7 @@
             <a
               href="/mem/shared_ptr/"
               class=""
-              >std::shared_ptr</a
+              >shared_ptr</a
             >
           </li>
           
@@ -101,7 +109,7 @@
             <a
               href="/mem/weak_ptr/"
               class=""
-              >std::weak_ptr</a
+              >weak_ptr</a
             >
           </li>
           
@@ -110,14 +118,6 @@
               href="/mem/c/"
               class=""
               >C Functions</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/mem/memory/"
-              class=""
-              >&lt;memory&gt;</a
             >
           </li>
           
@@ -185,7 +185,126 @@
         
 
 <article>
-  <section class="" itemprop="articleBody"></section>
+  <section class="" itemprop="articleBody"><h1 id="stdunique_ptr">std::unique_ptr</h1>
+<p>A <code>unique_ptr</code> is &hellip;</p>
+<h2 id="methods">Methods</h2>
+<h3 id="construct">construct</h3>
+<ul>
+<li><a href="#unique_ptr"><code>unique_ptr</code></a></li>
+</ul>
+<h3 id="assign--copy">assign / copy</h3>
+<ul>
+<li><a href="#operator_assign"><code>operator=</code></a></li>
+</ul>
+<h3 id="observe">observe</h3>
+<ul>
+<li><a href="#get"><code>get</code></a></li>
+<li><a href="#get_deleter"><code>get_deleter</code></a></li>
+<li><a href="#operator_star"><code>operator*</code></a></li>
+<li><a href="#operator_arrow_right"><code>operator-&gt;</code></a></li>
+<li><a href="#operator_bool"><code>operator bool</code></a></li>
+</ul>
+<h3 id="modify">modify</h3>
+<ul>
+<li><a href="#release"><code>release</code></a></li>
+<li><a href="#reset"><code>reset</code></a></li>
+<li><a href="#swap"><code>swap</code></a></li>
+</ul>
+<h2 id="functions">Functions</h2>
+<h3 id="create">create</h3>
+<ul>
+<li><a href="#make_unique"><code>make_unique</code></a></li>
+</ul>
+<h3 id="hash">hash</h3>
+<ul>
+<li><a href="#hash"><code>hash</code></a></li>
+</ul>
+<h3 id="adopt">adopt</h3>
+<ul>
+<li><a href="#out_ptr"><code>out_ptr</code></a></li>
+<li><a href="#out_ptr_t"><code>out_ptr_t</code></a></li>
+<li><a href="#inout_ptr"><code>inout_ptr</code></a></li>
+<li><a href="#inout_ptr_t"><code>inout_ptr_t</code></a></li>
+</ul>
+<h2 id="implementation">Implementation</h2>
+<p><code>std::unique_ptr</code> is &hellip;</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#069;font-weight:bold">template</span><span style="color:#555">&lt;</span><span style="color:#069;font-weight:bold">typename</span> T<span style="color:#555">&gt;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#069;font-weight:bold">class</span> <span style="color:#0a8;font-weight:bold">uniqur_ptr</span> {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#069;font-weight:bold">private</span><span style="color:#555">:</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>  T<span style="color:#555">*</span> xxx;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>}
+</span></span></code></pre></div><h3 id="size">Size</h3>
+<ul>
+<li>16 bytes (64-bit)</li>
+<li>8 bytes (32-bit)</li>
+</ul>
+<h3 id="layout">Layout</h3>
+<h2 id="similar-containers">Similar Containers</h2>
+<h2 id="reference">Reference</h2>
+<h3 id="construct-1">construct</h3>
+<ul>
+<li>
+<h4 id="unique_ptr"><code> </code></h4>
+<p><del><code>unique_ptr</code></del><code> () noexcept</code></p>
+<p><del><code>unique_ptr</code></del><code> (pointer p) noexcept</code></p>
+<p><del><code>unique_ptr</code></del><code> (const unique_ptr&amp;) = delete</code><br>
+Disable construction from lvalue.</p>
+<p><del><code>unique_ptr</code></del><code> (unique_ptr&amp;&amp; u) noexcept</code></p>
+<p><del><code>unique_ptr</code></del><code> (nullptr_t) noexcept</code></p>
+<p><code>template&lt;class U, class E&gt;</code><br>
+<del><code>unique_ptr</code></del><code> (unique_ptr&lt;U, E&gt;&amp;&amp; u) noexcept</code></p>
+</li>
+</ul>
+<h3 id="assign--copy-1">assign / copy</h3>
+<ul>
+<li>
+<h4 id="operator_assign"><code> </code></h4>
+<p><del><code>operator=</code></del><code> (unique_ptr&amp;&amp; u) noexcept -&gt; unique_ptr&amp;</code></p>
+<p><del><code>operator=</code></del><code> (const unique_ptr&amp;) -&gt; unique_ptr&amp; = delete</code><br>
+Disable copy from lvalue.</p>
+</li>
+</ul>
+<h3 id="observe-1">observe</h3>
+<ul>
+<li>
+<h4 id="get"><code> </code></h4>
+<p><del><code>get</code></del><code> () const noexcept -&gt; pointer</code></p>
+</li>
+<li>
+<h4 id="get_deleter"><code> </code></h4>
+<p><del><code>get_deleter</code></del><code> () const noexcept -&gt; const deleter_type&amp;</code></p>
+</li>
+<li>
+<h4 id="operator_star"><code> </code></h4>
+<p><del><code>operator*</code></del><code> () const -&gt; add_lvalue_reference_t&lt;T&gt;</code></p>
+</li>
+<li>
+<h4 id="operator_arrow_right"><code> </code></h4>
+<p><del><code>operator-&gt;</code></del><code> () const noexcept -&gt; pointer</code></p>
+</li>
+<li>
+<h4 id="operator_bool"><code> </code></h4>
+<p><del><code>operator bool</code></del><code> () const noexcept</code></p>
+</li>
+</ul>
+<h3 id="modify-1">modify</h3>
+<ul>
+<li>
+<h4 id="release"><code> </code></h4>
+<p><del><code>release</code></del><code> () noexcept -&gt; pointer</code></p>
+</li>
+<li>
+<h4 id="reset"><code> </code></h4>
+<p><del><code>reset</code></del><code> (pointer p = pointer()) noexcept -&gt; void</code></p>
+</li>
+<li>
+<h4 id="swap"><code> </code></h4>
+<p><del><code>swap</code></del><code> (unique_ptr&amp; u) noexcept -&gt; void</code></p>
+</li>
+</ul>
+<h2 id="examples">Examples</h2>
+<p><em>show/hide</em></p>
+</section>
 
   
   <div class="">

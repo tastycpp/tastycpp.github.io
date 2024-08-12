@@ -2,6 +2,7 @@ baseURL = "https://tastycpp.com/"
 languageCode = 'en-us'
 title = 'Tasty C++'
 
+enableEmoji = true
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]

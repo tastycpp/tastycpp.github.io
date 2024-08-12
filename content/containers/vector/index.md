@@ -15,9 +15,7 @@ when there is no space left for new elements._
 
 ## Methods
 
-### construct
-
-### copy
+### construct / copy
 
 ### iterate
 
@@ -115,127 +113,129 @@ myFirst     myLast      myEnd
 
 ### capacity {#none}
 
-- #### `empty`
+- #### ` ` {#empty}
 
-  - `bool `**`empty`**` () const`
+  ~~`empty`~~` () const -> bool`
 
-- #### `size`
+- #### ` ` {#size}
 
-  - `size_t `**`size`**` () const`
+  ~~`size`~~` () const -> size_t`
 
   _Returns_: The number of elements in the vector, i.e.,
-  `distance(v.begin(), v.end())`. \
-  _Complexity_: O(1)\
+  `distance(v.begin(), v.end())`.\
+  _Complexity_ : O(1)\
   _Examples_: ...
 
-- #### `max_size`
+- #### ` ` {#max_size}
 
-  - `size_t `**`max_size`**` () const`
+  ~~`max_size`~~` () const -> size_t`
 
-- #### `capacity`
+- #### ` ` {#capacity}
 
-  - `size_t `**`capacity`**` () const`
+  ~~`capacity`~~` () const -> size_t`
 
 ### element access
 
-- #### `at`
+- #### ` ` {#at}
 
-  - `const T& `**`at`**` (size_t n) const`
+  ~~`at`~~` (size_t n) const -> const T&`
 
-- #### `back`
+- #### ` ` {#back}
 
-  - `const T& `**`back`**` () const`
+  ~~`back`~~` () const -> const T&`
 
-- #### `front`
+- #### ` ` {#front}
 
-  - `const T& `**`front`**` () const`
+  ~~`front`~~` () const -> const T&`
 
-- #### `operator[]` {#operator_at}
+- #### ` ` {#operator_at}
 
-  - `const T& `**`operator[]`**` (size_t n) const`
+  ~~`operator[]`~~` (size_t n) const -> const T&`
 
 ### data access
 
-- #### `data`
+- #### ` ` {#data}
 
-  - `const T* `**`data`**` () const noexcept`
+  ~~`data`~~` () const noexcept -> const T*`
 
 ### modifiers
 
-- #### `append_range`
+- #### ` ` {#append_range}
 
-  - `void `**`append_range`**` (R&& rg)`
+  ~~`append_range`~~` (R&& rg) -> void`
 
-- #### `clear`
+- #### ` ` {#clear}
 
-  - `void `**`clear`**` () noexcept`
+  ~~`clear`~~` () noexcept -> void`
 
-- #### `emplace`
+- #### ` ` {#emplace}
 
-  - `template<class... Args>`\
-    `constexpr iterator `**`emplace`**` (const_iterator position, Args&&... args);`
+  `template<class... Args>`\
+  ~~`emplace`~~` (const_iterator position, Args&&... args) -> iterator`
 
-- #### `emplace_back`
+- #### ` ` {#emplace_back}
 
-  - `template<class... Args>`\
-    `constexpr reference `**`emplace_back`**` (Args&&... args);`
+  `template<class... Args>`\
+  ~~`emplace_back`~~` (Args&&... args) -> reference`
 
-- #### `erase`
+- #### ` ` {#erase}
 
-  - `constexpr iterator `**`erase`**` (const_iterator position)`
+  ~~`erase`~~` (const_iterator position) -> iterator`
 
-- #### `insert`
+- #### ` ` {#insert}
 
-  - `constexpr iterator `**`insert`**` (iterator pos, const T&)`
+  ~~`insert`~~` (iterator pos, const T&) -> iterator`
 
-  - `constexpr iterator `**`insert`**` (const_iterator pos, T&& x)`
-  - `constexpr iterator `**`insert`**` (const_iterator pos, size_type n, const T& x)`
-  - `template<class InputIterator>`\
-    `constexpr iterator `**`insert`**` (const_iterator pos, InputIterator first, InputIterator last)`
+  ~~`insert`~~`(const_iterator pos, T&& x) -> iterator`
 
-- #### `pop_back`
+  ~~`insert`~~`(const_iterator pos, size_type n, const T& x) -> iterator`
 
-  - `constexpr void `**`pop_back`**` ()`
+  `template<class InputIterator>`\
+  ~~`insert`~~`(const_iterator pos, InputIterator first, InputIterator last) -> iterator`
 
-- #### `push_back`
+- #### ` ` {#pop_back}
 
-  - `constexpr void `**`push_back`**` (const T& x);`
+  ~~`pop_back`~~` () -> void`
 
-  - `constexpr void `**`push_back`**` (T&& x);`
+- #### ` ` {#push_back}
 
-- #### `swap`
+  ~~`push_back`~~` (const T& x) -> void`
 
-  - `constexpr void `**`swap`**` (vector& other) noexcept`
+  ~~`push_back`~~` (T&& x) -> void`
+
+- #### ` ` {#swap}
+
+  ~~`swap`~~` (vector& other) noexcept -> void`
 
 ### Functions
 
-- #### `erase`
+- #### ` ` {#erase}
 
-  - `template<class T, class Allocator, class U>`\
-    `constexpr auto `**`erase`**` (vector<T, Allocator>& c, const U& value) -> typename vector<T, Allocator>::size_type;`
+  `template<class T, class Allocator, class U>`\
+  ~~`erase`~~` (vector<T, Allocator>& c, const U& value) -> typename vector<T, Allocator>::size_type;`
 
-    _Effects_: Equivalent to:
+  _Equivalent to_ :
 
-    ```
-    auto it = remove(c.begin(), c.end(), value);
-    auto r = distance(it, c.end());
-    c.erase(it, c.end());
-    return r;
-    ```
+  ```
+  auto it = remove(c.begin(), c.end(), value);
+  auto r = distance(it, c.end());
+  c.erase(it, c.end());
+  return r;
+  ```
 
-- #### `erase_if`
+- #### ` ` {#erase_if}
 
-  - `template<class T, class Allocator, class Predicate>`\
-    `constexpr auto `**`erase_if`**` (vector<T, Allocator>& c, Predicate pred) -> typename vector<T, Allocator>::size_type;`
+  `template<class T, class Allocator, class Predicate>`\
+  ~~`erase_if`~~` (vector<T, Allocator>& c, Predicate pred) -> typename vector<T, Allocator>::size_type;`
 
-    _Effects_: Equivalent to:
+  _Equivalent to_:
 
-    ```
-    auto it = remove_if(c.begin(), c.end(), pred);
-    auto r = distance(it, c.end());
-    c.erase(it, c.end());
-    return r;
-    ```
+  ```
+  auto it = remove_if(c.begin(), c.end(), pred);
+  auto r = distance(it, c.end());
+  c.erase(it, c.end());
+  return r;
+  ```
 
 ## Examples
 

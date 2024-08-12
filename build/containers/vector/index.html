@@ -44,8 +44,8 @@ In C&#43;&#43; Standard Library, std::vector is nothing more than a contiguous r
     
     <link
       rel="stylesheet"
-      href="https://tastycpp.com/css/main.min.b824e224ff9a3edd3660483c2bc4c237e29cd287695f4b943431509826efeda9.css"
-      integrity="sha256-uCTiJP&#43;aPt02YEg8K8TCN&#43;Kc0odpX0uUNDFQmCbv7ak="
+      href="https://tastycpp.com/css/main.min.39fe6aec9f731a0274a739a27309c6e68ed9ed6d83b30a1173630bb29570f612.css"
+      integrity="sha256-Of5q7J9zGgJ0pzmicwnG5o7Z7W2DswoRc2MLspVw9hI="
     />
      <meta property="og:url" content="https://tastycpp.com/containers/vector/">
   <meta property="og:site_name" content="Tasty C&#43;&#43;">
@@ -115,6 +115,38 @@ In C&#43;&#43; Standard Library, std::vector is nothing more than a contiguous r
           
           <li>
             <a
+              href="/containers/array/"
+              class=""
+              >array</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/containers/deque/"
+              class=""
+              >deque</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/containers/flat_map/"
+              class=""
+              >flat_map</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/containers/flat_set/"
+              class=""
+              >flat_set</a
+            >
+          </li>
+          
+          <li>
+            <a
               href="/containers/forward_list/"
               class=""
               >forward_list</a
@@ -179,46 +211,6 @@ In C&#43;&#43; Standard Library, std::vector is nothing more than a contiguous r
           
           <li>
             <a
-              href="/containers/array/"
-              class=""
-              >std::array</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/containers/deque/"
-              class=""
-              >std::deque</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/containers/flat_map/"
-              class=""
-              >std::flat_map</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/containers/flat_set/"
-              class=""
-              >std::flat_set</a
-            >
-          </li>
-          
-          <li>
-            <a
-              href="/containers/unordered_set/"
-              class=""
-              >std::unordered_set</a
-            >
-          </li>
-          
-          <li>
-            <a
               href="/containers/unordered_map/"
               class=""
               >unordered_map</a
@@ -238,6 +230,14 @@ In C&#43;&#43; Standard Library, std::vector is nothing more than a contiguous r
               href="/containers/unordered_multiset/"
               class=""
               >unordered_multiset</a
+            >
+          </li>
+          
+          <li>
+            <a
+              href="/containers/unordered_set/"
+              class=""
+              >unordered_set</a
             >
           </li>
           
@@ -292,8 +292,7 @@ given to improve efficiency.</p>
 of dynamic memory. The main task of std::vector is to grow the memory region
 when there is no space left for new elements.</em></p>
 <h2 id="methods">Methods</h2>
-<h3 id="construct">construct</h3>
-<h3 id="copy">copy</h3>
+<h3 id="construct--copy">construct / copy</h3>
 <h3 id="iterate">iterate</h3>
 <h3 id="none">capacity</h3>
 <ul>
@@ -381,176 +380,120 @@ the current elements.</p>
 <h3 id="none">capacity</h3>
 <ul>
 <li>
-<h4 id="empty"><code>empty</code></h4>
-<ul>
-<li><code>bool </code><strong><code>empty</code></strong><code> () const</code></li>
-</ul>
+<h4 id="empty"><code> </code></h4>
+<p><del><code>empty</code></del><code> () const -&gt; bool</code></p>
 </li>
 <li>
-<h4 id="size-1"><code>size</code></h4>
-<ul>
-<li><code>size_t </code><strong><code>size</code></strong><code> () const</code></li>
-</ul>
+<h4 id="size"><code> </code></h4>
+<p><del><code>size</code></del><code> () const -&gt; size_t</code></p>
 <p><em>Returns</em>: The number of elements in the vector, i.e.,
-<code>distance(v.begin(), v.end())</code>. <br>
-<em>Complexity</em>: O(1)<br>
+<code>distance(v.begin(), v.end())</code>.<br>
+<em>Complexity</em> : O(1)<br>
 <em>Examples</em>: &hellip;</p>
 </li>
 <li>
-<h4 id="max_size"><code>max_size</code></h4>
-<ul>
-<li><code>size_t </code><strong><code>max_size</code></strong><code> () const</code></li>
-</ul>
+<h4 id="max_size"><code> </code></h4>
+<p><del><code>max_size</code></del><code> () const -&gt; size_t</code></p>
 </li>
 <li>
-<h4 id="capacity"><code>capacity</code></h4>
-<ul>
-<li><code>size_t </code><strong><code>capacity</code></strong><code> () const</code></li>
-</ul>
+<h4 id="capacity"><code> </code></h4>
+<p><del><code>capacity</code></del><code> () const -&gt; size_t</code></p>
 </li>
 </ul>
 <h3 id="element-access">element access</h3>
 <ul>
 <li>
-<h4 id="at"><code>at</code></h4>
-<ul>
-<li><code>const T&amp; </code><strong><code>at</code></strong><code> (size_t n) const</code></li>
-</ul>
+<h4 id="at"><code> </code></h4>
+<p><del><code>at</code></del><code> (size_t n) const -&gt; const T&amp;</code></p>
 </li>
 <li>
-<h4 id="back"><code>back</code></h4>
-<ul>
-<li><code>const T&amp; </code><strong><code>back</code></strong><code> () const</code></li>
-</ul>
+<h4 id="back"><code> </code></h4>
+<p><del><code>back</code></del><code> () const -&gt; const T&amp;</code></p>
 </li>
 <li>
-<h4 id="front"><code>front</code></h4>
-<ul>
-<li><code>const T&amp; </code><strong><code>front</code></strong><code> () const</code></li>
-</ul>
+<h4 id="front"><code> </code></h4>
+<p><del><code>front</code></del><code> () const -&gt; const T&amp;</code></p>
 </li>
 <li>
-<h4 id="operator_at"><code>operator[]</code></h4>
-<ul>
-<li><code>const T&amp; </code><strong><code>operator[]</code></strong><code> (size_t n) const</code></li>
-</ul>
+<h4 id="operator_at"><code> </code></h4>
+<p><del><code>operator[]</code></del><code> (size_t n) const -&gt; const T&amp;</code></p>
 </li>
 </ul>
 <h3 id="data-access">data access</h3>
 <ul>
 <li>
-<h4 id="data"><code>data</code></h4>
-<ul>
-<li><code>const T* </code><strong><code>data</code></strong><code> () const noexcept</code></li>
-</ul>
+<h4 id="data"><code> </code></h4>
+<p><del><code>data</code></del><code> () const noexcept -&gt; const T*</code></p>
 </li>
 </ul>
 <h3 id="modifiers">modifiers</h3>
 <ul>
 <li>
-<h4 id="append_range"><code>append_range</code></h4>
-<ul>
-<li><code>void </code><strong><code>append_range</code></strong><code> (R&amp;&amp; rg)</code></li>
-</ul>
+<h4 id="append_range"><code> </code></h4>
+<p><del><code>append_range</code></del><code> (R&amp;&amp; rg) -&gt; void</code></p>
 </li>
 <li>
-<h4 id="clear"><code>clear</code></h4>
-<ul>
-<li><code>void </code><strong><code>clear</code></strong><code> () noexcept</code></li>
-</ul>
+<h4 id="clear"><code> </code></h4>
+<p><del><code>clear</code></del><code> () noexcept -&gt; void</code></p>
 </li>
 <li>
-<h4 id="emplace"><code>emplace</code></h4>
-<ul>
-<li><code>template&lt;class... Args&gt;</code><br>
-<code>constexpr iterator </code><strong><code>emplace</code></strong><code> (const_iterator position, Args&amp;&amp;... args);</code></li>
-</ul>
+<h4 id="emplace"><code> </code></h4>
+<p><code>template&lt;class... Args&gt;</code><br>
+<del><code>emplace</code></del><code> (const_iterator position, Args&amp;&amp;... args) -&gt; iterator</code></p>
 </li>
 <li>
-<h4 id="emplace_back"><code>emplace_back</code></h4>
-<ul>
-<li><code>template&lt;class... Args&gt;</code><br>
-<code>constexpr reference </code><strong><code>emplace_back</code></strong><code> (Args&amp;&amp;... args);</code></li>
-</ul>
+<h4 id="emplace_back"><code> </code></h4>
+<p><code>template&lt;class... Args&gt;</code><br>
+<del><code>emplace_back</code></del><code> (Args&amp;&amp;... args) -&gt; reference</code></p>
 </li>
 <li>
-<h4 id="erase"><code>erase</code></h4>
-<ul>
-<li><code>constexpr iterator </code><strong><code>erase</code></strong><code> (const_iterator position)</code></li>
-</ul>
+<h4 id="erase"><code> </code></h4>
+<p><del><code>erase</code></del><code> (const_iterator position) -&gt; iterator</code></p>
 </li>
 <li>
-<h4 id="insert"><code>insert</code></h4>
-<ul>
-<li>
-<p><code>constexpr iterator </code><strong><code>insert</code></strong><code> (iterator pos, const T&amp;)</code></p>
-</li>
-<li>
-<p><code>constexpr iterator </code><strong><code>insert</code></strong><code> (const_iterator pos, T&amp;&amp; x)</code></p>
-</li>
-<li>
-<p><code>constexpr iterator </code><strong><code>insert</code></strong><code> (const_iterator pos, size_type n, const T&amp; x)</code></p>
-</li>
-<li>
+<h4 id="insert"><code> </code></h4>
+<p><del><code>insert</code></del><code> (iterator pos, const T&amp;) -&gt; iterator</code></p>
+<p><del><code>insert</code></del><code>(const_iterator pos, T&amp;&amp; x) -&gt; iterator</code></p>
+<p><del><code>insert</code></del><code>(const_iterator pos, size_type n, const T&amp; x) -&gt; iterator</code></p>
 <p><code>template&lt;class InputIterator&gt;</code><br>
-<code>constexpr iterator </code><strong><code>insert</code></strong><code> (const_iterator pos, InputIterator first, InputIterator last)</code></p>
-</li>
-</ul>
+<del><code>insert</code></del><code>(const_iterator pos, InputIterator first, InputIterator last) -&gt; iterator</code></p>
 </li>
 <li>
-<h4 id="pop_back"><code>pop_back</code></h4>
-<ul>
-<li><code>constexpr void </code><strong><code>pop_back</code></strong><code> ()</code></li>
-</ul>
+<h4 id="pop_back"><code> </code></h4>
+<p><del><code>pop_back</code></del><code> () -&gt; void</code></p>
 </li>
 <li>
-<h4 id="push_back"><code>push_back</code></h4>
-<ul>
-<li>
-<p><code>constexpr void </code><strong><code>push_back</code></strong><code> (const T&amp; x);</code></p>
+<h4 id="push_back"><code> </code></h4>
+<p><del><code>push_back</code></del><code> (const T&amp; x) -&gt; void</code></p>
+<p><del><code>push_back</code></del><code> (T&amp;&amp; x) -&gt; void</code></p>
 </li>
 <li>
-<p><code>constexpr void </code><strong><code>push_back</code></strong><code> (T&amp;&amp; x);</code></p>
-</li>
-</ul>
-</li>
-<li>
-<h4 id="swap"><code>swap</code></h4>
-<ul>
-<li><code>constexpr void </code><strong><code>swap</code></strong><code> (vector&amp; other) noexcept</code></li>
-</ul>
+<h4 id="swap"><code> </code></h4>
+<p><del><code>swap</code></del><code> (vector&amp; other) noexcept -&gt; void</code></p>
 </li>
 </ul>
 <h3 id="functions-1">Functions</h3>
 <ul>
 <li>
-<h4 id="erase-1"><code>erase</code></h4>
-<ul>
-<li>
+<h4 id="erase"><code> </code></h4>
 <p><code>template&lt;class T, class Allocator, class U&gt;</code><br>
-<code>constexpr auto </code><strong><code>erase</code></strong><code> (vector&lt;T, Allocator&gt;&amp; c, const U&amp; value) -&gt; typename vector&lt;T, Allocator&gt;::size_type;</code></p>
-<p><em>Effects</em>: Equivalent to:</p>
+<del><code>erase</code></del><code> (vector&lt;T, Allocator&gt;&amp; c, const U&amp; value) -&gt; typename vector&lt;T, Allocator&gt;::size_type;</code></p>
+<p><em>Equivalent to</em> :</p>
 <pre tabindex="0"><code>auto it = remove(c.begin(), c.end(), value);
 auto r = distance(it, c.end());
 c.erase(it, c.end());
 return r;
 </code></pre></li>
-</ul>
-</li>
 <li>
-<h4 id="erase_if"><code>erase_if</code></h4>
-<ul>
-<li>
+<h4 id="erase_if"><code> </code></h4>
 <p><code>template&lt;class T, class Allocator, class Predicate&gt;</code><br>
-<code>constexpr auto </code><strong><code>erase_if</code></strong><code> (vector&lt;T, Allocator&gt;&amp; c, Predicate pred) -&gt; typename vector&lt;T, Allocator&gt;::size_type;</code></p>
-<p><em>Effects</em>: Equivalent to:</p>
+<del><code>erase_if</code></del><code> (vector&lt;T, Allocator&gt;&amp; c, Predicate pred) -&gt; typename vector&lt;T, Allocator&gt;::size_type;</code></p>
+<p><em>Equivalent to</em>:</p>
 <pre tabindex="0"><code>auto it = remove_if(c.begin(), c.end(), pred);
 auto r = distance(it, c.end());
 c.erase(it, c.end());
 return r;
 </code></pre></li>
-</ul>
-</li>
 </ul>
 <h2 id="examples">Examples</h2>
 <p><em>show/hide</em></p>
