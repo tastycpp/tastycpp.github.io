@@ -53,7 +53,6 @@
   </head>
 
   <body>
-    <!-- <div class="flex flex-col xl:flex-row px-6 lg:px-0 gh-content mx-auto"> -->
     <div class="tc-body">
       <!-- Sidebar -->
       {{ partial "sidebar.html" . }}
@@ -62,6 +61,7 @@
         <!-- Content -->
         {{ block "content" . }} {{ .Content }} {{ end }}
       </main>
+      {{ partial "pagenav.html" . }}
     </div>
     <script>
       document.querySelectorAll('a[href^="http"]').forEach(function (e) {

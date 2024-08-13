@@ -1,5 +1,50 @@
 ---
 title: "vector"
+pagenav:
+  - section: "Methods"
+    items:
+      - section: "construct"
+        items:
+          - name: "vector"
+      - section: "iterate"
+        items:
+          - name: "begin"
+          - name: "end"
+      - section: "capacity"
+        items:
+          - name: "capacity"
+          - name: "empty"
+          - name: "max_size"
+          - name: "reserve"
+          - name: "resize"
+          - name: "shrink_to_fit"
+          - name: "size"
+      - section: "access"
+        items:
+          - name: "at"
+          - name: "back"
+          - name: "data"
+          - name: "front"
+          - name: "operator[]"
+            url: "operator_at"
+      - section: "modify"
+        items:
+          - name: "append_range"
+          - name: "clear"
+          - name: "emplace"
+          - name: "emplace_back"
+          - name: "erase"
+          - name: "insert"
+          - name: "pop_back"
+          - name: "push_back"
+          - name: "swap"
+  - section: "Functions"
+    items:
+      - section: "modify"
+        items:
+          - name: "erase"
+            url: "erase_fn"
+          - name: "erase_if"
 ---
 
 # std::vector
@@ -12,50 +57,6 @@ given to improve efficiency.
 _In C++ Standard Library, std::vector is nothing more than a contiguous region
 of dynamic memory. The main task of std::vector is to grow the memory region
 when there is no space left for new elements._
-
-## Methods
-
-### construct / copy
-
-### iterate
-
-### capacity {#none}
-
-- [`capacity`](#capacity)
-- [`empty`](#empty)
-- [`max_size`](#max_size)
-- `reserve`
-- `resize`
-- `shrink_to_fit`
-- [`size`](#size)
-
-### access
-
-- [`at`](#at)
-- [`back`](#back)
-- [`front`](#front)
-- [`operator[]`](#operator_at)
-
-` `
-
-- [`data`](#data)
-
-### modify
-
-- [`append_range`](#append_range)
-- [`clear`](#clear)
-- [`emplace`](#emplace)
-- [`emplace_back`](#emplace_bacl)
-- [`erase`](#erase)
-- [`insert`](#insert)
-- [`pop_back`](#pop_back)
-- [`push_back`](#push_back)
-- [`swap`](#swap)
-
-## Functions
-
-- [`erase`](#erase)
-- [`erase_if`](#erase_if)
 
 ## Implementation
 

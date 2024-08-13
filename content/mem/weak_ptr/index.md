@@ -1,40 +1,38 @@
 ---
 title: "weak_ptr"
 weight: 3
+pagenav:
+  - section: "Methods"
+    items:
+      - section: "construct"
+        items:
+          - name: "weak_ptr"
+      - section: "assign / copy"
+        items:
+          - name: "operator="
+            url: "operator_assign"
+      - section: "observe"
+        items:
+          - name: "expired"
+          - name: "lock"
+          - name: "owner_before"
+          - name: "use_count"
+      - section: "modify"
+        items:
+          - name: "reset"
+          - name: "swap"
+  - section: "Functions"
+    items:
+      - section: "modify"
+        items:
+          - name: "swap"
+            url: "swap_fn"
 ---
 
 # std::weak_ptr
 
 The `weak_ptr` class template stores a weak reference to an object that is
 already managed by a `shared_ptr`.
-
-## Methods
-
-### construct
-
-- [`weak_ptr`](#weak_ptr)
-
-### assign / copy
-
-- [`operator=`](#operator_assign)
-
-### observe
-
-- [`expired`](#expired)
-- [`lock`](#lock)
-- [`owner_before`](#owner_before)
-- [`use_count`](#use_count)
-
-### modify
-
-- [`reset`](#reset)
-- [`swap`](#swap)
-
-## Functions
-
-### modify
-
-- [`swap`](#swap_fn)
 
 ## Implementation
 

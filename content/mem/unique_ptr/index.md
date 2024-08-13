@@ -1,52 +1,50 @@
 ---
 title: "unique_ptr"
 weight: 1
+pagenav:
+  - section: "Methods"
+    items:
+      - section: "construct"
+        items:
+          - name: "unique_ptr"
+      - section: "assign / copy"
+        items:
+          - name: "operator="
+            url: "operator_assign"
+      - section: "observe"
+        items:
+          - name: "get"
+          - name: "get_deleter"
+          - name: "operator*"
+            url: "operator_star"
+          - name: "operator->"
+            url: "operator_arrow_right"
+          - name: "operator bool"
+            url: "operator_bool"
+      - section: "modify"
+        items:
+          - name: "release"
+          - name: "reset"
+          - name: "swap"
+  - section: "Functions"
+    items:
+      - section: "create"
+        items:
+          - name: "make_unique"
+      - section: "hash"
+        items:
+          - name: "hash"
+      - section: "adopt"
+        items:
+          - name: "out_ptr"
+          - name: "out_ptr_t"
+          - name: "inout_ptr"
+          - name: "inout_ptr_t"
 ---
 
 # std::unique_ptr
 
 A `unique_ptr` is ...
-
-## Methods
-
-### construct
-
-- [`unique_ptr`](#unique_ptr)
-
-### assign / copy
-
-- [`operator=`](#operator_assign)
-
-### observe
-
-- [`get`](#get)
-- [`get_deleter`](#get_deleter)
-- [`operator*`](#operator_star)
-- [`operator->`](#operator_arrow_right)
-- [`operator bool`](#operator_bool)
-
-### modify
-
-- [`release`](#release)
-- [`reset`](#reset)
-- [`swap`](#swap)
-
-## Functions
-
-### create
-
-- [`make_unique`](#make_unique)
-
-### hash
-
-- [`hash`](#hash)
-
-### adopt
-
-- [`out_ptr`](#out_ptr)
-- [`out_ptr_t`](#out_ptr_t)
-- [`inout_ptr`](#inout_ptr)
-- [`inout_ptr_t`](#inout_ptr_t)
 
 ## Implementation
 

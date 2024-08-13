@@ -1,0 +1,19 @@
+<aside class="tc-pagenav">
+  {{ range .Params.pagenav }}
+  <h4>{{ .section }}</h4>
+  {{ if .items }} {{ range .items }}
+  <b>{{ .section }}</b>
+  {{ if .items }}
+  <ul>
+    {{ range .items }}
+    <li>
+      {{ if .url }}
+      <a href="#{{ .url }}"><code>{{ .name }}</code></a>
+      {{ else }}
+      <a href="#{{ .name }}"><code>{{ .name }}</code></a>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+  {{ end }} {{ end }} {{ end }} {{ end }}
+</aside>

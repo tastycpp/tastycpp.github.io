@@ -14,28 +14,28 @@
       <link>https://tastycpp.com/mem/unique_ptr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/mem/unique_ptr/</guid>
-      <description>std::unique_ptr A unique_ptr is &amp;hellip;&#xA;Methods construct unique_ptr assign / copy operator= observe get get_deleter operator* operator-&amp;gt; operator bool modify release reset swap Functions create make_unique hash hash adopt out_ptr out_ptr_t inout_ptr inout_ptr_t Implementation std::unique_ptr is &amp;hellip;&#xA;1template&amp;lt;typename T&amp;gt; 2class uniqur_ptr { 3private: 4 T* xxx; 5} Size 16 bytes (64-bit) 8 bytes (32-bit) Layout Similar Containers Reference construct unique_ptr () noexcept&#xA;unique_ptr (pointer p) noexcept&#xA;unique_ptr (const unique_ptr&amp;amp;) = delete</description>
+      <description>std::unique_ptr A unique_ptr is &amp;hellip;&#xA;Implementation std::unique_ptr is &amp;hellip;&#xA;1template&amp;lt;typename T&amp;gt; 2class uniqur_ptr { 3private: 4 T* xxx; 5} Size 16 bytes (64-bit) 8 bytes (32-bit) Layout Similar Containers Reference construct unique_ptr () noexcept&#xA;unique_ptr (pointer p) noexcept&#xA;unique_ptr (const unique_ptr&amp;amp;) = delete&#xA;Disable construction from lvalue.&#xA;unique_ptr (unique_ptr&amp;amp;&amp;amp; u) noexcept&#xA;unique_ptr (nullptr_t) noexcept&#xA;template&amp;lt;class U, class E&amp;gt;&#xA;unique_ptr (unique_ptr&amp;lt;U, E&amp;gt;&amp;amp;&amp;amp; u) noexcept&#xA;assign / copy operator= (unique_ptr&amp;amp;&amp;amp; u) noexcept -&amp;gt; unique_ptr&amp;amp;</description>
     </item>
     <item>
       <title>shared_ptr</title>
       <link>https://tastycpp.com/mem/shared_ptr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/mem/shared_ptr/</guid>
-      <description>std::shared_ptr The shared_ptr class template stores a pointer, usually obtained via new.&#xA;Related Classes enable_shared_from_this Methods construct shared_ptr assign / copy operator= observe get operator* operator-&amp;gt; operator[] operator bool owner_before use_count modify reset swap Functions create make_shared compare operator== cast static_pointer_cast modify swap input / output operator&amp;lt;&amp;lt; Implementation std::unique_ptr is &amp;hellip;&#xA;1template&amp;lt;typename T&amp;gt; 2class shared_ptr { 3private: 4 T* xxx; 5} Size n bytes (64-bit) n/2 bytes (32-bit) Layout Similar Containers Reference construct unique_ptr () noexcept</description>
+      <description>std::shared_ptr The shared_ptr class template stores a pointer, usually obtained via new.&#xA;Implementation std::unique_ptr is &amp;hellip;&#xA;1template&amp;lt;typename T&amp;gt; 2class shared_ptr { 3private: 4 T* xxx; 5} Size n bytes (64-bit) n/2 bytes (32-bit) Layout Similar Containers Reference construct unique_ptr () noexcept&#xA;unique_ptr (pointer p) noexcept&#xA;unique_ptr (const unique_ptr&amp;amp;) = delete&#xA;Disable construction from lvalue.&#xA;unique_ptr (unique_ptr&amp;amp;&amp;amp; u) noexcept&#xA;unique_ptr (nullptr_t) noexcept&#xA;template&amp;lt;class U, class E&amp;gt;&#xA;unique_ptr (unique_ptr&amp;lt;U, E&amp;gt;&amp;amp;&amp;amp; u) noexcept</description>
     </item>
     <item>
       <title>weak_ptr</title>
       <link>https://tastycpp.com/mem/weak_ptr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/mem/weak_ptr/</guid>
-      <description>std::weak_ptr The weak_ptr class template stores a weak reference to an object that is already managed by a shared_ptr.&#xA;Methods construct weak_ptr assign / copy operator= observe expired lock owner_before use_count modify reset swap Functions modify swap Implementation std::unique_ptr is &amp;hellip;&#xA;1template&amp;lt;typename T&amp;gt; 2class weak_ptr { 3private: 4 T* xxx; 5} Size n bytes (64-bit) n/2 bytes (32-bit) Layout Similar Containers Reference construct unique_ptr () noexcept&#xA;unique_ptr (pointer p) noexcept</description>
+      <description>std::weak_ptr The weak_ptr class template stores a weak reference to an object that is already managed by a shared_ptr.&#xA;Implementation std::unique_ptr is &amp;hellip;&#xA;1template&amp;lt;typename T&amp;gt; 2class weak_ptr { 3private: 4 T* xxx; 5} Size n bytes (64-bit) n/2 bytes (32-bit) Layout Similar Containers Reference construct unique_ptr () noexcept&#xA;unique_ptr (pointer p) noexcept&#xA;unique_ptr (const unique_ptr&amp;amp;) = delete&#xA;Disable construction from lvalue.&#xA;unique_ptr (unique_ptr&amp;amp;&amp;amp; u) noexcept&#xA;unique_ptr (nullptr_t) noexcept&#xA;template&amp;lt;class U, class E&amp;gt;</description>
     </item>
     <item>
-      <title>C Functions</title>
+      <title>Functions</title>
       <link>https://tastycpp.com/mem/c/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/mem/c/</guid>
-      <description>C Functions #include &amp;lt;cstdlib&amp;gt;&#xA;The header &amp;lt;memory&amp;gt; defines several types and function templates that describe properties of pointers and pointer-like types, manage memory for containers and other template types, destroy objects, and construct objects in uninitialized memory buffers (20.2.3–20.2.11 and 27.11). The header also defines the templates unique_ptr, shared_ptr, weak_ptr, out_ptr_t, inout_ptr_t, and various function templates that operate on objects of these types (20.3).&#xA;create std::calloc&#xA;void* calloc(size_t n, size_t size);</description>
+      <description>Memory Functions #include &amp;lt;cstdlib&amp;gt;&#xA;The header &amp;lt;memory&amp;gt; defines several types and function templates that describe properties of pointers and pointer-like types, manage memory for containers and other template types, destroy objects, and construct objects in uninitialized memory buffers (20.2.3–20.2.11 and 27.11). The header also defines the templates unique_ptr, shared_ptr, weak_ptr, out_ptr_t, inout_ptr_t, and various function templates that operate on objects of these types (20.3).&#xA;create std::calloc&#xA;void* calloc(size_t n, size_t size);</description>
     </item>
   </channel>
 </rss>

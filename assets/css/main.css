@@ -25,10 +25,6 @@
   --font-serif-alt: Georgia, Times, serif;
   --font-mono: "JetBrains Mono", Menlo, Consolas, Monaco, "Liberation Mono",
     "Lucida Console", monospace;
-  --container-width: 1280px;
-  --sidebar-width: 260px;
-  --content-main: 60ch;
-  --content-wide: 10ch;
 }
 
 /* 3. Fonts
@@ -171,28 +167,31 @@ del {
 
 .tc-body {
   display: flex;
-  width: 100%;
-}
-
-.tc-sidebar {
-  /* background-color: #333; */
-  color: #fff;
-  padding: 20px;
-  width: var(--sidebar-width);
-
   min-height: 100vh;
-
-  position: fixed;
-  top: 0;
 }
 
 .tc-content {
-  flex-grow: 1;
+  width: 60ch;
   padding: 20px;
-  /* background-color: #f4f4f4; */
+}
 
-  max-width: 80ch;
-  margin-left: var(--sidebar-width);
+.tc-sidebar {
+  padding: 20px;
+  width: 250px;
+}
+
+.tc-pagenav {
+  padding: 10px;
+  width: 200px;
+}
+
+.tc-sidebar,
+.tc-pagenav {
+  position: sticky;
+  top: 0;
+
+  align-self: flex-start;
+  height: fit-content;
 }
 
 .tc-blog-description {

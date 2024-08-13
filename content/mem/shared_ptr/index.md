@@ -1,62 +1,63 @@
 ---
 title: "shared_ptr"
 weight: 2
+pagenav:
+  - section: "Methods"
+    items:
+      - section: "construct"
+        items:
+          - name: "shared_ptr"
+      - section: "assign / copy"
+        items:
+          - name: "operator="
+            url: "operator_assign"
+      - section: "observe"
+        items:
+          - name: "get"
+          - name: "operator*"
+            url: "operator_star"
+          - name: "operator->"
+            url: "operator_arrow_right"
+          - name: "operator[]"
+            url: "operator_at"
+          - name: "operator bool"
+            url: "operator_bool"
+          - name: "owner_before"
+          - name: "use_count"
+      - section: "modify"
+        items:
+          - name: "reset"
+          - name: "swap"
+  - section: "Functions"
+    items:
+      - section: "create"
+        items:
+          - name: "make_shared"
+      - section: "compare"
+        items:
+          - name: "operator=="
+            url: "operator_eq"
+      - section: "cast"
+        items:
+          - name: "static_pointer_cast"
+      - section: "modify"
+        items:
+          - name: "swap"
+            url: "swap_fn"
+      - section: "input / output"
+        items:
+          - name: "operator<<"
+            url: "operator_out"
+  - section: "Related"
+    items:
+      - section: "classes"
+        items:
+          - name: "enable_shared_from_this"
 ---
 
 # std::shared_ptr
 
 The `shared_ptr` class template stores a pointer, usually obtained via `new`.
-
-## Related Classes
-
-- [`enable_shared_from_this`]()
-
-## Methods
-
-### construct
-
-- [`shared_ptr`](#shared_ptr)
-
-### assign / copy
-
-- [`operator=`](#operator_assign)
-
-### observe
-
-- [`get`](#get)
-- [`operator*`](#operator_star)
-- [`operator->`](#operator_arrow_right)
-- [`operator[]`](#operator_at)
-- [`operator bool`](#operator_bool)
-- [`owner_before`](#owner_before)
-- [`use_count`](#use_count)
-
-### modify
-
-- [`reset`](#reset)
-- [`swap`](#swap)
-
-## Functions
-
-### create
-
-- [`make_shared`](#make_shared)
-
-### compare
-
-- [`operator==`](#operator_eq)
-
-### cast
-
-- [`static_pointer_cast`](#static_pointer_cast)
-
-### modify
-
-- [`swap`](#swap_fn)
-
-### input / output
-
-- [`operator<<`](#operator_out)
 
 ## Implementation
 

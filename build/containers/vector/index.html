@@ -44,8 +44,8 @@ In C&#43;&#43; Standard Library, std::vector is nothing more than a contiguous r
     
     <link
       rel="stylesheet"
-      href="https://tastycpp.com/css/main.min.39fe6aec9f731a0274a739a27309c6e68ed9ed6d83b30a1173630bb29570f612.css"
-      integrity="sha256-Of5q7J9zGgJ0pzmicwnG5o7Z7W2DswoRc2MLspVw9hI="
+      href="https://tastycpp.com/css/main.min.438da896b7331fc12e12e758a709e604f4af7a99956e074a4a040fabc6d09889.css"
+      integrity="sha256-Q42olrczH8EuEudYpwnmBPSvepmVbgdKSgQPq8bQmIk="
     />
      <meta property="og:url" content="https://tastycpp.com/containers/vector/">
   <meta property="og:site_name" content="Tasty C&#43;&#43;">
@@ -61,7 +61,6 @@ In C&#43;&#43; Standard Library, std::vector is nothing more than a contiguous r
   </head>
 
   <body>
-    
     <div class="tc-body">
       
       
@@ -291,47 +290,6 @@ given to improve efficiency.</p>
 <p><em>In C++ Standard Library, std::vector is nothing more than a contiguous region
 of dynamic memory. The main task of std::vector is to grow the memory region
 when there is no space left for new elements.</em></p>
-<h2 id="methods">Methods</h2>
-<h3 id="construct--copy">construct / copy</h3>
-<h3 id="iterate">iterate</h3>
-<h3 id="none">capacity</h3>
-<ul>
-<li><a href="#capacity"><code>capacity</code></a></li>
-<li><a href="#empty"><code>empty</code></a></li>
-<li><a href="#max_size"><code>max_size</code></a></li>
-<li><code>reserve</code></li>
-<li><code>resize</code></li>
-<li><code>shrink_to_fit</code></li>
-<li><a href="#size"><code>size</code></a></li>
-</ul>
-<h3 id="access">access</h3>
-<ul>
-<li><a href="#at"><code>at</code></a></li>
-<li><a href="#back"><code>back</code></a></li>
-<li><a href="#front"><code>front</code></a></li>
-<li><a href="#operator_at"><code>operator[]</code></a></li>
-</ul>
-<p><code> </code></p>
-<ul>
-<li><a href="#data"><code>data</code></a></li>
-</ul>
-<h3 id="modify">modify</h3>
-<ul>
-<li><a href="#append_range"><code>append_range</code></a></li>
-<li><a href="#clear"><code>clear</code></a></li>
-<li><a href="#emplace"><code>emplace</code></a></li>
-<li><a href="#emplace_bacl"><code>emplace_back</code></a></li>
-<li><a href="#erase"><code>erase</code></a></li>
-<li><a href="#insert"><code>insert</code></a></li>
-<li><a href="#pop_back"><code>pop_back</code></a></li>
-<li><a href="#push_back"><code>push_back</code></a></li>
-<li><a href="#swap"><code>swap</code></a></li>
-</ul>
-<h2 id="functions">Functions</h2>
-<ul>
-<li><a href="#erase"><code>erase</code></a></li>
-<li><a href="#erase_if"><code>erase_if</code></a></li>
-</ul>
 <h2 id="implementation">Implementation</h2>
 <p><code>std::vector</code> is a contiguous region of memory.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#069;font-weight:bold">template</span><span style="color:#555">&lt;</span><span style="color:#069;font-weight:bold">typename</span> T<span style="color:#555">&gt;</span>
@@ -472,7 +430,7 @@ the current elements.</p>
 <p><del><code>swap</code></del><code> (vector&amp; other) noexcept -&gt; void</code></p>
 </li>
 </ul>
-<h3 id="functions-1">Functions</h3>
+<h3 id="functions">Functions</h3>
 <ul>
 <li>
 <h4 id="erase"><code> </code></h4>
@@ -525,6 +483,206 @@ return r;
 
 
       </main>
+      <aside class="tc-pagenav">
+  
+  <h4>Methods</h4>
+   
+  <b>construct</b>
+  
+  <ul>
+    
+    <li>
+      
+      <a href="#vector"><code>vector</code></a>
+      
+    </li>
+    
+  </ul>
+   
+  <b>iterate</b>
+  
+  <ul>
+    
+    <li>
+      
+      <a href="#begin"><code>begin</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#end"><code>end</code></a>
+      
+    </li>
+    
+  </ul>
+   
+  <b>capacity</b>
+  
+  <ul>
+    
+    <li>
+      
+      <a href="#capacity"><code>capacity</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#empty"><code>empty</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#max_size"><code>max_size</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#reserve"><code>reserve</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#resize"><code>resize</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#shrink_to_fit"><code>shrink_to_fit</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#size"><code>size</code></a>
+      
+    </li>
+    
+  </ul>
+   
+  <b>access</b>
+  
+  <ul>
+    
+    <li>
+      
+      <a href="#at"><code>at</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#back"><code>back</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#data"><code>data</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#front"><code>front</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#operator_at"><code>operator[]</code></a>
+      
+    </li>
+    
+  </ul>
+   
+  <b>modify</b>
+  
+  <ul>
+    
+    <li>
+      
+      <a href="#append_range"><code>append_range</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#clear"><code>clear</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#emplace"><code>emplace</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#emplace_back"><code>emplace_back</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#erase"><code>erase</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#insert"><code>insert</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#pop_back"><code>pop_back</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#push_back"><code>push_back</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#swap"><code>swap</code></a>
+      
+    </li>
+    
+  </ul>
+     
+  <h4>Functions</h4>
+   
+  <b>modify</b>
+  
+  <ul>
+    
+    <li>
+      
+      <a href="#erase_fn"><code>erase</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#erase_if"><code>erase_if</code></a>
+      
+    </li>
+    
+  </ul>
+     
+</aside>
+
     </div>
     <script>
       document.querySelectorAll('a[href^="http"]').forEach(function (e) {

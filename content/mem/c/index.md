@@ -1,9 +1,28 @@
 ---
-title: "C Functions"
+title: "Functions"
 weight: 4
+pagenav:
+  - section: "Functions"
+    items:
+      - section: "create"
+        items:
+          - name: "calloc"
+          - name: "malloc"
+          - name: "realloc"
+      - section: "delete"
+        items:
+          - name: "free"
+      - section: "convert"
+        items:
+          - name: "construct_at"
+          - name: "destroy_at"
+      - section: "align"
+        items:
+          - name: "align"
+          - name: "ssume_aligned"
 ---
 
-# C Functions
+# Memory Functions
 
 `#include `[`<cstdlib>`]()
 

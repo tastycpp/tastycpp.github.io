@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <title>
-      C Functions | Tasty C&#43;&#43;
+      Functions | Tasty C&#43;&#43;
     </title>
 
     <meta charset="utf-8" />
@@ -10,7 +10,7 @@
     <meta name="author" content="Oleksandr Gituliar" />
     <meta
       name="description"
-      content="C Functions #include &lt;cstdlib&gt;
+      content="Memory Functions #include &lt;cstdlib&gt;
 The header &lt;memory&gt; defines several types and function templates that describe properties of pointers and pointer-like types, manage memory for containers and other template types, destroy objects, and construct objects in uninitialized memory buffers (20.2.3–20.2.11 and 27.11). The header also defines the templates unique_ptr, shared_ptr, weak_ptr, out_ptr_t, inout_ptr_t, and various function templates that operate on objects of these types (20.3).
 create std::calloc
 void* calloc(size_t n, size_t size);"
@@ -46,13 +46,13 @@ void* calloc(size_t n, size_t size);"
     
     <link
       rel="stylesheet"
-      href="https://tastycpp.com/css/main.min.39fe6aec9f731a0274a739a27309c6e68ed9ed6d83b30a1173630bb29570f612.css"
-      integrity="sha256-Of5q7J9zGgJ0pzmicwnG5o7Z7W2DswoRc2MLspVw9hI="
+      href="https://tastycpp.com/css/main.min.438da896b7331fc12e12e758a709e604f4af7a99956e074a4a040fabc6d09889.css"
+      integrity="sha256-Q42olrczH8EuEudYpwnmBPSvepmVbgdKSgQPq8bQmIk="
     />
      <meta property="og:url" content="https://tastycpp.com/mem/c/">
   <meta property="og:site_name" content="Tasty C&#43;&#43;">
-  <meta property="og:title" content="C Functions">
-  <meta property="og:description" content="C Functions #include &lt;cstdlib&gt;
+  <meta property="og:title" content="Functions">
+  <meta property="og:description" content="Memory Functions #include &lt;cstdlib&gt;
 The header &lt;memory&gt; defines several types and function templates that describe properties of pointers and pointer-like types, manage memory for containers and other template types, destroy objects, and construct objects in uninitialized memory buffers (20.2.3–20.2.11 and 27.11). The header also defines the templates unique_ptr, shared_ptr, weak_ptr, out_ptr_t, inout_ptr_t, and various function templates that operate on objects of these types (20.3).
 create std::calloc
 void* calloc(size_t n, size_t size);">
@@ -65,7 +65,6 @@ void* calloc(size_t n, size_t size);">
   </head>
 
   <body>
-    
     <div class="tc-body">
       
       
@@ -115,7 +114,7 @@ void* calloc(size_t n, size_t size);">
             <a
               href="/mem/c/"
               class="active"
-              >C Functions</a
+              >Functions</a
             >
           </li>
           
@@ -183,7 +182,7 @@ void* calloc(size_t n, size_t size);">
         
 
 <article>
-  <section class="" itemprop="articleBody"><h1 id="c-functions">C Functions</h1>
+  <section class="" itemprop="articleBody"><h1 id="memory-functions">Memory Functions</h1>
 <p><code>#include </code><a href=""><code>&lt;cstdlib&gt;</code></a></p>
 <p>The header <code>&lt;memory&gt;</code> defines several types and function templates that describe
 properties of pointers and pointer-like types, manage memory for containers and
@@ -288,6 +287,84 @@ which must be a power of two.</p>
 
 
       </main>
+      <aside class="tc-pagenav">
+  
+  <h4>Functions</h4>
+   
+  <b>create</b>
+  
+  <ul>
+    
+    <li>
+      
+      <a href="#calloc"><code>calloc</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#malloc"><code>malloc</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#realloc"><code>realloc</code></a>
+      
+    </li>
+    
+  </ul>
+   
+  <b>delete</b>
+  
+  <ul>
+    
+    <li>
+      
+      <a href="#free"><code>free</code></a>
+      
+    </li>
+    
+  </ul>
+   
+  <b>convert</b>
+  
+  <ul>
+    
+    <li>
+      
+      <a href="#construct_at"><code>construct_at</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#destroy_at"><code>destroy_at</code></a>
+      
+    </li>
+    
+  </ul>
+   
+  <b>align</b>
+  
+  <ul>
+    
+    <li>
+      
+      <a href="#align"><code>align</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#ssume_aligned"><code>ssume_aligned</code></a>
+      
+    </li>
+    
+  </ul>
+     
+</aside>
+
     </div>
     <script>
       document.querySelectorAll('a[href^="http"]').forEach(function (e) {

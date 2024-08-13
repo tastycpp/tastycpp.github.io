@@ -11,8 +11,15 @@
     <meta
       name="description"
       content="std::shared_ptr The shared_ptr class template stores a pointer, usually obtained via new.
-Related Classes enable_shared_from_this Methods construct shared_ptr assign / copy operator= observe get operator* operator-&gt; operator[] operator bool owner_before use_count modify reset swap Functions create make_shared compare operator== cast static_pointer_cast modify swap input / output operator&lt;&lt; Implementation std::unique_ptr is &hellip;
-1template&lt;typename T&gt; 2class shared_ptr { 3private: 4 T* xxx; 5} Size n bytes (64-bit) n/2 bytes (32-bit) Layout Similar Containers Reference construct unique_ptr () noexcept"
+Implementation std::unique_ptr is &hellip;
+1template&lt;typename T&gt; 2class shared_ptr { 3private: 4 T* xxx; 5} Size n bytes (64-bit) n/2 bytes (32-bit) Layout Similar Containers Reference construct unique_ptr () noexcept
+unique_ptr (pointer p) noexcept
+unique_ptr (const unique_ptr&amp;) = delete
+Disable construction from lvalue.
+unique_ptr (unique_ptr&amp;&amp; u) noexcept
+unique_ptr (nullptr_t) noexcept
+template&lt;class U, class E&gt;
+unique_ptr (unique_ptr&lt;U, E&gt;&amp;&amp; u) noexcept"
     />
 
     
@@ -45,15 +52,22 @@ Related Classes enable_shared_from_this Methods construct shared_ptr assign / co
     
     <link
       rel="stylesheet"
-      href="https://tastycpp.com/css/main.min.39fe6aec9f731a0274a739a27309c6e68ed9ed6d83b30a1173630bb29570f612.css"
-      integrity="sha256-Of5q7J9zGgJ0pzmicwnG5o7Z7W2DswoRc2MLspVw9hI="
+      href="https://tastycpp.com/css/main.min.438da896b7331fc12e12e758a709e604f4af7a99956e074a4a040fabc6d09889.css"
+      integrity="sha256-Q42olrczH8EuEudYpwnmBPSvepmVbgdKSgQPq8bQmIk="
     />
      <meta property="og:url" content="https://tastycpp.com/mem/shared_ptr/">
   <meta property="og:site_name" content="Tasty C&#43;&#43;">
   <meta property="og:title" content="shared_ptr">
   <meta property="og:description" content="std::shared_ptr The shared_ptr class template stores a pointer, usually obtained via new.
-Related Classes enable_shared_from_this Methods construct shared_ptr assign / copy operator= observe get operator* operator-&gt; operator[] operator bool owner_before use_count modify reset swap Functions create make_shared compare operator== cast static_pointer_cast modify swap input / output operator&lt;&lt; Implementation std::unique_ptr is …
-1template&lt;typename T&gt; 2class shared_ptr { 3private: 4 T* xxx; 5} Size n bytes (64-bit) n/2 bytes (32-bit) Layout Similar Containers Reference construct unique_ptr () noexcept">
+Implementation std::unique_ptr is …
+1template&lt;typename T&gt; 2class shared_ptr { 3private: 4 T* xxx; 5} Size n bytes (64-bit) n/2 bytes (32-bit) Layout Similar Containers Reference construct unique_ptr () noexcept
+unique_ptr (pointer p) noexcept
+unique_ptr (const unique_ptr&amp;) = delete
+Disable construction from lvalue.
+unique_ptr (unique_ptr&amp;&amp; u) noexcept
+unique_ptr (nullptr_t) noexcept
+template&lt;class U, class E&gt;
+unique_ptr (unique_ptr&lt;U, E&gt;&amp;&amp; u) noexcept">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="mem">
@@ -63,7 +77,6 @@ Related Classes enable_shared_from_this Methods construct shared_ptr assign / co
   </head>
 
   <body>
-    
     <div class="tc-body">
       
       
@@ -113,7 +126,7 @@ Related Classes enable_shared_from_this Methods construct shared_ptr assign / co
             <a
               href="/mem/c/"
               class=""
-              >C Functions</a
+              >Functions</a
             >
           </li>
           
@@ -183,55 +196,6 @@ Related Classes enable_shared_from_this Methods construct shared_ptr assign / co
 <article>
   <section class="" itemprop="articleBody"><h1 id="stdshared_ptr">std::shared_ptr</h1>
 <p>The <code>shared_ptr</code> class template stores a pointer, usually obtained via <code>new</code>.</p>
-<h2 id="related-classes">Related Classes</h2>
-<ul>
-<li><a href=""><code>enable_shared_from_this</code></a></li>
-</ul>
-<h2 id="methods">Methods</h2>
-<h3 id="construct">construct</h3>
-<ul>
-<li><a href="#shared_ptr"><code>shared_ptr</code></a></li>
-</ul>
-<h3 id="assign--copy">assign / copy</h3>
-<ul>
-<li><a href="#operator_assign"><code>operator=</code></a></li>
-</ul>
-<h3 id="observe">observe</h3>
-<ul>
-<li><a href="#get"><code>get</code></a></li>
-<li><a href="#operator_star"><code>operator*</code></a></li>
-<li><a href="#operator_arrow_right"><code>operator-&gt;</code></a></li>
-<li><a href="#operator_at"><code>operator[]</code></a></li>
-<li><a href="#operator_bool"><code>operator bool</code></a></li>
-<li><a href="#owner_before"><code>owner_before</code></a></li>
-<li><a href="#use_count"><code>use_count</code></a></li>
-</ul>
-<h3 id="modify">modify</h3>
-<ul>
-<li><a href="#reset"><code>reset</code></a></li>
-<li><a href="#swap"><code>swap</code></a></li>
-</ul>
-<h2 id="functions">Functions</h2>
-<h3 id="create">create</h3>
-<ul>
-<li><a href="#make_shared"><code>make_shared</code></a></li>
-</ul>
-<h3 id="compare">compare</h3>
-<ul>
-<li><a href="#operator_eq"><code>operator==</code></a></li>
-</ul>
-<h3 id="cast">cast</h3>
-<ul>
-<li><a href="#static_pointer_cast"><code>static_pointer_cast</code></a></li>
-</ul>
-<h3 id="modify-1">modify</h3>
-<ul>
-<li><a href="#swap_fn"><code>swap</code></a></li>
-</ul>
-<h3 id="input--output">input / output</h3>
-<ul>
-<li><a href="#operator_out"><code>operator&lt;&lt;</code></a></li>
-</ul>
 <h2 id="implementation">Implementation</h2>
 <p><code>std::unique_ptr</code> is &hellip;</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#069;font-weight:bold">template</span><span style="color:#555">&lt;</span><span style="color:#069;font-weight:bold">typename</span> T<span style="color:#555">&gt;</span>
@@ -247,7 +211,7 @@ Related Classes enable_shared_from_this Methods construct shared_ptr assign / co
 <h3 id="layout">Layout</h3>
 <h2 id="similar-containers">Similar Containers</h2>
 <h2 id="reference">Reference</h2>
-<h3 id="construct-1">construct</h3>
+<h3 id="construct">construct</h3>
 <ul>
 <li>
 <h4 id="unique_ptr"><code> </code></h4>
@@ -261,7 +225,7 @@ Disable construction from lvalue.</p>
 <del><code>unique_ptr</code></del><code> (unique_ptr&lt;U, E&gt;&amp;&amp; u) noexcept</code></p>
 </li>
 </ul>
-<h3 id="assign--copy-1">assign / copy</h3>
+<h3 id="assign--copy">assign / copy</h3>
 <ul>
 <li>
 <h4 id="operator_assign"><code> </code></h4>
@@ -270,7 +234,7 @@ Disable construction from lvalue.</p>
 Disable copy from lvalue.</p>
 </li>
 </ul>
-<h3 id="observe-1">observe</h3>
+<h3 id="observe">observe</h3>
 <ul>
 <li>
 <h4 id="get"><code> </code></h4>
@@ -293,7 +257,7 @@ Disable copy from lvalue.</p>
 <p><del><code>operator bool</code></del><code> () const noexcept</code></p>
 </li>
 </ul>
-<h3 id="modify-2">modify</h3>
+<h3 id="modify">modify</h3>
 <ul>
 <li>
 <h4 id="release"><code> </code></h4>
@@ -338,6 +302,178 @@ Disable copy from lvalue.</p>
 
 
       </main>
+      <aside class="tc-pagenav">
+  
+  <h4>Methods</h4>
+   
+  <b>construct</b>
+  
+  <ul>
+    
+    <li>
+      
+      <a href="#shared_ptr"><code>shared_ptr</code></a>
+      
+    </li>
+    
+  </ul>
+   
+  <b>assign / copy</b>
+  
+  <ul>
+    
+    <li>
+      
+      <a href="#operator_assign"><code>operator=</code></a>
+      
+    </li>
+    
+  </ul>
+   
+  <b>observe</b>
+  
+  <ul>
+    
+    <li>
+      
+      <a href="#get"><code>get</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#operator_star"><code>operator*</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#operator_arrow_right"><code>operator-&gt;</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#operator_at"><code>operator[]</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#operator_bool"><code>operator bool</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#owner_before"><code>owner_before</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#use_count"><code>use_count</code></a>
+      
+    </li>
+    
+  </ul>
+   
+  <b>modify</b>
+  
+  <ul>
+    
+    <li>
+      
+      <a href="#reset"><code>reset</code></a>
+      
+    </li>
+    
+    <li>
+      
+      <a href="#swap"><code>swap</code></a>
+      
+    </li>
+    
+  </ul>
+     
+  <h4>Functions</h4>
+   
+  <b>create</b>
+  
+  <ul>
+    
+    <li>
+      
+      <a href="#make_shared"><code>make_shared</code></a>
+      
+    </li>
+    
+  </ul>
+   
+  <b>compare</b>
+  
+  <ul>
+    
+    <li>
+      
+      <a href="#operator_eq"><code>operator==</code></a>
+      
+    </li>
+    
+  </ul>
+   
+  <b>cast</b>
+  
+  <ul>
+    
+    <li>
+      
+      <a href="#static_pointer_cast"><code>static_pointer_cast</code></a>
+      
+    </li>
+    
+  </ul>
+   
+  <b>modify</b>
+  
+  <ul>
+    
+    <li>
+      
+      <a href="#swap_fn"><code>swap</code></a>
+      
+    </li>
+    
+  </ul>
+   
+  <b>input / output</b>
+  
+  <ul>
+    
+    <li>
+      
+      <a href="#operator_out"><code>operator&lt;&lt;</code></a>
+      
+    </li>
+    
+  </ul>
+     
+  <h4>Related</h4>
+   
+  <b>classes</b>
+  
+  <ul>
+    
+    <li>
+      
+      <a href="#enable_shared_from_this"><code>enable_shared_from_this</code></a>
+      
+    </li>
+    
+  </ul>
+     
+</aside>
+
     </div>
     <script>
       document.querySelectorAll('a[href^="http"]').forEach(function (e) {
