@@ -70,6 +70,8 @@
   </url><url>
     <loc>https://tastycpp.com/containers/array/</loc>
   </url><url>
+    <loc>https://tastycpp.com/</loc>
+  </url><url>
     <loc>https://tastycpp.com/concurrency/</loc>
   </url><url>
     <loc>https://tastycpp.com/thread/</loc>
@@ -117,8 +119,6 @@
     <loc>https://tastycpp.com/re/regex_search/</loc>
   </url><url>
     <loc>https://tastycpp.com/strings/</loc>
-  </url><url>
-    <loc>https://tastycpp.com/</loc>
   </url><url>
     <loc>https://tastycpp.com/containers/unordered_map/</loc>
   </url><url>

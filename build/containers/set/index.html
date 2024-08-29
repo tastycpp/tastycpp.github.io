@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <title>
-      set | Tasty C&#43;&#43;
+      set | C&#43;&#43; Land
     </title>
 
     <meta charset="utf-8" />
@@ -11,7 +11,8 @@
     <meta
       name="description"
       content="The std::set container in C&#43;&#43; is a sorted associative container that stores unique elements. Internally, it is typically implemented as a balanced binary tree (usually a Red-Black Tree). The memory layout of std::set is similar to that of std::map, but since std::set only stores keys (without associated values), its node structure is simpler.
-Methods operations complexity Implementation std::set is typically implemented as a balanced binary tree (usually a Red-Black Tree)."
+Methods operations complexity Implementation std::set is implemented as a red-black tree &ndash; a balanced binary tree.
+1template&lt;typename T&gt; 2class set { 3 Node* myHead; // Pointer to the parent node 4 size_t mySize; // Color for Red-Black Tree (true = red, false = black) 5} 1template&lt;typename T&gt; 2class Node { 3 Node* myLeft; // Pointer to the left child 4 Node* myParent; // Pointer to the parent node 5 Node* myRight; // Pointer to the right child 6 char myColor; // Color for Red-Black Tree (true = red, false = black) 7 char myIsNil; // Color for Red-Black Tree (true = red, false = black) 8 T myKey; // The key element 9} std::set class:"
     />
 
     
@@ -48,10 +49,11 @@ Methods operations complexity Implementation std::set is typically implemented a
       integrity="sha256-Q42olrczH8EuEudYpwnmBPSvepmVbgdKSgQPq8bQmIk="
     />
      <meta property="og:url" content="https://tastycpp.com/containers/set/">
-  <meta property="og:site_name" content="Tasty C&#43;&#43;">
+  <meta property="og:site_name" content="C&#43;&#43; Land">
   <meta property="og:title" content="set">
   <meta property="og:description" content="The std::set container in C&#43;&#43; is a sorted associative container that stores unique elements. Internally, it is typically implemented as a balanced binary tree (usually a Red-Black Tree). The memory layout of std::set is similar to that of std::map, but since std::set only stores keys (without associated values), its node structure is simpler.
-Methods operations complexity Implementation std::set is typically implemented as a balanced binary tree (usually a Red-Black Tree).">
+Methods operations complexity Implementation std::set is implemented as a red-black tree – a balanced binary tree.
+1template&lt;typename T&gt; 2class set { 3 Node* myHead; // Pointer to the parent node 4 size_t mySize; // Color for Red-Black Tree (true = red, false = black) 5} 1template&lt;typename T&gt; 2class Node { 3 Node* myLeft; // Pointer to the left child 4 Node* myParent; // Pointer to the parent node 5 Node* myRight; // Pointer to the right child 6 char myColor; // Color for Red-Black Tree (true = red, false = black) 7 char myIsNil; // Color for Red-Black Tree (true = red, false = black) 8 T myKey; // The key element 9} std::set class:">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="containers">
@@ -68,7 +70,7 @@ Methods operations complexity Implementation std::set is typically implemented a
   <h1 class="tc-sidebar-title">
     <a class="" href="/">
       <img src="/img/logo/logo-64x64.png" class="" />
-      <span class=""> Tasty C&#43;&#43; </span>
+      <span class=""> C&#43;&#43; Land </span>
     </a>
   </h1>
 
@@ -293,30 +295,56 @@ values), its node structure is simpler.</p>
 <li>complexity</li>
 </ul>
 <h2 id="implementation">Implementation</h2>
-<p><code>std::set</code> is typically implemented as a balanced binary tree (usually a
-Red-Black Tree).</p>
+<p><code>std::set</code> is implemented as a red-black tree &ndash; a balanced binary tree.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#069;font-weight:bold">template</span><span style="color:#555">&lt;</span><span style="color:#069;font-weight:bold">typename</span> T<span style="color:#555">&gt;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#069;font-weight:bold">struct</span> <span style="color:#0a8;font-weight:bold">Node</span> {
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    T key;         <span style="color:#09f;font-style:italic">// The key element
-</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#09f;font-style:italic"></span>    Node<span style="color:#555">*</span> parent;  <span style="color:#09f;font-style:italic">// Pointer to the parent node
-</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#09f;font-style:italic"></span>    Node<span style="color:#555">*</span> left;    <span style="color:#09f;font-style:italic">// Pointer to the left child
-</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span><span style="color:#09f;font-style:italic"></span>    Node<span style="color:#555">*</span> right;   <span style="color:#09f;font-style:italic">// Pointer to the right child
-</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span><span style="color:#09f;font-style:italic"></span>    <span style="color:#078;font-weight:bold">bool</span> color;    <span style="color:#09f;font-style:italic">// Color for Red-Black Tree (true = red, false = black)
-</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span><span style="color:#09f;font-style:italic"></span>}
-</span></span></code></pre></div><p>std::set uses a tree structure where each node contains:</p>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#069;font-weight:bold">class</span> <span style="color:#0a8;font-weight:bold">set</span> {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    Node<span style="color:#555">*</span>   myHead;     <span style="color:#09f;font-style:italic">// Pointer to the parent node
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#09f;font-style:italic"></span>    size_t  mySize;     <span style="color:#09f;font-style:italic">// Color for Red-Black Tree (true = red, false = black)
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#09f;font-style:italic"></span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#069;font-weight:bold">template</span><span style="color:#555">&lt;</span><span style="color:#069;font-weight:bold">typename</span> T<span style="color:#555">&gt;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#069;font-weight:bold">class</span> <span style="color:#0a8;font-weight:bold">Node</span> {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>    Node<span style="color:#555">*</span>   myLeft;     <span style="color:#09f;font-style:italic">// Pointer to the left child
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span><span style="color:#09f;font-style:italic"></span>    Node<span style="color:#555">*</span>   myParent;   <span style="color:#09f;font-style:italic">// Pointer to the parent node
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span><span style="color:#09f;font-style:italic"></span>    Node<span style="color:#555">*</span>   myRight;    <span style="color:#09f;font-style:italic">// Pointer to the right child
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span><span style="color:#09f;font-style:italic"></span>    <span style="color:#078;font-weight:bold">char</span>    myColor;    <span style="color:#09f;font-style:italic">// Color for Red-Black Tree (true = red, false = black)
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span><span style="color:#09f;font-style:italic"></span>    <span style="color:#078;font-weight:bold">char</span>    myIsNil;    <span style="color:#09f;font-style:italic">// Color for Red-Black Tree (true = red, false = black)
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8</span><span><span style="color:#09f;font-style:italic"></span>    T       myKey;      <span style="color:#09f;font-style:italic">// The key element
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9</span><span><span style="color:#09f;font-style:italic"></span>}
+</span></span></code></pre></div><p><img src="std__set.png" alt="std::set memory layout"></p>
+<p><code>std::set</code> class:</p>
 <ul>
-<li><strong>Key</strong>: The key element.</li>
-<li><strong>Parent Pointer</strong>: A pointer to the parent node.</li>
-<li><strong>Left Child Pointer</strong>: A pointer to the left child node.</li>
-<li><strong>Right Child Pointer</strong>: A pointer to the right child node.</li>
-<li><strong>Color</strong>: An attribute indicating the color of the node (red or black)</li>
+<li>
+<p><code>myHead</code> - a pointer to the head node</p>
+</li>
+<li>
+<p><code>mySize</code> - number of keys in the set</p>
+</li>
 </ul>
-<h3 id="layout">Layout</h3>
-<p><em>TODO</em></p>
+<p><code>Node</code> class:</p>
+<ul>
+<li>
+<p><code>myLeft</code> - A pointer to the left child node.</p>
+</li>
+<li>
+<p><code>myParent</code> - A pointer to the parent node.</p>
+</li>
+<li>
+<p><code>myRight</code> - A pointer to the right child node.</p>
+</li>
+<li>
+<p><code>myColor</code> - red or black color of the node</p>
+</li>
+<li>
+<p><code>myIsNull</code> - null node?</p>
+</li>
+<li>
+<p><code>myKey</code> - the key element.</p>
+</li>
+</ul>
 <h3 id="size">Size</h3>
-<ul>
-<li><strong>16 bytes</strong></li>
-</ul>
+<p><code>std::set</code> allocates 32 bytes per element or more.</p>
+<p><code>sizeof(x) = 16</code></p>
+<p><code>SizeOf(x) = sizeof(x) + N * (32 + sizeof(T))</code></p>
 </section>
 
   

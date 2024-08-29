@@ -19,32 +19,54 @@ values), its node structure is simpler.
 
 ## Implementation
 
-`std::set` is typically implemented as a balanced binary tree (usually a
-Red-Black Tree).
+`std::set` is implemented as a red-black tree -- a balanced binary tree.
 
 ```cpp
 template<typename T>
-struct Node {
-    T key;         // The key element
-    Node* parent;  // Pointer to the parent node
-    Node* left;    // Pointer to the left child
-    Node* right;   // Pointer to the right child
-    bool color;    // Color for Red-Black Tree (true = red, false = black)
+class set {
+    Node*   myHead;     // Pointer to the parent node
+    size_t  mySize;     // Color for Red-Black Tree (true = red, false = black)
 }
 ```
 
-std::set uses a tree structure where each node contains:
+```cpp
+template<typename T>
+class Node {
+    Node*   myLeft;     // Pointer to the left child
+    Node*   myParent;   // Pointer to the parent node
+    Node*   myRight;    // Pointer to the right child
+    char    myColor;    // Color for Red-Black Tree (true = red, false = black)
+    char    myIsNil;    // Color for Red-Black Tree (true = red, false = black)
+    T       myKey;      // The key element
+}
+```
 
-- **Key**: The key element.
-- **Parent Pointer**: A pointer to the parent node.
-- **Left Child Pointer**: A pointer to the left child node.
-- **Right Child Pointer**: A pointer to the right child node.
-- **Color**: An attribute indicating the color of the node (red or black)
+![std::set memory layout](std__set.png)
 
-### Layout
+`std::set` class:
 
-_TODO_
+- `myHead` - a pointer to the head node
+
+- `mySize` - number of keys in the set
+
+`Node` class:
+
+- `myLeft` - A pointer to the left child node.
+
+- `myParent` - A pointer to the parent node.
+
+- `myRight` - A pointer to the right child node.
+
+- `myColor` - red or black color of the node
+
+- `myIsNull` - null node?
+
+- `myKey` - the key element.
 
 ### Size
 
-- **16 bytes**
+`std::set` allocates 32 bytes per element or more.
+
+`sizeof(x) = 16`
+
+`SizeOf(x) = sizeof(x) + N * (32 + sizeof(T))`
