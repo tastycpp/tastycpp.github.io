@@ -34,6 +34,10 @@ pagenav:
 The `weak_ptr` class template stores a weak reference to an object that is
 already managed by a `shared_ptr`.
 
+## Examples
+
+_show/hide_
+
 ## Implementation
 
 `std::unique_ptr` is ...
@@ -53,7 +57,7 @@ private:
 
 ### Layout
 
-## Similar Containers
+## See Also
 
 ## Reference
 
@@ -119,7 +123,3 @@ private:
 - #### ` ` {#swap}
 
   ~~`swap`~~` (unique_ptr& u) noexcept -> void`
-
-## Examples
-
-_show/hide_

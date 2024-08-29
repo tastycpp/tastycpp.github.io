@@ -10,16 +10,10 @@
     <meta name="author" content="Oleksandr Gituliar" />
     <meta
       name="description"
-      content="std::shared_ptr The shared_ptr class template stores a pointer, usually obtained via new.
+      content="std::shared_ptr A shared pointer is an object that owns another object through a pointer, usually obtained via new. shared_ptr implements semantics of shared ownership; the last remaining owner of the pointer is responsible for destroying the object, or otherwise releasing the resources associated with the stored pointer.
+Examples show/hide
 Implementation std::unique_ptr is &hellip;
-1template&lt;typename T&gt; 2class shared_ptr { 3private: 4 T* xxx; 5} Size n bytes (64-bit) n/2 bytes (32-bit) Layout Similar Containers Reference construct unique_ptr () noexcept
-unique_ptr (pointer p) noexcept
-unique_ptr (const unique_ptr&amp;) = delete
-Disable construction from lvalue.
-unique_ptr (unique_ptr&amp;&amp; u) noexcept
-unique_ptr (nullptr_t) noexcept
-template&lt;class U, class E&gt;
-unique_ptr (unique_ptr&lt;U, E&gt;&amp;&amp; u) noexcept"
+1template&lt;typename T&gt; 2class shared_ptr { 3private: 4 T* xxx; 5} Size n bytes (64-bit) n/2 bytes (32-bit) Layout See Also Reference template&lt;class T&gt;"
     />
 
     
@@ -58,16 +52,10 @@ unique_ptr (unique_ptr&lt;U, E&gt;&amp;&amp; u) noexcept"
      <meta property="og:url" content="https://tastycpp.com/mem/shared_ptr/">
   <meta property="og:site_name" content="Tasty C&#43;&#43;">
   <meta property="og:title" content="shared_ptr">
-  <meta property="og:description" content="std::shared_ptr The shared_ptr class template stores a pointer, usually obtained via new.
+  <meta property="og:description" content="std::shared_ptr A shared pointer is an object that owns another object through a pointer, usually obtained via new. shared_ptr implements semantics of shared ownership; the last remaining owner of the pointer is responsible for destroying the object, or otherwise releasing the resources associated with the stored pointer.
+Examples show/hide
 Implementation std::unique_ptr is …
-1template&lt;typename T&gt; 2class shared_ptr { 3private: 4 T* xxx; 5} Size n bytes (64-bit) n/2 bytes (32-bit) Layout Similar Containers Reference construct unique_ptr () noexcept
-unique_ptr (pointer p) noexcept
-unique_ptr (const unique_ptr&amp;) = delete
-Disable construction from lvalue.
-unique_ptr (unique_ptr&amp;&amp; u) noexcept
-unique_ptr (nullptr_t) noexcept
-template&lt;class U, class E&gt;
-unique_ptr (unique_ptr&lt;U, E&gt;&amp;&amp; u) noexcept">
+1template&lt;typename T&gt; 2class shared_ptr { 3private: 4 T* xxx; 5} Size n bytes (64-bit) n/2 bytes (32-bit) Layout See Also Reference template&lt;class T&gt;">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="mem">
@@ -126,7 +114,7 @@ unique_ptr (unique_ptr&lt;U, E&gt;&amp;&amp; u) noexcept">
             <a
               href="/mem/c/"
               class=""
-              >Functions</a
+              >Reference</a
             >
           </li>
           
@@ -195,7 +183,13 @@ unique_ptr (unique_ptr&lt;U, E&gt;&amp;&amp; u) noexcept">
 
 <article>
   <section class="" itemprop="articleBody"><h1 id="stdshared_ptr">std::shared_ptr</h1>
-<p>The <code>shared_ptr</code> class template stores a pointer, usually obtained via <code>new</code>.</p>
+<p>A <code>shared pointer</code> is an object that owns another object through a pointer,
+usually obtained via <code>new</code>. <code>shared_ptr</code> implements semantics of shared
+ownership; the last remaining owner of the pointer is responsible for destroying
+the object, or otherwise releasing the resources associated with the stored
+pointer.</p>
+<h2 id="examples">Examples</h2>
+<p><em>show/hide</em></p>
 <h2 id="implementation">Implementation</h2>
 <p><code>std::unique_ptr</code> is &hellip;</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#069;font-weight:bold">template</span><span style="color:#555">&lt;</span><span style="color:#069;font-weight:bold">typename</span> T<span style="color:#555">&gt;</span>
@@ -209,8 +203,10 @@ unique_ptr (unique_ptr&lt;U, E&gt;&amp;&amp; u) noexcept">
 <li>n/2 bytes (32-bit)</li>
 </ul>
 <h3 id="layout">Layout</h3>
-<h2 id="similar-containers">Similar Containers</h2>
+<h2 id="see-also">See Also</h2>
 <h2 id="reference">Reference</h2>
+<p><code>template&lt;class T&gt;</code><br>
+<code>class shared_ptr;</code></p>
 <h3 id="construct">construct</h3>
 <ul>
 <li>
@@ -272,8 +268,6 @@ Disable copy from lvalue.</p>
 <p><del><code>swap</code></del><code> (unique_ptr&amp; u) noexcept -&gt; void</code></p>
 </li>
 </ul>
-<h2 id="examples">Examples</h2>
-<p><em>show/hide</em></p>
 </section>
 
   

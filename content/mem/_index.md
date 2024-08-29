@@ -2,7 +2,21 @@
 title: "Memory Management Library"
 ---
 
-This Clause describes components for memory management.
+# Memory Management
+
+Memory is a main resource in your computer. It's important to understand /
+reason ...
+
+- CRT
+- `nothrownew.h`
+- `malloc`
+- `operator new`
+- \[adv\] Smart pointers
+
+` `
+
+- Implementation details
+- Links to sources: MSVC, GCC, Clang
 
 ## Smart Pointers
 
@@ -12,36 +26,7 @@ This Clause describes components for memory management.
 
 - [`std::unique_ptr`]()
 
-  ***
-
-  `template<class T, class D = std::default_delete<T>>`\
-  `class `**`unique_ptr`**`;`
-
-  ***
-
-  `template<class T, class D>`\
-  `class `**`unique_ptr`**`<T[], D>;`
-
-  ***
-
-  A _unique pointer_ is an object that owns another object through a pointer.
-  The object is destroyed when the unique pointer is destroyed (e.g., when
-  leaving a block scope).
-
 - [`std::shared_ptr`]()
-
-  ***
-
-  `template<class T>`\
-  `class shared_ptr;`
-
-  ***
-
-  A _shared pointer_ is an object that owns another object through a pointer,
-  usually obtained via `new`. `shared_ptr` implements semantics of shared
-  ownership; the last remaining owner of the pointer is responsible for
-  destroying the object, or otherwise releasing the resources associated with
-  the stored pointer.
 
 - [`std::weak_ptr`]()
 
@@ -74,7 +59,7 @@ This Clause describes components for memory management.
   The class template `hash`, used by the unordered associative containers as the
   default hash function.
 
-### Adaptors
+<!-- ### Adaptors
 
 - [`std::out_ptr_t`]()
 
@@ -121,4 +106,4 @@ This Clause describes components for memory management.
 
   ***
 
-  _Returns_: `inout_ptr_t<Smart, P, Args&&...>(s, std::forward<Args>(args)...)`.
+  _Returns_: `inout_ptr_t<Smart, P, Args&&...>(s, std::forward<Args>(args)...)`. -->

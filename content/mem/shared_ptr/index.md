@@ -57,7 +57,15 @@ pagenav:
 
 # std::shared_ptr
 
-The `shared_ptr` class template stores a pointer, usually obtained via `new`.
+A `shared pointer` is an object that owns another object through a pointer,
+usually obtained via `new`. `shared_ptr` implements semantics of shared
+ownership; the last remaining owner of the pointer is responsible for destroying
+the object, or otherwise releasing the resources associated with the stored
+pointer.
+
+## Examples
+
+_show/hide_
 
 ## Implementation
 
@@ -78,9 +86,12 @@ private:
 
 ### Layout
 
-## Similar Containers
+## See Also
 
 ## Reference
+
+`template<class T>`\
+`class shared_ptr;`
 
 ### construct
 
@@ -144,7 +155,3 @@ private:
 - #### ` ` {#swap}
 
   ~~`swap`~~` (unique_ptr& u) noexcept -> void`
-
-## Examples
-
-_show/hide_

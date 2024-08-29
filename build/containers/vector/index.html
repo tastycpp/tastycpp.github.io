@@ -11,7 +11,8 @@
     <meta
       name="description"
       content="std::vector A vector is a sequence container that supports (amortized) constant time insert and erase operations at the end; insert and erase in the middle take linear time. Storage management is handled automatically, though hints can be given to improve efficiency.
-In C&#43;&#43; Standard Library, std::vector is nothing more than a contiguous region of dynamic memory. The main task of std::vector is to grow the memory region when there is no space left for new elements."
+Examples show/hide
+Implementation 1template&lt;typename T&gt; 2class vector { 3 T* myFirst; 4 T* myLast; 5 T* myEnd; 6} myFirst - pointer to the first element (if the vector is not empty)."
     />
 
     
@@ -51,7 +52,8 @@ In C&#43;&#43; Standard Library, std::vector is nothing more than a contiguous r
   <meta property="og:site_name" content="Tasty C&#43;&#43;">
   <meta property="og:title" content="vector">
   <meta property="og:description" content="std::vector A vector is a sequence container that supports (amortized) constant time insert and erase operations at the end; insert and erase in the middle take linear time. Storage management is handled automatically, though hints can be given to improve efficiency.
-In C&#43;&#43; Standard Library, std::vector is nothing more than a contiguous region of dynamic memory. The main task of std::vector is to grow the memory region when there is no space left for new elements.">
+Examples show/hide
+Implementation 1template&lt;typename T&gt; 2class vector { 3 T* myFirst; 4 T* myLast; 5 T* myEnd; 6} myFirst - pointer to the first element (if the vector is not empty).">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="containers">
@@ -287,49 +289,39 @@ In C&#43;&#43; Standard Library, std::vector is nothing more than a contiguous r
 insert and erase operations at the end; insert and erase in the middle take
 linear time. Storage management is handled automatically, though hints can be
 given to improve efficiency.</p>
-<p><em>In C++ Standard Library, std::vector is nothing more than a contiguous region
-of dynamic memory. The main task of std::vector is to grow the memory region
-when there is no space left for new elements.</em></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="examples">Examples</h2>
+<p><em>show/hide</em></p>
 <h2 id="implementation">Implementation</h2>
-<p><code>std::vector</code> is a contiguous region of memory.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#069;font-weight:bold">template</span><span style="color:#555">&lt;</span><span style="color:#069;font-weight:bold">typename</span> T<span style="color:#555">&gt;</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#069;font-weight:bold">struct</span> <span style="color:#0a8;font-weight:bold">vector</span> {
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#069;font-weight:bold">private</span><span style="color:#555">:</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>  T<span style="color:#555">*</span> myFirst;
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>  T<span style="color:#555">*</span> myLast;
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>  T<span style="color:#555">*</span> myEnd;
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7</span><span>}
-</span></span></code></pre></div><ul>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#069;font-weight:bold">class</span> <span style="color:#0a8;font-weight:bold">vector</span> {
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span>  T<span style="color:#555">*</span> myFirst;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>  T<span style="color:#555">*</span> myLast;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>  T<span style="color:#555">*</span> myEnd;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>}
+</span></span></code></pre></div><!-- raw HTML omitted -->
+<p><img src="std__vector.png" alt="std::vector memory layout"></p>
+<ul>
 <li>
-<p><code>myFirst</code> - pointer to the first element.</p>
-<p>This pointer points to the beginning of the allocated storage. It points to
-the first element of the vector if the vector is not empty.</p>
+<p><code>myFirst</code> - pointer to the first element (if the vector is not empty).</p>
 </li>
 <li>
-<p><code>myLast</code> - pointer to the last element.</p>
-<p>This pointer points to one past the last element in the vector. It indicates
-where the next element will be inserted.</p>
+<p><code>myLast</code> - pointer to one past the last element in the vector.</p>
+<p>It indicates where the next element will be inserted.</p>
 </li>
 <li>
-<p><code>myEnd</code> - pointer to the end of the allocated storage.</p>
-<p>This pointer points to one past the end of the allocated capacity. It
-indicates the end of the allocated storage space, not necessarily the end of
-the current elements.</p>
+<p><code>myEnd</code> - pointer to one past the end of the allocated capacity.</p>
+<p>It indicates the end of the allocated storage space, not necessarily the end
+of the current elements.</p>
 </li>
 </ul>
 <h3 id="size">Size</h3>
-<ul>
-<li>24 bytes (64-bit)</li>
-<li>12 bytes (32-bit)</li>
-</ul>
-<h3 id="layout">Layout</h3>
-<pre tabindex="0"><code>myFirst     myLast      myEnd
-  |           |           |
-  v           v           v
-+---+---+---+---+---+---+
-| 1 | 2 | 3 |   |   |   |
-+---+---+---+---+---+---+
-</code></pre><h2 id="similar-containers">Similar Containers</h2>
+<p><code>std::vector</code> has <code>O(1)</code> memory overhead, no matter how many elements are in the
+vector.</p>
+<p><code>sizeof(x) = 24</code></p>
+<p><code>SizeOf(x) = sizeof(x) + N * sizeof(T)</code></p>
+<h2 id="see-also">See Also</h2>
 <ul>
 <li><a href=""><code>plf::colony</code></a></li>
 <li><a href=""><code>std::hive</code></a> (since C++20)</li>
@@ -453,8 +445,6 @@ c.erase(it, c.end());
 return r;
 </code></pre></li>
 </ul>
-<h2 id="examples">Examples</h2>
-<p><em>show/hide</em></p>
 </section>
 
   

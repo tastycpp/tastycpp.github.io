@@ -126,7 +126,7 @@
       <link>https://tastycpp.com/containers/vector/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/containers/vector/</guid>
-      <description>std::vector A vector is a sequence container that supports (amortized) constant time insert and erase operations at the end; insert and erase in the middle take linear time. Storage management is handled automatically, though hints can be given to improve efficiency.&#xA;In C++ Standard Library, std::vector is nothing more than a contiguous region of dynamic memory. The main task of std::vector is to grow the memory region when there is no space left for new elements.</description>
+      <description>std::vector A vector is a sequence container that supports (amortized) constant time insert and erase operations at the end; insert and erase in the middle take linear time. Storage management is handled automatically, though hints can be given to improve efficiency.&#xA;Examples show/hide&#xA;Implementation 1template&amp;lt;typename T&amp;gt; 2class vector { 3 T* myFirst; 4 T* myLast; 5 T* myEnd; 6} myFirst - pointer to the first element (if the vector is not empty).</description>
     </item>
   </channel>
 </rss>

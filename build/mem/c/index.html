@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <title>
-      Functions | Tasty C&#43;&#43;
+      Reference | Tasty C&#43;&#43;
     </title>
 
     <meta charset="utf-8" />
@@ -12,8 +12,7 @@
       name="description"
       content="Memory Functions #include &lt;cstdlib&gt;
 The header &lt;memory&gt; defines several types and function templates that describe properties of pointers and pointer-like types, manage memory for containers and other template types, destroy objects, and construct objects in uninitialized memory buffers (20.2.3–20.2.11 and 27.11). The header also defines the templates unique_ptr, shared_ptr, weak_ptr, out_ptr_t, inout_ptr_t, and various function templates that operate on objects of these types (20.3).
-create std::calloc
-void* calloc(size_t n, size_t size);"
+create aligned_alloc (size_t alignment, size_t size) -&gt; void*"
     />
 
     
@@ -51,11 +50,10 @@ void* calloc(size_t n, size_t size);"
     />
      <meta property="og:url" content="https://tastycpp.com/mem/c/">
   <meta property="og:site_name" content="Tasty C&#43;&#43;">
-  <meta property="og:title" content="Functions">
+  <meta property="og:title" content="Reference">
   <meta property="og:description" content="Memory Functions #include &lt;cstdlib&gt;
 The header &lt;memory&gt; defines several types and function templates that describe properties of pointers and pointer-like types, manage memory for containers and other template types, destroy objects, and construct objects in uninitialized memory buffers (20.2.3–20.2.11 and 27.11). The header also defines the templates unique_ptr, shared_ptr, weak_ptr, out_ptr_t, inout_ptr_t, and various function templates that operate on objects of these types (20.3).
-create std::calloc
-void* calloc(size_t n, size_t size);">
+create aligned_alloc (size_t alignment, size_t size) -&gt; void*">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="mem">
@@ -114,7 +112,7 @@ void* calloc(size_t n, size_t size);">
             <a
               href="/mem/c/"
               class="active"
-              >Functions</a
+              >Reference</a
             >
           </li>
           
@@ -193,27 +191,35 @@ function templates that operate on objects of these types (20.3).</p>
 <h3 id="create">create</h3>
 <ul>
 <li>
-<p><a href=""><code>std::calloc</code></a></p>
+<h4 id="aligned_alloc"><code> </code></h4>
+<p><del><code>aligned_alloc</code></del><code> (size_t alignment, size_t size) -&gt; void*</code></p>
+<p>The <code>aligned_alloc()</code> function allocates <code>size</code> bytes and returns a pointer to
+the allocated memory. The memory is not initialized. The <code>size</code> should be a
+multiple of <code>alignment</code>. The memory address will be a multiple of <code>alignment</code>,
+which must be a power of two.</p>
+</li>
+<li>
+<h4 id="calloc"><code> </code></h4>
 <hr>
-<p><code>void* calloc(size_t n, size_t size);</code></p>
-<hr>
+<p><del><code>calloc</code></del><code> (size_t n, size_t size) -&gt; void*</code></p>
 <p>The <code>calloc()</code> function allocates memory for an array of <code>n</code> elements of
 <code>size</code> bytes each and returns a pointer to the allocated memory. The memory is
 set to zero.</p>
 </li>
 <li>
-<p><a href=""><code>std::malloc</code></a></p>
+<h4 id="malloc"><code> </code></h4>
 <hr>
-<p><code>void* malloc(size_t size);</code></p>
-<hr>
+<p><del><code>malloc</code></del><code> (size_t size) -&gt; void*</code></p>
 <p>The <code>malloc()</code> function allocates <code>size</code> bytes and returns a pointer to the
 allocated memory. The memory is not initialized.</p>
+<ul>
+<li><code>nothrownew.cpp</code></li>
+</ul>
 </li>
 <li>
-<p><a href=""><code>std::realloc</code></a></p>
+<h4 id="realloc"><code> </code></h4>
 <hr>
-<p><code>void* realloc(void* ptr, size_t size);</code></p>
-<hr>
+<p><del><code>realloc</code></del><code> (void* ptr, size_t size) -&gt; void*</code></p>
 <p>The <code>realloc()</code> function changes the size of the memory block pointed to by
 <code>ptr</code> to <code>size</code> bytes. The added memory is not initialized.</p>
 </li>
@@ -221,42 +227,46 @@ allocated memory. The memory is not initialized.</p>
 <h3 id="delete">delete</h3>
 <ul>
 <li>
-<p><a href=""><code>std::free</code></a></p>
-<hr>
-<p><code>void free(void* ptr);</code></p>
-<hr>
+<h4 id="free"><code> </code></h4>
+<p><del><code>free</code></del><code> (void* ptr) -&gt; void</code></p>
 <p>The <code>free()</code> function frees the memory space pointed to by <code>ptr</code>, which must
 have been returned by a previous call to <code>malloc()</code>, <code>calloc()</code>, <code>realloc()</code>,
 or <code>aligned_alloc()</code>.</p>
 </li>
 </ul>
 <h3 id="convert">convert</h3>
-<p><a href=""><strong><code>construct_at</code></strong></a></p>
-<p><a href=""><strong><code>destroy_at</code></strong></a></p>
 <ul>
-<li><code>template&lt;class T&gt;</code><br>
-<code>constexpr to_address(T* p) noexcept -&gt; T*</code></li>
-<li><code>template&lt;class Ptr&gt;</code><br>
-<code>constexpr to_address(const Ptr&amp; p) noexcept -&gt; auto</code></li>
+<li>
+<h4 id="construct_at"><code> </code></h4>
+<p><del><code>construct_at</code></del><code> (void* ptr) -&gt; void</code></p>
+</li>
+<li>
+<h4 id="destroy_at"><code> </code></h4>
+<hr>
+<p><del><code>destroy_at</code></del><code> (void* ptr) -&gt; void</code></p>
+</li>
+<li>
+<h4 id="to_address"><code> </code></h4>
+<hr>
+<p><code>template&lt;class T&gt;</code><br>
+<del><code>to_address</code></del><code> (T* p) noexcept -&gt; T*</code></p>
+<p><code>template&lt;class Ptr&gt;</code><br>
+<del><code>to_address</code></del><code> (const Ptr&amp; p) noexcept -&gt; auto</code></p>
+</li>
 </ul>
 <h3 id="align">align</h3>
 <ul>
-<li><code>align(size_t alignment, size_t size, void*&amp; ptr, size_t&amp; space) -&gt; void*</code></li>
-<li><code>template&lt;size_t N, class T&gt;</code><br>
-<code>[[nodiscard]] constexpr assume_aligned(T* ptr) -&gt; T*</code></li>
-</ul>
+<li>
+<h4 id="align"><code> </code></h4>
+<p><del><code>align</code></del><code> (size_t alignment, size_t size, void*&amp; ptr, size_t&amp; space) -&gt; void*</code></p>
+</li>
+<li>
+<h4 id="assume_aligned"><code> </code></h4>
+<hr>
+<p><code>template&lt;size_t N, class T&gt;</code><br>
+<del><code>assume_aligned</code></del><code> (T* ptr) -&gt; T*</code></p>
 <p><em>Note</em>: These functions do not attempt to allocate storage by calling
 <code>::operator new()</code> (as it might use these functions itself).</p>
-<ul>
-<li>
-<p><a href=""><code>std::aligned_alloc</code></a></p>
-<hr>
-<p><code>void* aligned_alloc(size_t alignment, size_t size);</code></p>
-<hr>
-<p>The <code>aligned_alloc</code> function allocates <code>size</code> bytes and returns a pointer to
-the allocated memory. The memory is not initialized. The <code>size</code> should be a
-multiple of <code>alignment</code>. The memory address will be a multiple of <code>alignment</code>,
-which must be a power of two.</p>
 </li>
 </ul>
 </section>
@@ -294,6 +304,12 @@ which must be a power of two.</p>
   <b>create</b>
   
   <ul>
+    
+    <li>
+      
+      <a href="#aligned_alloc"><code>aligned_alloc</code></a>
+      
+    </li>
     
     <li>
       
@@ -343,6 +359,12 @@ which must be a power of two.</p>
       
     </li>
     
+    <li>
+      
+      <a href="#to_address"><code>to_address</code></a>
+      
+    </li>
+    
   </ul>
    
   <b>align</b>
@@ -357,7 +379,7 @@ which must be a power of two.</p>
     
     <li>
       
-      <a href="#ssume_aligned"><code>ssume_aligned</code></a>
+      <a href="#assume_aligned"><code>assume_aligned</code></a>
       
     </li>
     

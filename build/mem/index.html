@@ -49,18 +49,17 @@
      <meta property="og:url" content="https://tastycpp.com/mem/">
   <meta property="og:site_name" content="Tasty C&#43;&#43;">
   <meta property="og:title" content="Memory Management Library">
-  <meta property="og:description" content="This Clause describes components for memory management.
-Smart Pointers #include &lt;memory&gt;
+  <meta property="og:description" content="Memory Management Memory is a main resource in your computer. It’s important to understand / reason …
+CRT nothrownew.h malloc operator new [adv] Smart pointers Implementation details Links to sources: MSVC, GCC, Clang Smart Pointers #include &lt;memory&gt;
 Classes std::unique_ptr
-template&lt;class T, class D = std::default_delete&lt;T&gt;&gt;
-class unique_ptr;
-template&lt;class T, class D&gt;
-class unique_ptr&lt;T[], D&gt;;
-A unique pointer is an object that owns another object through a pointer. The object is destroyed when the unique pointer is destroyed (e.g., when leaving a block scope).
 std::shared_ptr
+std::weak_ptr
 template&lt;class T&gt;
-class shared_ptr;
-A shared pointer is an object that owns another object through a pointer, usually obtained via new.">
+class weak_ptr;
+The weak_ptr class template stores a weak reference to an object that is already managed by a shared_ptr.
+Hash Support std::hash
+template&lt;class T&gt;
+struct hash&lt;shared_ptr&lt;T&gt;&gt;">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 
@@ -118,7 +117,7 @@ A shared pointer is an object that owns another object through a pointer, usuall
             <a
               href="/mem/c/"
               class=""
-              >Functions</a
+              >Reference</a
             >
           </li>
           
@@ -183,39 +182,30 @@ A shared pointer is an object that owns another object through a pointer, usuall
 
       <main class="tc-content">
         
-        
-
-<h2>Memory Management Library</h2>
-
-<p>This Clause describes components for memory management.</p>
+         <h1 id="memory-management">Memory Management</h1>
+<p>Memory is a main resource in your computer. It&rsquo;s important to understand /
+reason &hellip;</p>
+<ul>
+<li>CRT</li>
+<li><code>nothrownew.h</code></li>
+<li><code>malloc</code></li>
+<li><code>operator new</code></li>
+<li>[adv] Smart pointers</li>
+</ul>
+<p><code> </code></p>
+<ul>
+<li>Implementation details</li>
+<li>Links to sources: MSVC, GCC, Clang</li>
+</ul>
 <h2 id="smart-pointers">Smart Pointers</h2>
 <p><code>#include </code><a href=""><code>&lt;memory&gt;</code></a></p>
 <h4 id="classes">Classes</h4>
 <ul>
 <li>
 <p><a href=""><code>std::unique_ptr</code></a></p>
-<hr>
-<p><code>template&lt;class T, class D = std::default_delete&lt;T&gt;&gt;</code><br>
-<code>class </code><strong><code>unique_ptr</code></strong><code>;</code></p>
-<hr>
-<p><code>template&lt;class T, class D&gt;</code><br>
-<code>class </code><strong><code>unique_ptr</code></strong><code>&lt;T[], D&gt;;</code></p>
-<hr>
-<p>A <em>unique pointer</em> is an object that owns another object through a pointer.
-The object is destroyed when the unique pointer is destroyed (e.g., when
-leaving a block scope).</p>
 </li>
 <li>
 <p><a href=""><code>std::shared_ptr</code></a></p>
-<hr>
-<p><code>template&lt;class T&gt;</code><br>
-<code>class shared_ptr;</code></p>
-<hr>
-<p>A <em>shared pointer</em> is an object that owns another object through a pointer,
-usually obtained via <code>new</code>. <code>shared_ptr</code> implements semantics of shared
-ownership; the last remaining owner of the pointer is responsible for
-destroying the object, or otherwise releasing the resources associated with
-the stored pointer.</p>
 </li>
 <li>
 <p><a href=""><code>std::weak_ptr</code></a></p>
@@ -242,44 +232,8 @@ already managed by a <code>shared_ptr</code>.</p>
 default hash function.</p>
 </li>
 </ul>
-<h3 id="adaptors">Adaptors</h3>
-<ul>
-<li>
-<p><a href=""><code>std::out_ptr_t</code></a></p>
-<hr>
-<p><code>template&lt;class Smart, class Pointer, class... Args&gt;</code><br>
-<code>class out_ptr_t;</code></p>
-<hr>
-<p><code>out_ptr_t</code> is a class template used to adapt types such as smart pointers
-(20.3) for functions that use output pointer parameters.</p>
-</li>
-<li>
-<p><a href=""><code>std::out_ptr</code></a></p>
-<hr>
-<p><code>template&lt;class Pointer = void, class Smart, class... Args&gt;</code><br>
-<code>auto out_ptr(Smart&amp; s, Args&amp;&amp;... args);</code></p>
-<hr>
-<p><em>Returns</em>: <code>out_ptr_t&lt;Smart, P, Args&amp;&amp;...&gt;(s, std::forward&lt;Args&gt;(args)...)</code>.</p>
-</li>
-<li>
-<p><a href=""><code>std::inout_ptr_t</code></a></p>
-<hr>
-<p><code>template&lt;class Smart, class Pointer, class... Args&gt;</code><br>
-<code>class inout_ptr_t</code></p>
-<hr>
-<p><code>inout_ptr_t</code> is a class template used to adapt types such as smart pointers
-(20.3) for functions that use output pointer parameters whose dereferenced
-values may first be deleted before being set to another allocated value.</p>
-</li>
-<li>
-<p><a href=""><code>std::inout_ptr</code></a></p>
-<hr>
-<p><code>template&lt;class Pointer = void, class Smart, class... Args&gt;</code><br>
-<code>auto inout_ptr(Smart&amp; s, Args&amp;&amp;... args);</code></p>
-<hr>
-<p><em>Returns</em>: <code>inout_ptr_t&lt;Smart, P, Args&amp;&amp;...&gt;(s, std::forward&lt;Args&gt;(args)...)</code>.</p>
-</li>
-</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
  
       </main>
       <aside class="tc-pagenav">

@@ -1,11 +1,12 @@
 ---
-title: "Functions"
+title: "Reference"
 weight: 4
 pagenav:
   - section: "Functions"
     items:
       - section: "create"
         items:
+          - name: "aligned_alloc"
           - name: "calloc"
           - name: "malloc"
           - name: "realloc"
@@ -16,10 +17,11 @@ pagenav:
         items:
           - name: "construct_at"
           - name: "destroy_at"
+          - name: "to_address"
       - section: "align"
         items:
           - name: "align"
-          - name: "ssume_aligned"
+          - name: "assume_aligned"
 ---
 
 # Memory Functions
@@ -35,49 +37,50 @@ function templates that operate on objects of these types (20.3).
 
 ### create
 
-- [`std::calloc`]()
+- #### ` ` {#aligned_alloc}
+
+  ~~`aligned_alloc`~~` (size_t alignment, size_t size) -> void*`
+
+  The `aligned_alloc()` function allocates `size` bytes and returns a pointer to
+  the allocated memory. The memory is not initialized. The `size` should be a
+  multiple of `alignment`. The memory address will be a multiple of `alignment`,
+  which must be a power of two.
+
+- #### ` ` {#calloc}
 
   ***
 
-  `void* calloc(size_t n, size_t size);`
-
-  ***
+  ~~`calloc`~~` (size_t n, size_t size) -> void*`
 
   The `calloc()` function allocates memory for an array of `n` elements of
   `size` bytes each and returns a pointer to the allocated memory. The memory is
   set to zero.
 
-- [`std::malloc`]()
+- #### ` ` {#malloc}
 
   ***
 
-  `void* malloc(size_t size);`
-
-  ***
+  ~~`malloc`~~` (size_t size) -> void*`
 
   The `malloc()` function allocates `size` bytes and returns a pointer to the
   allocated memory. The memory is not initialized.
 
-- [`std::realloc`]()
+  - `nothrownew.cpp`
+
+- #### ` ` {#realloc}
 
   ***
 
-  `void* realloc(void* ptr, size_t size);`
-
-  ***
+  ~~`realloc`~~` (void* ptr, size_t size) -> void*`
 
   The `realloc()` function changes the size of the memory block pointed to by
   `ptr` to `size` bytes. The added memory is not initialized.
 
 ### delete
 
-- [`std::free`]()
+- #### ` ` {#free}
 
-  ***
-
-  `void free(void* ptr);`
-
-  ***
+  ~~`free`~~` (void* ptr) -> void`
 
   The `free()` function frees the memory space pointed to by `ptr`, which must
   have been returned by a previous call to `malloc()`, `calloc()`, `realloc()`,
@@ -85,33 +88,38 @@ function templates that operate on objects of these types (20.3).
 
 ### convert
 
-[**`construct_at`**]()
+- #### ` ` {#construct_at}
 
-[**`destroy_at`**]()
+  ~~`construct_at`~~` (void* ptr) -> void`
 
-- `template<class T>`\
-  `constexpr to_address(T* p) noexcept -> T*`
-- `template<class Ptr>`\
-  `constexpr to_address(const Ptr& p) noexcept -> auto`
+- #### ` ` {#destroy_at}
+
+  ***
+
+  ~~`destroy_at`~~` (void* ptr) -> void`
+
+- #### ` ` {#to_address}
+
+  ***
+
+  `template<class T>`\
+  ~~`to_address`~~` (T* p) noexcept -> T*`
+
+  `template<class Ptr>`\
+  ~~`to_address`~~` (const Ptr& p) noexcept -> auto`
 
 ### align
 
-- `align(size_t alignment, size_t size, void*& ptr, size_t& space) -> void*`
-- `template<size_t N, class T>`\
-  `[[nodiscard]] constexpr assume_aligned(T* ptr) -> T*`
+- #### ` ` {#align}
 
-_Note_: These functions do not attempt to allocate storage by calling
-`::operator new()` (as it might use these functions itself).
+  ~~`align`~~` (size_t alignment, size_t size, void*& ptr, size_t& space) -> void*`
 
-- [`std::aligned_alloc`]()
+- #### ` ` {#assume_aligned}
 
   ***
 
-  `void* aligned_alloc(size_t alignment, size_t size);`
+  `template<size_t N, class T>`\
+  ~~`assume_aligned`~~` (T* ptr) -> T*`
 
-  ***
-
-  The `aligned_alloc` function allocates `size` bytes and returns a pointer to
-  the allocated memory. The memory is not initialized. The `size` should be a
-  multiple of `alignment`. The memory address will be a multiple of `alignment`,
-  which must be a power of two.
+  _Note_: These functions do not attempt to allocate storage by calling
+  `::operator new()` (as it might use these functions itself).

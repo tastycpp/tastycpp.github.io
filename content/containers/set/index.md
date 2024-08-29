@@ -47,5 +47,4 @@ _TODO_
 
 ### Size
 
-- xx bytes (64-bit)
-- xx bytes (32-bit)
+- **16 bytes**

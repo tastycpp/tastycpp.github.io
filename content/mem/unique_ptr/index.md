@@ -2,7 +2,7 @@
 title: "unique_ptr"
 weight: 1
 pagenav:
-  - section: "Methods"
+  - section: "std::unique_ptr"
     items:
       - section: "construct"
         items:
@@ -34,17 +34,17 @@ pagenav:
       - section: "hash"
         items:
           - name: "hash"
-      - section: "adopt"
-        items:
-          - name: "out_ptr"
-          - name: "out_ptr_t"
-          - name: "inout_ptr"
-          - name: "inout_ptr_t"
 ---
 
 # std::unique_ptr
 
-A `unique_ptr` is ...
+A _unique pointer_ is an object that owns another object through a pointer. The
+object is destroyed when the unique pointer is destroyed (e.g., when leaving a
+block scope).
+
+## Examples
+
+_show/hide_
 
 ## Implementation
 
@@ -65,9 +65,15 @@ private:
 
 ### Layout
 
-## Similar Containers
+## See Also
 
 ## Reference
+
+`template<class T, class D = std::default_delete<T>>`\
+ `class `~~`unique_ptr`~~`;`
+
+`template<class T, class D>`\
+ `class `~~`unique_ptr`~~`<T[], D>;`
 
 ### construct
 
@@ -131,7 +137,3 @@ private:
 - #### ` ` {#swap}
 
   ~~`swap`~~` (unique_ptr& u) noexcept -> void`
-
-## Examples
-
-_show/hide_

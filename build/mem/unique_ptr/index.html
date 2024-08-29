@@ -10,17 +10,13 @@
     <meta name="author" content="Oleksandr Gituliar" />
     <meta
       name="description"
-      content="std::unique_ptr A unique_ptr is &hellip;
+      content="std::unique_ptr A unique pointer is an object that owns another object through a pointer. The object is destroyed when the unique pointer is destroyed (e.g., when leaving a block scope).
+Examples show/hide
 Implementation std::unique_ptr is &hellip;
-1template&lt;typename T&gt; 2class uniqur_ptr { 3private: 4 T* xxx; 5} Size 16 bytes (64-bit) 8 bytes (32-bit) Layout Similar Containers Reference construct unique_ptr () noexcept
-unique_ptr (pointer p) noexcept
-unique_ptr (const unique_ptr&amp;) = delete
-Disable construction from lvalue.
-unique_ptr (unique_ptr&amp;&amp; u) noexcept
-unique_ptr (nullptr_t) noexcept
-template&lt;class U, class E&gt;
-unique_ptr (unique_ptr&lt;U, E&gt;&amp;&amp; u) noexcept
-assign / copy operator= (unique_ptr&amp;&amp; u) noexcept -&gt; unique_ptr&amp;"
+1template&lt;typename T&gt; 2class uniqur_ptr { 3private: 4 T* xxx; 5} Size 16 bytes (64-bit) 8 bytes (32-bit) Layout See Also Reference template&lt;class T, class D = std::default_delete&lt;T&gt;&gt;
+class unique_ptr;
+template&lt;class T, class D&gt;
+class unique_ptr&lt;T[], D&gt;;"
     />
 
     
@@ -59,17 +55,13 @@ assign / copy operator= (unique_ptr&amp;&amp; u) noexcept -&gt; unique_ptr&amp;"
      <meta property="og:url" content="https://tastycpp.com/mem/unique_ptr/">
   <meta property="og:site_name" content="Tasty C&#43;&#43;">
   <meta property="og:title" content="unique_ptr">
-  <meta property="og:description" content="std::unique_ptr A unique_ptr is …
+  <meta property="og:description" content="std::unique_ptr A unique pointer is an object that owns another object through a pointer. The object is destroyed when the unique pointer is destroyed (e.g., when leaving a block scope).
+Examples show/hide
 Implementation std::unique_ptr is …
-1template&lt;typename T&gt; 2class uniqur_ptr { 3private: 4 T* xxx; 5} Size 16 bytes (64-bit) 8 bytes (32-bit) Layout Similar Containers Reference construct unique_ptr () noexcept
-unique_ptr (pointer p) noexcept
-unique_ptr (const unique_ptr&amp;) = delete
-Disable construction from lvalue.
-unique_ptr (unique_ptr&amp;&amp; u) noexcept
-unique_ptr (nullptr_t) noexcept
-template&lt;class U, class E&gt;
-unique_ptr (unique_ptr&lt;U, E&gt;&amp;&amp; u) noexcept
-assign / copy operator= (unique_ptr&amp;&amp; u) noexcept -&gt; unique_ptr&amp;">
+1template&lt;typename T&gt; 2class uniqur_ptr { 3private: 4 T* xxx; 5} Size 16 bytes (64-bit) 8 bytes (32-bit) Layout See Also Reference template&lt;class T, class D = std::default_delete&lt;T&gt;&gt;
+class unique_ptr;
+template&lt;class T, class D&gt;
+class unique_ptr&lt;T[], D&gt;;">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="mem">
@@ -128,7 +120,7 @@ assign / copy operator= (unique_ptr&amp;&amp; u) noexcept -&gt; unique_ptr&amp;"
             <a
               href="/mem/c/"
               class=""
-              >Functions</a
+              >Reference</a
             >
           </li>
           
@@ -197,7 +189,11 @@ assign / copy operator= (unique_ptr&amp;&amp; u) noexcept -&gt; unique_ptr&amp;"
 
 <article>
   <section class="" itemprop="articleBody"><h1 id="stdunique_ptr">std::unique_ptr</h1>
-<p>A <code>unique_ptr</code> is &hellip;</p>
+<p>A <em>unique pointer</em> is an object that owns another object through a pointer. The
+object is destroyed when the unique pointer is destroyed (e.g., when leaving a
+block scope).</p>
+<h2 id="examples">Examples</h2>
+<p><em>show/hide</em></p>
 <h2 id="implementation">Implementation</h2>
 <p><code>std::unique_ptr</code> is &hellip;</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#069;font-weight:bold">template</span><span style="color:#555">&lt;</span><span style="color:#069;font-weight:bold">typename</span> T<span style="color:#555">&gt;</span>
@@ -211,8 +207,12 @@ assign / copy operator= (unique_ptr&amp;&amp; u) noexcept -&gt; unique_ptr&amp;"
 <li>8 bytes (32-bit)</li>
 </ul>
 <h3 id="layout">Layout</h3>
-<h2 id="similar-containers">Similar Containers</h2>
+<h2 id="see-also">See Also</h2>
 <h2 id="reference">Reference</h2>
+<p><code>template&lt;class T, class D = std::default_delete&lt;T&gt;&gt;</code><br>
+<code>class </code><del><code>unique_ptr</code></del><code>;</code></p>
+<p><code>template&lt;class T, class D&gt;</code><br>
+<code>class </code><del><code>unique_ptr</code></del><code>&lt;T[], D&gt;;</code></p>
 <h3 id="construct">construct</h3>
 <ul>
 <li>
@@ -274,8 +274,6 @@ Disable copy from lvalue.</p>
 <p><del><code>swap</code></del><code> (unique_ptr&amp; u) noexcept -&gt; void</code></p>
 </li>
 </ul>
-<h2 id="examples">Examples</h2>
-<p><em>show/hide</em></p>
 </section>
 
   
@@ -306,7 +304,7 @@ Disable copy from lvalue.</p>
       </main>
       <aside class="tc-pagenav">
   
-  <h4>Methods</h4>
+  <h4>std::unique_ptr</h4>
    
   <b>construct</b>
   
@@ -413,36 +411,6 @@ Disable copy from lvalue.</p>
     <li>
       
       <a href="#hash"><code>hash</code></a>
-      
-    </li>
-    
-  </ul>
-   
-  <b>adopt</b>
-  
-  <ul>
-    
-    <li>
-      
-      <a href="#out_ptr"><code>out_ptr</code></a>
-      
-    </li>
-    
-    <li>
-      
-      <a href="#out_ptr_t"><code>out_ptr_t</code></a>
-      
-    </li>
-    
-    <li>
-      
-      <a href="#inout_ptr"><code>inout_ptr</code></a>
-      
-    </li>
-    
-    <li>
-      
-      <a href="#inout_ptr_t"><code>inout_ptr_t</code></a>
       
     </li>
     

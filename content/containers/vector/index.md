@@ -54,58 +54,50 @@ insert and erase operations at the end; insert and erase in the middle take
 linear time. Storage management is handled automatically, though hints can be
 given to improve efficiency.
 
-_In C++ Standard Library, std::vector is nothing more than a contiguous region
+<!-- _In C++ Standard Library, std::vector is nothing more than a contiguous region
 of dynamic memory. The main task of std::vector is to grow the memory region
-when there is no space left for new elements._
+when there is no space left for new elements._ -->
+
+## Examples
+
+_show/hide_
 
 ## Implementation
 
-`std::vector` is a contiguous region of memory.
-
 ```cpp
 template<typename T>
-struct vector {
-private:
+class vector {
   T* myFirst;
   T* myLast;
   T* myEnd;
 }
 ```
 
-- `myFirst` - pointer to the first element.
+<!-- `std::vector` is a contiguous region of memory. -->
 
-  This pointer points to the beginning of the allocated storage. It points to
-  the first element of the vector if the vector is not empty.
+![std::vector memory layout](std__vector.png)
 
-- `myLast` - pointer to the last element.
+- `myFirst` - pointer to the first element (if the vector is not empty).
 
-  This pointer points to one past the last element in the vector. It indicates
-  where the next element will be inserted.
+- `myLast` - pointer to one past the last element in the vector.
 
-- `myEnd` - pointer to the end of the allocated storage.
+  It indicates where the next element will be inserted.
 
-  This pointer points to one past the end of the allocated capacity. It
-  indicates the end of the allocated storage space, not necessarily the end of
-  the current elements.
+- `myEnd` - pointer to one past the end of the allocated capacity.
+
+  It indicates the end of the allocated storage space, not necessarily the end
+  of the current elements.
 
 ### Size
 
-- 24 bytes (64-bit)
-- 12 bytes (32-bit)
+`std::vector` has `O(1)` memory overhead, no matter how many elements are in the
+vector.
 
-### Layout
+`sizeof(x) = 24`
 
-```
-myFirst     myLast      myEnd
-  |           |           |
-  v           v           v
-+---+---+---+---+---+---+
-| 1 | 2 | 3 |   |   |   |
-+---+---+---+---+---+---+
+`SizeOf(x) = sizeof(x) + N * sizeof(T)`
 
-```
-
-## Similar Containers
+## See Also
 
 - [`plf::colony`]()
 - [`std::hive`]() (since C++20)
@@ -237,7 +229,3 @@ myFirst     myLast      myEnd
   c.erase(it, c.end());
   return r;
   ```
-
-## Examples
-
-_show/hide_
