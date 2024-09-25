@@ -10,9 +10,8 @@
     <meta name="author" content="Oleksandr Gituliar" />
     <meta
       name="description"
-      content="The std::set container in C&#43;&#43; is a sorted associative container that stores unique elements. Internally, it is typically implemented as a balanced binary tree (usually a Red-Black Tree). The memory layout of std::set is similar to that of std::map, but since std::set only stores keys (without associated values), its node structure is simpler.
-Methods operations complexity Implementation std::set is implemented as a red-black tree &ndash; a balanced binary tree.
-1template&lt;typename T&gt; 2class set { 3 Node* myHead; // Pointer to the parent node 4 size_t mySize; // Color for Red-Black Tree (true = red, false = black) 5} 1template&lt;typename T&gt; 2class Node { 3 Node* myLeft; // Pointer to the left child 4 Node* myParent; // Pointer to the parent node 5 Node* myRight; // Pointer to the right child 6 char myColor; // Color for Red-Black Tree (true = red, false = black) 7 char myIsNil; // Color for Red-Black Tree (true = red, false = black) 8 T myKey; // The key element 9} std::set class:"
+      content="std::set The std::set container in C&#43;&#43; is a sorted associative container that stores unique elements. Internally, it is typically implemented as a balanced binary tree (usually a Red-Black Tree). The memory layout of std::set is similar to that of std::map, but since std::set only stores keys (without associated values), its node structure is simpler.
+Methods operations complexity Implementation std::set is implemented as a red-black tree &ndash; a balanced binary tree."
     />
 
     
@@ -51,9 +50,8 @@ Methods operations complexity Implementation std::set is implemented as a red-bl
      <meta property="og:url" content="https://tastycpp.com/containers/set/">
   <meta property="og:site_name" content="C&#43;&#43; Land">
   <meta property="og:title" content="set">
-  <meta property="og:description" content="The std::set container in C&#43;&#43; is a sorted associative container that stores unique elements. Internally, it is typically implemented as a balanced binary tree (usually a Red-Black Tree). The memory layout of std::set is similar to that of std::map, but since std::set only stores keys (without associated values), its node structure is simpler.
-Methods operations complexity Implementation std::set is implemented as a red-black tree – a balanced binary tree.
-1template&lt;typename T&gt; 2class set { 3 Node* myHead; // Pointer to the parent node 4 size_t mySize; // Color for Red-Black Tree (true = red, false = black) 5} 1template&lt;typename T&gt; 2class Node { 3 Node* myLeft; // Pointer to the left child 4 Node* myParent; // Pointer to the parent node 5 Node* myRight; // Pointer to the right child 6 char myColor; // Color for Red-Black Tree (true = red, false = black) 7 char myIsNil; // Color for Red-Black Tree (true = red, false = black) 8 T myKey; // The key element 9} std::set class:">
+  <meta property="og:description" content="std::set The std::set container in C&#43;&#43; is a sorted associative container that stores unique elements. Internally, it is typically implemented as a balanced binary tree (usually a Red-Black Tree). The memory layout of std::set is similar to that of std::map, but since std::set only stores keys (without associated values), its node structure is simpler.
+Methods operations complexity Implementation std::set is implemented as a red-black tree – a balanced binary tree.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="containers">
@@ -284,7 +282,8 @@ Methods operations complexity Implementation std::set is implemented as a red-bl
         
 
 <article>
-  <section class="" itemprop="articleBody"><p>The std::set container in C++ is a sorted associative container that stores
+  <section class="" itemprop="articleBody"><h1 id="stdset">std::set</h1>
+<p>The std::set container in C++ is a sorted associative container that stores
 unique elements. Internally, it is typically implemented as a balanced binary
 tree (usually a Red-Black Tree). The memory layout of std::set is similar to
 that of std::map, but since std::set only stores keys (without associated
@@ -375,6 +374,20 @@ values), its node structure is simpler.</p>
       </main>
       <aside class="tc-pagenav">
   
+  <h4>Methods</h4>
+   
+  <b>construct</b>
+  
+  <ul>
+    
+    <li>
+      
+      <a href="#set"><code>set</code></a>
+      
+    </li>
+    
+  </ul>
+     
 </aside>
 
     </div>

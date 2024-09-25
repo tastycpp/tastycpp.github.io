@@ -26,6 +26,8 @@
   </url><url>
     <loc>https://tastycpp.com/numerics/cmath/</loc>
   </url><url>
+    <loc>https://tastycpp.com/</loc>
+  </url><url>
     <loc>https://tastycpp.com/algorithms/algorithm/</loc>
   </url><url>
     <loc>https://tastycpp.com/thread/atomic/</loc>
@@ -69,8 +71,6 @@
     <loc>https://tastycpp.com/algorithms/</loc>
   </url><url>
     <loc>https://tastycpp.com/containers/array/</loc>
-  </url><url>
-    <loc>https://tastycpp.com/</loc>
   </url><url>
     <loc>https://tastycpp.com/concurrency/</loc>
   </url><url>

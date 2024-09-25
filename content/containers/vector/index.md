@@ -77,6 +77,8 @@ class vector {
 
 ![std::vector memory layout](std__vector.png)
 
+![std::set memory layout](std__set.png)
+
 - `myFirst` - pointer to the first element (if the vector is not empty).
 
 - `myLast` - pointer to one past the last element in the vector.

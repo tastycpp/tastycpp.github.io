@@ -42,7 +42,7 @@
       <link>https://tastycpp.com/mem/shared_ptr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/mem/shared_ptr/</guid>
-      <description>std::shared_ptr A shared pointer is an object that owns another object through a pointer, usually obtained via new. shared_ptr implements semantics of shared ownership; the last remaining owner of the pointer is responsible for destroying the object, or otherwise releasing the resources associated with the stored pointer.&#xA;Examples show/hide&#xA;Implementation std::unique_ptr is &amp;hellip;&#xA;1template&amp;lt;typename T&amp;gt; 2class shared_ptr { 3private: 4 T* xxx; 5} Size n bytes (64-bit) n/2 bytes (32-bit) Layout See Also Reference template&amp;lt;class T&amp;gt;</description>
+      <description>std::shared_ptr A shared pointer is an object that owns another object through a pointer, usually obtained via new. shared_ptr implements semantics of shared ownership; the last remaining owner of the pointer is responsible for destroying the object, or otherwise releasing the resources associated with the stored pointer.&#xA;Examples show/hide&#xA;Implementation std::shared_ptr is &amp;hellip;&#xA;1template&amp;lt;typename T&amp;gt; 2class shared_ptr { 3private: 4 T* m_ptr; 5 _Ref_count_base* m_rep; 6} https://herbsutter.com/2013/05/29/gotw-89-solution-smart-pointers&#xA;Details Uses atomic inc / dev.</description>
     </item>
     <item>
       <title>std::string_view</title>
@@ -301,7 +301,7 @@
       <link>https://tastycpp.com/containers/set/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>oleksandr@gituliar.net (Oleksandr Gituliar)</author>
       <guid>https://tastycpp.com/containers/set/</guid>
-      <description>The std::set container in C++ is a sorted associative container that stores unique elements. Internally, it is typically implemented as a balanced binary tree (usually a Red-Black Tree). The memory layout of std::set is similar to that of std::map, but since std::set only stores keys (without associated values), its node structure is simpler.&#xA;Methods operations complexity Implementation std::set is implemented as a red-black tree &amp;ndash; a balanced binary tree.&#xA;1template&amp;lt;typename T&amp;gt; 2class set { 3 Node* myHead; // Pointer to the parent node 4 size_t mySize; // Color for Red-Black Tree (true = red, false = black) 5} 1template&amp;lt;typename T&amp;gt; 2class Node { 3 Node* myLeft; // Pointer to the left child 4 Node* myParent; // Pointer to the parent node 5 Node* myRight; // Pointer to the right child 6 char myColor; // Color for Red-Black Tree (true = red, false = black) 7 char myIsNil; // Color for Red-Black Tree (true = red, false = black) 8 T myKey; // The key element 9} std::set class:</description>
+      <description>std::set The std::set container in C++ is a sorted associative container that stores unique elements. Internally, it is typically implemented as a balanced binary tree (usually a Red-Black Tree). The memory layout of std::set is similar to that of std::map, but since std::set only stores keys (without associated values), its node structure is simpler.&#xA;Methods operations complexity Implementation std::set is implemented as a red-black tree &amp;ndash; a balanced binary tree.</description>
     </item>
     <item>
       <title>span</title>

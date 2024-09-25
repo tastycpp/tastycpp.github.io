@@ -12,8 +12,9 @@
       name="description"
       content="std::shared_ptr A shared pointer is an object that owns another object through a pointer, usually obtained via new. shared_ptr implements semantics of shared ownership; the last remaining owner of the pointer is responsible for destroying the object, or otherwise releasing the resources associated with the stored pointer.
 Examples show/hide
-Implementation std::unique_ptr is &hellip;
-1template&lt;typename T&gt; 2class shared_ptr { 3private: 4 T* xxx; 5} Size n bytes (64-bit) n/2 bytes (32-bit) Layout See Also Reference template&lt;class T&gt;"
+Implementation std::shared_ptr is &hellip;
+1template&lt;typename T&gt; 2class shared_ptr { 3private: 4 T* m_ptr; 5 _Ref_count_base* m_rep; 6} https://herbsutter.com/2013/05/29/gotw-89-solution-smart-pointers
+Details Uses atomic inc / dev."
     />
 
     
@@ -54,8 +55,9 @@ Implementation std::unique_ptr is &hellip;
   <meta property="og:title" content="shared_ptr">
   <meta property="og:description" content="std::shared_ptr A shared pointer is an object that owns another object through a pointer, usually obtained via new. shared_ptr implements semantics of shared ownership; the last remaining owner of the pointer is responsible for destroying the object, or otherwise releasing the resources associated with the stored pointer.
 Examples show/hide
-Implementation std::unique_ptr is …
-1template&lt;typename T&gt; 2class shared_ptr { 3private: 4 T* xxx; 5} Size n bytes (64-bit) n/2 bytes (32-bit) Layout See Also Reference template&lt;class T&gt;">
+Implementation std::shared_ptr is …
+1template&lt;typename T&gt; 2class shared_ptr { 3private: 4 T* m_ptr; 5 _Ref_count_base* m_rep; 6} https://herbsutter.com/2013/05/29/gotw-89-solution-smart-pointers
+Details Uses atomic inc / dev.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="mem">
@@ -191,18 +193,46 @@ pointer.</p>
 <h2 id="examples">Examples</h2>
 <p><em>show/hide</em></p>
 <h2 id="implementation">Implementation</h2>
-<p><code>std::unique_ptr</code> is &hellip;</p>
+<p><code>std::shared_ptr</code> is &hellip;</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1</span><span><span style="color:#069;font-weight:bold">template</span><span style="color:#555">&lt;</span><span style="color:#069;font-weight:bold">typename</span> T<span style="color:#555">&gt;</span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2</span><span><span style="color:#069;font-weight:bold">class</span> <span style="color:#0a8;font-weight:bold">shared_ptr</span> {
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3</span><span><span style="color:#069;font-weight:bold">private</span><span style="color:#555">:</span>
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>  T<span style="color:#555">*</span> xxx;
-</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>}
-</span></span></code></pre></div><h3 id="size">Size</h3>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4</span><span>  T<span style="color:#555">*</span>                m_ptr;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5</span><span>  _Ref_count_base<span style="color:#555">*</span>  m_rep;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6</span><span>}
+</span></span></code></pre></div><p><a href="https://herbsutter.com/2013/05/29/gotw-89-solution-smart-pointers">https://herbsutter.com/2013/05/29/gotw-89-solution-smart-pointers</a></p>
+<h2 id="details">Details</h2>
+<ol>
+<li>
+<p>Uses atomic inc / dev. On Windows <code>_InterlockedIncrement</code>, which is as simple
+as</p>
+<pre tabindex="0"><code>mov eax, 1;
+mov ebx, ptr;
+lock add [ebx], eax
+</code></pre><p>Using <code>lock</code> introduces performance penalties due to cache invalidation,
+pipeline stalling (no out-of-order execution), and waiting time to acquire
+the lock.</p>
+</li>
+<li>
+<p>Has a base class, hence virtual functions. Does it penalize performance ?</p>
+</li>
+</ol>
+<h3 id="size">Size</h3>
 <ul>
 <li>n bytes (64-bit)</li>
 <li>n/2 bytes (32-bit)</li>
 </ul>
 <h3 id="layout">Layout</h3>
+<p><code>_Ref_count_base</code>.</p>
+<p>The derived class tells how the object was created.</p>
+<p>Two notable examples:</p>
+<p><strong>new</strong></p>
+<p><code>_Ref_count</code></p>
+<p><img src="std__shared_ptr_new.png" alt="std::shared_ptr memory layout"></p>
+<p><strong>make</strong></p>
+<p><code>_Ref_count_obj2</code></p>
+<p><img src="std__shared_ptr_make.png" alt="std::shared_ptr memory layout"></p>
+<p><code>make_shared</code> vs <code>ptr = new ...</code></p>
 <h2 id="see-also">See Also</h2>
 <h2 id="reference">Reference</h2>
 <p><code>template&lt;class T&gt;</code><br>
@@ -211,7 +241,7 @@ pointer.</p>
 <ul>
 <li>
 <h4 id="unique_ptr"><code> </code></h4>
-<p><del><code>unique_ptr</code></del><code> () noexcept</code></p>
+<p><del><code>shared_ptr</code></del><code> () noexcept</code></p>
 <p><del><code>unique_ptr</code></del><code> (pointer p) noexcept</code></p>
 <p><del><code>unique_ptr</code></del><code> (const unique_ptr&amp;) = delete</code><br>
 Disable construction from lvalue.</p>

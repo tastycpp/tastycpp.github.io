@@ -49,17 +49,9 @@
      <meta property="og:url" content="https://tastycpp.com/mem/">
   <meta property="og:site_name" content="C&#43;&#43; Land">
   <meta property="og:title" content="Memory Management Library">
-  <meta property="og:description" content="Memory Management Memory is a main resource in your computer. It’s important to understand / reason …
-CRT nothrownew.h malloc operator new [adv] Smart pointers Implementation details Links to sources: MSVC, GCC, Clang Smart Pointers #include &lt;memory&gt;
-Classes std::unique_ptr
-std::shared_ptr
-std::weak_ptr
-template&lt;class T&gt;
-class weak_ptr;
-The weak_ptr class template stores a weak reference to an object that is already managed by a shared_ptr.
-Hash Support std::hash
-template&lt;class T&gt;
-struct hash&lt;shared_ptr&lt;T&gt;&gt;">
+  <meta property="og:description" content="Memory Management Memory is a main resource in your computer. It’s how you organize your memory defines the performance of your program, not how fast your CPU is. Of course, some CPU offer special instructions to speedup some operations, for example SIMD extensions. However, if your memory is organized poorly, these instructions are useless.
+It’s important to understand / reason …
+CRT malloc operator new [adv] Smart pointers Implementation details Links to sources: MSVC, GCC, Clang Smart Pointers #include &lt;memory&gt;">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 
@@ -183,11 +175,14 @@ struct hash&lt;shared_ptr&lt;T&gt;&gt;">
       <main class="tc-content">
         
          <h1 id="memory-management">Memory Management</h1>
-<p>Memory is a main resource in your computer. It&rsquo;s important to understand /
-reason &hellip;</p>
+<p>Memory is a main resource in your computer. It&rsquo;s how you organize your memory
+defines the performance of your program, not how fast your CPU is. Of course,
+some CPU offer special instructions to speedup some operations, for example SIMD
+extensions. However, if your memory is organized poorly, these instructions are
+useless.</p>
+<p>It&rsquo;s important to understand / reason &hellip;</p>
 <ul>
 <li>CRT</li>
-<li><code>nothrownew.h</code></li>
 <li><code>malloc</code></li>
 <li><code>operator new</code></li>
 <li>[adv] Smart pointers</li>

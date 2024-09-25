@@ -69,15 +69,35 @@ _show/hide_
 
 ## Implementation
 
-`std::unique_ptr` is ...
+`std::shared_ptr` is ...
 
 ```cpp
 template<typename T>
 class shared_ptr {
 private:
-  T* xxx;
+  T*                m_ptr;
+  _Ref_count_base*  m_rep;
 }
 ```
+
+<https://herbsutter.com/2013/05/29/gotw-89-solution-smart-pointers>
+
+## Details
+
+1. Uses atomic inc / dev. On Windows `_InterlockedIncrement`, which is as simple
+   as
+
+   ```
+   mov eax, 1;
+   mov ebx, ptr;
+   lock add [ebx], eax
+   ```
+
+   Using `lock` introduces performance penalties due to cache invalidation,
+   pipeline stalling (no out-of-order execution), and waiting time to acquire
+   the lock.
+
+2. Has a base class, hence virtual functions. Does it penalize performance ?
 
 ### Size
 
@@ -85,6 +105,26 @@ private:
 - n/2 bytes (32-bit)
 
 ### Layout
+
+`_Ref_count_base`.
+
+The derived class tells how the object was created.
+
+Two notable examples:
+
+**new**
+
+`_Ref_count`
+
+![std::shared_ptr memory layout](std__shared_ptr_new.png)
+
+**make**
+
+`_Ref_count_obj2`
+
+![std::shared_ptr memory layout](std__shared_ptr_make.png)
+
+`make_shared` vs `ptr = new ...`
 
 ## See Also
 
@@ -97,7 +137,7 @@ private:
 
 - #### ` ` {#unique_ptr}
 
-  ~~`unique_ptr`~~` () noexcept`
+  ~~`shared_ptr`~~` () noexcept`
 
   ~~`unique_ptr`~~` (pointer p) noexcept`
 

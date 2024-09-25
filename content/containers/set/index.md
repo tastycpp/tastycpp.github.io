@@ -1,10 +1,14 @@
 ---
 title: "set"
-#description: "This is a story..."
-#cover: cover.png
-#image: cover.png
-#date: 2024-07-02
+pagenav:
+  - section: "Methods"
+    items:
+      - section: "construct"
+        items:
+          - name: "set"
 ---
+
+# std::set
 
 The std::set container in C++ is a sorted associative container that stores
 unique elements. Internally, it is typically implemented as a balanced binary

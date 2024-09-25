@@ -4,11 +4,15 @@ title: "Memory Management Library"
 
 # Memory Management
 
-Memory is a main resource in your computer. It's important to understand /
-reason ...
+Memory is a main resource in your computer. It's how you organize your memory
+defines the performance of your program, not how fast your CPU is. Of course,
+some CPU offer special instructions to speedup some operations, for example SIMD
+extensions. However, if your memory is organized poorly, these instructions are
+useless.
+
+It's important to understand / reason ...
 
 - CRT
-- `nothrownew.h`
 - `malloc`
 - `operator new`
 - \[adv\] Smart pointers
